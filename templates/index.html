@@ -1,0 +1,1743 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Edusetin Study Abroad (EDUSETIN LLP), located in Areakode, Malappuram, Kerala, offers expert guidance for studying in Italy, Germany, Singapore & Kyrgyzstan. Services include MBBS, bachelor’s & master’s admissions, visa assistance, scholarships & test prep.
+">
+
+    <!-- ========== Page Title ========== -->
+    <title>Edusetin Study Abroad – Trusted Overseas Education Consultants in Kerala</title>
+
+    <!-- ========== Favicon Icon ========== -->
+<link rel="shortcut icon" href="{% static 'assets/img/favicon.ico' %}" type="image/x-icon">
+
+<!-- ========== Start Stylesheet ========== -->
+<link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/font-awesome.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/visaco-icons.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/magnific-popup.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/swiper-bundle.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/animate.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/validnavs.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/helper.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/unit-test.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+<link href="{% static 'style.css' %}" rel="stylesheet">
+
+    
+
+</head>
+
+
+
+<body>
+    <style>
+  /* Hide default cursor */
+body {
+  cursor: none;
+}
+
+/* Dot cursor */
+.cursor-dot,
+.cursor-circle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+/* Small dot */
+.cursor-dot {
+  width: 13px;
+  height: 13px;
+  background-color: #4faaff; /* Your brand color */
+  border-radius: 70%;
+}
+
+/* Circular outline */
+.cursor-circle {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #4faaff; /* Your brand color */
+  border-radius: 50%;
+  opacity: 0.6;
+  transition: transform 0.15s ease-out, opacity 0.15s ease-out;
+}
+
+    </style>
+    <script>
+    // Create cursor elements
+const cursorDot = document.createElement('div');
+const cursorCircle = document.createElement('div');
+
+cursorDot.classList.add('cursor-dot');
+cursorCircle.classList.add('cursor-circle');
+
+document.body.appendChild(cursorDot);
+document.body.appendChild(cursorCircle);
+
+let mouseX = 0, mouseY = 0;
+let circleX = 0, circleY = 0;
+
+// Update mouse position on move
+document.addEventListener('mousemove', (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+
+  cursorDot.style.top = `${mouseY}px`;
+  cursorDot.style.left = `${mouseX}px`;
+});
+
+// Animate circle following dot smoothly
+function animate() {
+  circleX += (mouseX - circleX) * 0.1; // 0.1 = smoothness factor
+  circleY += (mouseY - circleY) * 0.1;
+
+  cursorCircle.style.top = `${circleY}px`;
+  cursorCircle.style.left = `${circleX}px`;
+
+  requestAnimationFrame(animate);
+}
+
+animate();
+
+
+    </script>
+
+	
+<style>
+    #preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #fff; /* Adjust to var(--white) if using variables */
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader > div {
+  display: inline-flex;
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: #0066f5; /* Your $secondary color */
+  animation: bounce 1.48s ease-in-out infinite both;
+}
+
+.loader > div:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.loader > div:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+</style>
+
+    <!-- Start Preloader 
+    ============================================= -->
+   <div id="preloader">
+  <div class="vynzora-loader-inner">
+    <div class="loader">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</div>
+
+    <!-- preloader end -->
+
+   <!-- Start Header Top 
+    ============================================= -->
+    <div class="top-bar-area bg-dark text-light">
+        <div class="container-full">
+            <div class="row align-center">
+                <div class="col-xl-9 col-lg-9 info">
+                    <div class="address-info">
+                        <ul class="item-flex">
+                            <li>
+                                <i class="fas fa-envelope-open-text"></i> Info@edusetin.com
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i> Working Hours: 09:00 AM – 06:00 PM
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 text-end">
+                    <div class="social">
+                        <ul class="item-flex">
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="{% static 'assets/img/icon/twitter-x.png' %}" alt="Image Not Found">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Top -->
+
+    <!-- Header 
+    ============================================= -->
+    <header>
+        <!-- Start Navigation -->
+        <nav class="navbar mobile-sidenav navbar-default validnavs navbar-sticky navbar-style-two">
+
+            <!-- Start Top Search -->
+            <div class="top-search">
+                <div class="container-xl">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- End Top Search -->
+
+
+            <div class="container-full d-flex justify-content-between align-items-center">            
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="{% url 'index' %}">
+                        <img src="{% static 'assets/img/logo1.png' %}" class="logo logo-display" alt="Logo">
+                        <img src="{% static 'assets/img/logo1.png' %}" class="logo logo-scrolled" alt="Logo">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+
+                    <img src="{% static 'assets/img/logo2.png' %}" alt="Logo">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="dropdown megamenu-fw megamenu-style-one">
+                            <a href="{% url 'index' %}" class="" data-toggle="dropdown">Home</a>
+                          
+                        </li>
+                        <li>
+                            <a href="{% url 'about' %}">About</a>
+                        </li>
+
+                         
+                        <li>
+                            <a href="#country">Country</a>
+                        </li>
+                        <li>
+                            <a href="#team">Courses</a>
+                        </li>
+                        <li>
+                            <a href="#blog">Blog</a>
+                        </li>
+
+                         <li>
+                            <a href="#team">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#blog">Contact</a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+
+                <div class="attr-right">
+                    <!-- Start Atribute Navigation -->
+                    <div class="attr-nav">
+                        <ul>
+                           
+                            <li><a href="apply-form.html" class="btn-style-one">Appointment <span></span></a></li>
+                        </ul>
+                    </div>
+                    <!-- End Atribute Navigation -->
+                </div>
+
+            </div>   
+            <!-- Overlay screen for menu -->
+            <div class="overlay-screen"></div>
+            <!-- End Overlay screen for menu -->
+
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Header -->
+
+
+    <!-- Start Banner Area 
+    ============================================= -->
+    <div class="banner-area banner-style-three navigation-circle overflow-hidden text-light auto-height">
+        
+        <!-- Slider main container -->
+        <div class="banner-fade">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+
+                <!-- Single Item -->
+                <div class="swiper-slide banner-style-three shadow-left">
+                    <div class="item bg-cover" style="background: url('{% static 'assets/img/banner/2.png' %}');">
+                        <div class="banner-syle-thee-shape">
+                            <img src="{% static 'assets/img/shape/3.png' %}" alt="Image Not 
+                            ">
+                            <img src="{% static 'assets/img/shape/4.png' %}" alt="Image Not Found">
+                        </div>
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-xl-7">
+                                    <div class="content">
+                                      <h2> Study Abroad Consultants in Kerala</h2>
+                                        <p>
+                                        Get expert guidance for studying in Germany, Italy, Singapore & Kyrgyzstan. Edusetin offers complete support for admissions, student visa, and scholarships.
+                                        </p>
+
+                                        <div class="button">
+                                            <a href="about-us.html" class="btn-style-one circle">Discover More <span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+
+                <!-- Single Item -->
+                <div class="swiper-slide banner-style-three shadow-left">
+                    <div class="item bg-cover" style="background: url('{% static 'assets/img/banner/1.png' %}');">
+                        <div class="banner-syle-thee-shape">
+                            <img src="{% static 'assets/img/shape/3.png' %}" alt="Image Not Found">
+                            <img src="{% static 'assets/img/shape/4.png' %}" alt="Image Not Found">
+                        </div>
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-xl-7">
+                                    <div class="content">
+                                        <h2>Affordable MBBS & Study Abroad Guidance</h2>
+                                        <p>
+                                        Secure your seat for MBBS or master’s programs abroad with Edusetin. Trusted for low tuition universities, admission help, and fast visa processing.
+                                        </p>
+
+
+                                        <div class="button">
+                                            <a href="about-us.html" class="btn-style-one circle">Discover More<span></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+
+            </div>
+
+            <!-- Navigation -->
+            <div class="banner-prev-nav">
+                <svg width="27" height="10" viewBox="0 0 27 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M27 9H3L9.9 1" stroke="#ffffff" stroke-width="2"></path>
+                </svg>
+            </div>
+            <div class="banner-next-nav">
+                <svg width="27" height="10" viewBox="0 0 27 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 9H24L17.1 1" stroke="#ffffff" stroke-width="2"></path>
+                </svg>
+            </div>
+
+        </div> 
+
+    </div>
+    <!-- End Banner -->
+
+    <!-- Start About 
+    ============================================= -->
+    <div id="about" class="about-style-three-area default-padding">
+    
+        <div class="container">
+            <div class="about-style-three-items"> 
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="about-style-three-info">
+                            <div class="experience-style-one mb-50">
+                               <h2 style="background-image: url('{% static 'assets/img/about/5.jpg' %}');">10</h2>
+                                <h4>Years of Trusted Study Abroad & Visa Support Services</h4>
+
+                            </div>
+                            <h4 class="sub-title">About Edusetin Study Abroad</h4>
+                            <h2 class="title split-text">Trusted Experts in Student Visa & Overseas Education</h2>
+
+                           <p class="wow fadeInUp">
+                            Edusetin offers expert guidance for students planning to study abroad. From university selection to visa processing, we ensure a smooth journey to top destinations like Germany, Italy, Singapore, and Kyrgyzstan.
+                            </p>
+                            <ul class="list-card wow fadeInUp" data-wow-delay="100ms">
+                               <li>
+                                    <div class="top">
+                                        <img src="{% static 'assets/img/icon/16.png' %}" alt="Best Consultancy for Study Abroad">
+                                        <h4>Top-Rated Study Abroad Consultancy</h4>
+                                    </div>
+                                    <p>
+                                        Edusetin is trusted by students across Kerala for expert guidance on overseas education, including MBBS, bachelor's, and master's programs in top countries.
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="top">
+                                        <img src="{% static 'assets/img/icon/17.png' %}" alt="Visa Assistance Services">
+                                        <h4>Comprehensive Visa Support</h4>
+                                    </div>
+                                    <p>
+                                        We assist students with return visa applications, interview preparation, and complete documentation support to ensure smooth international travel.
+                                    </p>
+                                </li>
+
+                            </ul>
+                            <a href="about-us.html" class="btn-style-one circle mt-30 wow fadeInUp" data-wow-delay="200ms">Discover More <span></span></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 offset-xl-1 col-lg-6">
+                        <div class="about-three-thumb">
+                            <img class="wow fadeInUp" src="{% static 'assets/img/thumb/6.jpg' %}" alt="Image Not Found">
+                            <div class="success-rate wow fadeInDown" data-wow-delay="100ms">
+                                <div class="circle-progress">
+                                    <div class="progressbar">
+                                        <h4>Success Rate</h4>
+                                        <div class="circle"  data-percent="88">
+                                            <strong></strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About -->
+
+
+
+    <!-- Start Visa Category 
+    ============================================= -->
+    <div id="services" class="visa-category-area default-padding text-center bg-gray bg-cover" style="background-image: url(assets/img/shape/20.png);">
+        <!-- <div class="shape-top-right">
+            <img src="{% static 'assets/img/illustration/4.png' %}" alt="Image Not Found">
+        </div> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                    <div class="site-heading text-center">
+                        <h4 class="sub-title">Varieties of visa</h4>
+                        <h2 class="title split-text">Achieve your dream of citizenship & immigration</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="visa-category-items wow fadeInUp" data-wow-delay="200ms">
+                        <!-- Slider main container -->
+                        <div class="visa-category-carousel swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Single Item -->
+                                <div class="swiper-slide">
+                                    <div class="visa-cat-style-one">
+                                        <div class="thumb">
+                                            <img src="{% static 'assets/img/category/1.jpg' %}" alt="Image Not Found">
+                                            <div class="shape">
+                                                <img src="{% static 'assets/img/shape/39.png' %}" alt="Image Not Found">
+                                            </div>
+                                            <div class="icon">
+                                                <img src="{% static 'assets/img/icon/business-visa.png' %}" alt="Image Not Found">
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h4><a href="visa-details.html">Business Visa</a></h4>
+                                            <p>
+                                                Business visa is a conditional permission provided by a region to a foreigner to enter, stay in, or leave that country.
+                                            </p>
+                                        </div>
+                                        <div class="button">
+                                            <a href="visa-details.html">
+                                                <i class="fas fa-angle-right"></i>
+                                                <span>Know More</span>
+                                                <div class="shape"><img src="{% static 'assets/img/shape/40.png' %}" alt="Image Not Found"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Item -->
+                                <!-- Single Item -->
+                                <div class="swiper-slide">
+                                    <div class="visa-cat-style-one">
+                                        <div class="thumb">
+                                            <img src="{% static 'assets/img/category/2.jpg' %}" alt="Image Not Found">
+                                            <div class="shape">
+                                                <img src="{% static 'assets/img/shape/39.png' %}" alt="Image Not Found">
+                                            </div>
+                                            <div class="icon">
+                                                <img src="{% static 'assets/img/icon/student-visa.png' %}" alt="Image Not Found">
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h4><a href="visa-details.html">Student Visa</a></h4>
+                                            <p>
+                                                Student visa is a conditional permission provided by a region to a foreigner to enter, stay in, or leave that country.
+                                            </p>
+                                        </div>
+                                        <div class="button">
+                                            <a href="visa-details.html">
+                                                <i class="fas fa-angle-right"></i>
+                                                <span>Know More</span>
+                                                <div class="shape"><img src="{% static 'assets/img/shape/40.png' %}" alt="Image Not Found"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Item -->
+                                <!-- Single Item -->
+                                <div class="swiper-slide">
+                                    <div class="visa-cat-style-one">
+                                        <div class="thumb">
+                                            <img src="{% static 'assets/img/category/3.jpg' %}" alt="Image Not Found">
+                                            <div class="shape">
+                                                <img src="{% static 'assets/img/shape/39.png' %}" alt="Image Not Found">
+                                            </div>
+                                            <div class="icon">
+                                                <img src="{% static 'assets/img/icon/travel-visa.png' %}" alt="Image Not Found">
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h4><a href="visa-details.html">Travel Visa</a></h4>
+                                            <p>
+                                                Travel visa is a conditional permission provided by a region to a foreigner to enter, stay in, or leave that country.
+                                            </p>
+                                        </div>
+                                        <div class="button">
+                                            <a href="visa-details.html">
+                                                <i class="fas fa-angle-right"></i>
+                                                <span>Know More</span>
+                                                <div class="shape"><img src="{% static 'assets/img/shape/40.png' %}" alt="Image Not Found"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Item -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Visa Category -->
+
+     <!-- Start Why Choose Us 
+    ============================================= -->
+    <div class="choose-us-style-three-area default-padding">
+        <div class="choose-us-three-thumb">
+            <img class="wow fadeInLeft" src="{% static 'assets/img/thumb/3.jpg' %}" alt="Image Not Found">
+            <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=ZRqEtpeQX8g" class="popup-youtube">
+                    <i class="fas fa-play"></i>
+                </a>
+                <span>Watch Us</span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 offset-xl-4">
+                    <div class="choose-us-style-three-info">
+                        <h4 class="sub-title">Why choose us</h4>
+                        <h2 class="title split-text">Reliable Study Abroad & Immigration Services in Kerala</h2>
+                        <p class="wow fadeInUp">
+                            At Edusetin, we specialize in providing personalized guidance for students aiming to study abroad. With over a decade of experience, we’ve helped hundreds of students secure admissions and visas for top universities in Germany, Italy, Singapore, and Kyrgyzstan. Our expert team ensures transparent, end-to-end support — from university selection to final visa approval — making us a trusted name in overseas education consulting in Kerala.
+                            </p>
+                      <div class="card-style-three wow fadeInUp" data-wow-delay="100ms">
+                            <div class="item">
+                                <div class="number">01</div>
+                                <div class="info">
+                                    <h4>Expert Visa Guidance</h4>
+                                    <p>
+                                        Our team provides step-by-step support for student visas, ensuring accurate documentation and faster approvals for countries like Germany, Italy, and Kyrgyzstan.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="number">02</div>
+                                <div class="info">
+                                    <h4>Global University Network</h4>
+                                    <p>
+                                        We work closely with reputed universities across Europe and Asia, helping students access top-ranked programs in MBBS, engineering, and business.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-style-three wow fadeInUp" data-wow-delay="100ms">
+                            <div class="item">
+                                <div class="number">03</div>
+                                <div class="info">
+                                    <h4>Personalized Admission Support</h4>
+                                    <p>
+                                        From course selection to application submission, Edusetin offers tailored guidance to match your career goals with the right international programs.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="number">04</div>
+                                <div class="info">
+                                    <h4>Trusted by Students Across Kerala</h4>
+                                    <p>
+                                        With years of experience and hundreds of success stories, Edusetin has become a go-to consultancy for students pursuing higher education abroad.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Why Choose Us -->
+      <!-- Start Fun fact 
+    ============================================= -->
+    <div class="fun-fact-style-one-area default-padding bg-gray bg-cover overflow-hidden" style="background-image: url(assets/img/shape/banner-3.jpg);">
+        <div class="container">
+            <div class="fun-fact-style-one-items">
+                <div class="row">
+                   <!-- Single item -->
+                    <div class="col-lg-4 col-md-6 funfact-style-one-item">
+                        <div class="fun-fact">
+                            <div class="counter">
+                                <div class="timer" data-to="56" data-speed="2000">56</div>
+                                <div class="operator">K</div>
+                            </div>
+                            <span class="medium">Students Guided for <br> Overseas Education</span>
+                        </div>
+                    </div>
+                    <!-- End Single item -->
+
+                    <!-- Single item -->
+                    <div class="col-lg-4 col-md-6 funfact-style-one-item">
+                        <div class="fun-fact">
+                            <div class="counter">
+                                <div class="timer" data-to="100" data-speed="2000">100</div>
+                                <div class="operator">%</div>
+                            </div>
+                            <span class="medium">Visa Success Rate for <br> Study Abroad Applicants</span>
+                        </div>
+                    </div>
+                    <!-- End Single item -->
+
+                    <!-- Single item -->
+                    <div class="col-lg-4 col-md-6 funfact-style-one-item">
+                        <div class="fun-fact">
+                            <div class="counter">
+                                <div class="timer" data-to="2" data-speed="2000">2</div>
+                                <div class="operator">Days</div>
+                            </div>
+                            <span class="medium">Quickest Visa Approval <br> Turnaround Time</span>
+                        </div>
+                    </div>
+                    <!-- End Single item -->
+
+                </div>
+           </div>
+        </div>
+    </div>
+    <!-- End Fun Fact -->
+
+     <!-- Start Team 
+    ============================================= -->
+    <div id="team" class="team-style-one-area default-padding bottom-less">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                    <div class="site-heading text-center">
+                        <h4 class="sub-title">Our Expert Members</h4>
+                        <h2 class="title split-text">Introducing our skilled visa process specialists</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!-- Single Item -->
+                <div class="col-lg-4 col-md-6 mb-30">
+                    <div class="team-style-one-item wow fadeInUp">
+                        <div class="thumb">
+                            <img src="{% static 'assets/img/team/5.jpg' %}" alt="Image Not Found">
+                            <img src="{% static 'assets/img/shape/31.png' %}" alt="Image Not Found">
+                            <div class="social-info">
+                                <div class="social-overlay">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="icon">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                </div>
+                                <a href="contact-us.html"><i class="fas fa-comments-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h4><a href="team-details.html">Aleesha Brown</a></h4>
+                            <span>Visa Counselor</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+                <!-- Single Item -->
+                <div class="col-lg-4 col-md-6 mb-30">
+                    <div class="team-style-one-item wow fadeInUp" data-wow-delay="100ms">
+                        <div class="thumb">
+                            <img src="{% static 'assets/img/team/6.jpg' %}" alt="Image Not Found">
+                            <img src="{% static 'assets/img/shape/31.png' %}" alt="Image Not Found">
+                            <div class="social-info">
+                                <div class="social-overlay">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="icon">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                </div>
+                                <a href="contact-us.html"><i class="fas fa-comments-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h4><a href="team-details.html">Kevin Martin</a></h4>
+                            <span>Immigration Officer</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+                <!-- Single Item -->
+                <div class="col-lg-4 col-md-6 mb-30">
+                    <div class="team-style-one-item wow fadeInUp" data-wow-delay="200ms">
+                        <div class="thumb">
+                            <img src="{% static 'assets/img/team/7.jpg' %}" alt="Image Not Found">
+                            <img src="{% static 'assets/img/shape/31.png' %}" alt="Image Not Found">
+                            <div class="social-info">
+                                <div class="social-overlay">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="icon">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                </div>
+                                <a href="contact-us.html"><i class="fas fa-comments-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h4><a href="team-details.html">Sarah Albert</a></h4>
+                            <span>Immigration Specialist</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+            </div>
+        </div>
+    </div>
+    <!-- End Team -->
+
+
+
+    <!-- Start Training -->
+<div class="training-style-one-area default-padding-top bg-dark text-light" style="background-image: url('{% static 'assets/img/shape/30.png' %}');">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="site-heading">
+                    <h4 class="sub-title">Training & Certification</h4>
+                    <h2 class="title split-text">Get Trained for Global Immigration Success</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container container-stage">
+        <div class="row">
+            <div class="col-xl-4 col-lg-5 pr-60 pr-md-15 pr-xs-15">
+                <div class="training-style-one-navs">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="tabs_1" data-bs-toggle="tab" data-bs-target="#tab_1" type="button" role="tab" aria-controls="tab_1" aria-selected="true">
+                                <strong>Citizenship Test <i class="fas fa-long-arrow-right"></i></strong>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tabs_2" data-bs-toggle="tab" data-bs-target="#tab_2" type="button" role="tab" aria-controls="tab_2" aria-selected="false">
+                                <strong>Visa Interview Training <i class="fas fa-long-arrow-right"></i></strong>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tabs_3" data-bs-toggle="tab" data-bs-target="#tab_3" type="button" role="tab" aria-controls="tab_3" aria-selected="false">
+                                <strong>Immigration Law Basics <i class="fas fa-long-arrow-right"></i></strong>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tabs_4" data-bs-toggle="tab" data-bs-target="#tab_4" type="button" role="tab" aria-controls="tab_4" aria-selected="false">
+                                <strong>Workplace Skills <i class="fas fa-long-arrow-right"></i></strong>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xl-8 col-lg-7">
+                <div class="training-style-one-contents">
+                    <div class="tab-content" id="myTabContent">
+
+                        <!-- Citizenship Test -->
+                        <div class="tab-pane fade show active" id="tab_1" role="tabpanel" aria-labelledby="tabs_1">
+                            <div class="training-style-one-item">
+                                <img src="{% static 'assets/img/course/1.jpg' %}" alt="Citizenship Test Training">
+                                <div class="info">
+                                    <div class="shape">
+                                        <img src="{% static 'assets/img/shape/29.png' %}" alt="Shape">
+                                    </div>
+                                    <h3><a href="#">Citizenship Test</a></h3>
+                                    <p>
+                                        Prepare confidently for your U.S. Citizenship Test with our structured training modules. Learn essential civics knowledge, improve your English communication, and build the confidence needed to pass your naturalization interview.
+                                    </p>
+                                    <ul class="list-style-three">
+                                        <li>English Proficiency Training</li>
+                                        <li>Official Civics Practice</li>
+                                        <li>Interview Preparation</li>
+                                    </ul>
+                                    <a href="coaching-details.html" class="btn-style-one circle">Course Details <span></span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Visa Training -->
+                        <div class="tab-pane fade" id="tab_2" role="tabpanel" aria-labelledby="tabs_2">
+                            <div class="training-style-one-item">
+                                <img src="{% static 'assets/img/course/2.jpg' %}" alt="Visa Training Program">
+                                <div class="info">
+                                    <h3><a href="#">Visa Interview Training</a></h3>
+                                    <p>
+                                        Increase your chances of visa approval with our expert-led visa training program. Learn how to handle embassy interviews, prepare documentation, and respond confidently to officer questions for study, work, or immigration visas.
+                                    </p>
+                                    <ul class="list-style-three">
+                                        <li>Mock Visa Interviews</li>
+                                        <li>Document Review Guidance</li>
+                                        <li>Country-Specific Scenarios</li>
+                                    </ul>
+                                    <a href="coaching-details.html" class="btn-style-one circle">Course Details <span></span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Immigration Law -->
+                        <div class="tab-pane fade" id="tab_3" role="tabpanel" aria-labelledby="tabs_3">
+                            <div class="training-style-one-item">
+                                <img src="{% static 'assets/img/course/3.jpg' %}" alt="Immigration Law Course">
+                                <div class="info">
+                                    <h3><a href="#">Immigration Law Basics</a></h3>
+                                    <p>
+                                        Understand the foundations of immigration law and how it impacts visa categories, eligibility, and policy updates. Ideal for professionals, students, or anyone navigating legal immigration frameworks.
+                                    </p>
+                                    <ul class="list-style-three">
+                                        <li>Visa Types & Legal Terms</li>
+                                        <li>Government Process Overview</li>
+                                        <li>Work Authorization Rules</li>
+                                    </ul>
+                                    <a href="coaching-details.html" class="btn-style-one circle">Course Details <span></span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Working Skills -->
+                        <div class="tab-pane fade" id="tab_4" role="tabpanel" aria-labelledby="tabs_4">
+                            <div class="training-style-one-item">
+                                <img src="{% static 'assets/img/course/4.jpg' %}" alt="Workplace Skills Training">
+                                <div class="info">
+                                    <h3><a href="#">Workplace Skills</a></h3>
+                                    <p>
+                                        Get career-ready with essential workplace training. This course helps you develop practical skills like digital literacy, teamwork, communication, and basic IT troubleshooting — perfect for students and job seekers abroad.
+                                    </p>
+                                    <ul class="list-style-three">
+                                        <li>Professional Communication</li>
+                                        <li>Team Collaboration Tools</li>
+                                        <li>Digital & IT Literacy</li>
+                                    </ul>
+                                    <a href="coaching-details.html" class="btn-style-one circle">Course Details <span></span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> <!-- End tab content -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Training -->
+
+
+   <!-- Start Process 
+============================================= -->
+<div class="process-style-one-area text-center default-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                <div class="site-heading text-center">
+                    <h4 class="sub-title">Visa Process Made Easy</h4>
+                    <h2 class="title split-text">Your Visa in Just Three Simple Steps</h2>
+                    <p class="mt-3">
+                        Navigating your visa application has never been easier. Follow our streamlined process to get started on your journey abroad—quickly, confidently, and without hassle.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="process-style-one-items wow fadeInUp" data-wow-delay="100ms">
+                    <!-- Step 1 -->
+                    <div class="process-style-one-item hover-active-item">
+                        <div class="icon">
+                            <img src="{% static 'assets/img/icon/9.png' %}" alt="Visa Application Form Icon">
+                        </div>
+                        <div class="info">
+                            <div class="shape">
+                                <img src="{% static 'assets/img/shape/41.png' %}" alt="Shape">
+                            </div>
+                            <span>01</span>
+                            <h4>Fill Out the Online Form</h4>
+                            <p>
+                                Start your journey by completing our simple and secure online visa application form. It only takes a few minutes and helps us understand your needs better.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="process-style-one-item hover-active-item active">
+                        <div class="icon">
+                            <img src="{% static 'assets/img/icon/10.png' %}" alt="Documents and Payment Icon">
+                        </div>
+                        <div class="info">
+                            <div class="shape">
+                                <img src="{% static 'assets/img/shape/41.png' %}" alt="Shape">
+                            </div>
+                            <span>02</span>
+                            <h4>Submit Documents & Make Payment</h4>
+                            <p>
+                                Upload your required documents and make a secure payment. Our expert team will review everything and provide feedback if needed.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="process-style-one-item hover-active-item">
+                        <div class="icon">
+                            <img src="{% static 'assets/img/icon/11.png' %}" alt="Visa Approval Icon">
+                        </div>
+                        <div class="info">
+                            <div class="shape">
+                                <img src="{% static 'assets/img/shape/41.png' %}" alt="Shape">
+                            </div>
+                            <span>03</span>
+                            <h4>Receive Your Visa</h4>
+                            <p>
+                                Once approved, your visa will be delivered to you via email or courier—fast, efficient, and worry-free. You're now ready to explore new opportunities abroad!
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Steps -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Process -->
+
+
+
+
+
+
+    <!-- Start Visa Country 
+    ============================================= -->
+    <div id="country" class="visa-country-area default-padding bg-dark text-light bg-cover" style="background-image: url(assets/img/shape/21.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                    <div class="site-heading text-center">
+                        <h4 class="sub-title">Explore Our Covered</h4>
+                        <h2 class="title split-text">Start your journey & pick <br> your ideal country</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="visa-offer-country-items" id="accordion">
+                        <li class="out">
+                            <div class="visa-offer-country-item">
+                                <div class="country">
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/france.png' %}" alt="Image Not Found">
+                                    </div>
+                                    <div class="content">
+                                        <h5>France</h5>
+                                        <span>Artois</span>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <ul class="list-style-one">
+                                        <li>Student Visa & Admision</li>
+                                        <li>5 Years Business Visa</li>
+                                        <li>Apply Visa Online</li>
+                                    </ul>
+                                    <a href="country-details.html" class="btn-style-one circle mt-30">Discover More <span></span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="visa-offer-country-item">
+                                <div class="country">
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/uk.png' %}" alt="Image Not Found">
+                                    </div>
+                                    <div class="content">
+                                        <h5>United Kingdom</h5>
+                                        <span>Asheville</span>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <ul class="list-style-one">
+                                        <li>Student Visa & Admision</li>
+                                        <li>5 Years Business Visa</li>
+                                        <li>Apply Visa Online</li>
+                                    </ul>
+                                    <a href="country-details.html" class="btn-style-one circle mt-30">Discover More <span></span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="visa-offer-country-item">
+                                <div class="country">
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/canada.png' %}" alt="Image Not Found">
+                                    </div>
+                                    <div class="content">
+                                        <h5>Canada</h5>
+                                        <span>Quebec</span>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <ul class="list-style-one">
+                                        <li>Student Visa & Admision</li>
+                                        <li>5 Years Business Visa</li>
+                                        <li>Apply Visa Online</li>
+                                    </ul>
+                                    <a href="country-details.html" class="btn-style-one circle mt-30">Discover More <span></span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="visa-offer-country-item">
+                                <div class="country">
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/australia.png' %}" alt="Image Not Found">
+                                    </div>
+                                    <div class="content">
+                                        <h5>Australia</h5>
+                                        <span>Oceania</span>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <ul class="list-style-one">
+                                        <li>Student Visa & Admision</li>
+                                        <li>5 Years Business Visa</li>
+                                        <li>Apply Visa Online</li>
+                                    </ul>
+                                    <a href="country-details.html" class="btn-style-one circle mt-30">Discover More <span></span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="visa-offer-country-item">
+                                <div class="country">
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/dubai.png' %}" alt="Image Not Found">
+                                    </div>
+                                    <div class="content">
+                                        <h5>Dubai</h5>
+                                        <span>Abu Dhabi</span>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <ul class="list-style-one">
+                                        <li>Student Visa & Admision</li>
+                                        <li>5 Years Business Visa</li>
+                                        <li>Apply Visa Online</li>
+                                    </ul>
+                                    <a href="country-details.html" class="btn-style-one circle mt-30">Discover More <span></span></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Visa Country  -->
+
+   <!-- Start FAQ 
+============================================= -->
+<div class="faq-style-one-area default-padding bg-cover bg-gray" style="background-image: url('{% static 'assets/img/shape/22.png' %}');">
+    <div class="container">
+        <div class="row justify-content-end">
+            
+            <div class="col-xl-6 offset-xl-1 order-lg-last">
+                <div class="faq-style-one-items">
+                    <h4 class="sub-title">Frequently Asked Questions</h4>
+                    <h2 class="title wow fadeInUp">Quick Answers to Common Visa Queries</h2>
+                    <div class="accordion wow fadeInUp" data-wow-delay="100ms" id="faqAccordion">
+                        <!-- Single Item -->
+                        <div class="accordion-item accordion-style-one">
+                            <h2 class="accordion-header" id="heading_1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_1" aria-expanded="true" aria-controls="collapse_1">
+                                    What types of visas do you assist with?
+                                </button>
+                            </h2>
+                            <div id="collapse_1" class="accordion-collapse collapse show" aria-labelledby="heading_1" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        We provide expert assistance with a wide range of visas, including tourist visas, work permits, student visas, family and spouse visas, business visas, and permanent residency applications. Our team ensures that each visa category is handled with the required documentation and process knowledge for your destination country.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+
+                        <!-- Single Item -->
+                        <div class="accordion-item accordion-style-one">
+                            <h2 class="accordion-header" id="heading_2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_2" aria-expanded="false" aria-controls="collapse_2">
+                                    How long does the visa process take?
+                                </button>
+                            </h2>
+                            <div id="collapse_2" class="accordion-collapse collapse" aria-labelledby="heading_2" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        Visa processing times vary depending on the visa type, your nationality, and the destination country’s immigration policies. Typically, it can take anywhere from a few days to several weeks. Once we assess your profile, we provide an estimated timeline based on the most up-to-date visa regulations.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+
+                        <!-- Single Item -->
+                        <div class="accordion-item accordion-style-one">
+                            <h2 class="accordion-header" id="heading_3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_3" aria-expanded="false" aria-controls="collapse_3">
+                                    What documents are required for a visa application?
+                                </button>
+                            </h2>
+                            <div id="collapse_3" class="accordion-collapse collapse" aria-labelledby="heading_3" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        Required documents typically include a valid passport, recent passport-size photographs, proof of financial stability, visa application forms, travel itinerary, employment or admission letters, and invitation letters (if applicable). We provide a tailored checklist based on your visa category and country requirements.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+
+                        <!-- Single Item -->
+                        <div class="accordion-item accordion-style-one">
+                            <h2 class="accordion-header" id="heading_4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_4" aria-expanded="false" aria-controls="collapse_4">
+                                    Do you guarantee visa approval?
+                                </button>
+                            </h2>
+                            <div id="collapse_4" class="accordion-collapse collapse" aria-labelledby="heading_4" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        While we cannot guarantee visa approval (as final decisions are made by the respective embassies or consulates), we significantly improve your chances by submitting a complete, accurate, and professionally prepared application. Our expert guidance helps avoid common errors that lead to rejections or delays.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-5">
+                <div class="faq-style-one-thumb">
+                    <img src="{% static 'assets/img/illustration/5.png' %}" alt="Visa Support Illustration">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- End FAQ  -->
+
+    <!-- Start Course 
+    ============================================= -->
+    <div id="coaching" class="course-style-one-area default-padding-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                    <div class="site-heading text-center">
+                        <h4 class="sub-title">Coaching we provide</h4>
+                        <h2 class="title split-text">Discover the elite training programs you need</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="course-style-one-items">
+            <div class="container">
+                <!-- Navigation -->
+                <div class="course-style-one-nav">
+                    <div class="course-carousel-prev"><i class="fas fa-long-arrow-left"></i></div>
+                    <div class="course-carousel-next"><i class="fas fa-long-arrow-right"></i></div>
+                </div>
+                <!-- Slider main container -->
+                <div class="course-style-one-carousel swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Single Item -->
+                        <div class="swiper-slide">
+                            <div class="course-style-one-item">
+                                <img src="{% static 'assets/img/course/1.jpg' %}" alt="Image Not Found">
+                                <div class="overlay-title">
+                                    <h4><a href="coaching-details.html">Entrepreneurs Starting</a></h4>
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/3.png' %}" alt="Image Not Found">
+                                    </div>
+                                </div>
+                                <div class="overlay">
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/3.png' %}" alt="Image Not Found">
+                                    </div>
+                                    <h4><a href="coaching-details.html">Entrepreneurs Starting</a></h4>
+                                    <p>
+                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <!-- Single Item -->
+                        <div class="swiper-slide">
+                            <div class="course-style-one-item">
+                                <img src="{% static 'assets/img/course/2.jpg' %}" alt="Image Not Found">
+                                <div class="overlay-title">
+                                    <h4><a href="coaching-details.html">Visa Training</a></h4>
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/4.png' %}" alt="Image Not Found">
+                                    </div>
+                                </div>
+                                <div class="overlay">
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/4.png' %}" alt="Image Not Found">
+                                    </div>
+                                    <h4><a href="coaching-details.html">Visa Training</a></h4>
+                                    <p>
+                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <!-- Single Item -->
+                        <div class="swiper-slide">
+                            <div class="course-style-one-item">
+                                <img src="{% static 'assets/img/course/3.jpg' %}" alt="Image Not Found">
+                                <div class="overlay-title">
+                                    <h4><a href="coaching-details.html">Immigration law</a></h4>
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/5.png' %}" alt="Image Not Found">
+                                    </div>
+                                </div>
+                                <div class="overlay">
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/5.png' %}" alt="Image Not Found">
+                                    </div>
+                                    <h4><a href="coaching-details.html">Immigration law</a></h4>
+                                    <p>
+                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <!-- Single Item -->
+                        <div class="swiper-slide">
+                            <div class="course-style-one-item">
+                                <img src="{% static 'assets/img/course/4.jpg' %}" alt="Image Not Found">
+                                <div class="overlay-title">
+                                    <h4><a href="coaching-details.html">Business Development</a></h4>
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/6.png' %}" alt="Image Not Found">
+                                    </div>
+                                </div>
+                                <div class="overlay">
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/6.png' %}" alt="Image Not Found">
+                                    </div>
+                                    <h4><a href="coaching-details.html">Business Development </a></h4>
+                                    <p>
+                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Course  -->
+
+    <!-- Start Testimonial 
+    ============================================= -->
+    <div class="tesimonial-style-one-area text-center default-padding bg-cover" style="background-image: url('{% static 'assets/img/shape/map.png' %}');">
+        <div class="container">
+            <div class="testimonial-style-one-items">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="testimonial-style-one-contents">
+                            <div class="testimonial-one-shape">
+                                <img class="wow fadeInUp" src="{% static 'assets/img/team/7.jpg' %}" alt="Image Not Found">
+                                <img class="wow fadeInUp" src="{% static 'assets/img/team/8.jpg' %}" alt="Image Not Found">
+                                <img class="wow fadeInUp" data-wow-delay="100ms" src="{% static 'assets/img/team/9.jpg' %}" alt="Image Not Found">
+                                <img class="wow fadeInUp" data-wow-delay="100ms" src="{% static 'assets/img/team/10.jpg' %}" alt="Image Not Found">
+                            </div>
+                            <!-- Slider main container -->
+                            <div class="testimonial-style-one-carousel wow fadeInUp swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Single Item -->
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-style-one-item">
+                                            <div class="tm-provider">
+                                                <img src="{% static 'assets/img/team/10.jpg' %}" alt="Image Not Found">
+                                            </div>
+                                            <div class="reviews">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <h3>Positive and supportive interactions</h3>
+                                            <p>
+                                                Objectively administrate bleeding-edge best practices through interactive niche market. Distinctively productize Phosphorescently promote excellent.Sed ut perspiciatis unde omnis isteerror voluptatem Distinctively.
+                                            </p>
+                                            <div class="tm-provider-detaisl">
+                                                <h4>Nazat Sarwar</h4>
+                                                <span>Web Developer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Single Item -->
+                                    <!-- Single Item -->
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-style-one-item">
+                                            <div class="tm-provider">
+                                                <img src="{% static 'assets/img/team/11.jpg' %}" alt="Image Not Found">
+                                            </div>
+                                            <div class="reviews">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <h3>Courteous and attentive support</h3>
+                                            <p>
+                                                Regulation administrate bleeding-edge best practices through interactive niche market. Distinctively productize Phosphorescently promote excellent.Sed ut perspiciatis unde omnis isteerror voluptatem Distinctively.
+                                            </p>
+                                            <div class="tm-provider-detaisl">
+                                                <h4>Kevin Martin</h4>
+                                                <span>Product Manager</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Single Item -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Testimonial -->
+
+    <!-- Start Call to action 
+    ============================================= -->
+    <div class="call-to-action-area">
+        <div class="container">
+            <div class="call-to-action-style-one bg-dark text-light">
+                <div class="shape">
+                    <img src="{% static 'assets/img/shape/24.png' %}" alt="Image Not Found">
+                </div>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="thumb bg-theme-secondary">
+                            <img class="wow fadeInUp" src="{% static 'assets/img/illustration/6.png' %}" alt="Image Not Found">
+                            <div class="shape">
+                                <img src="{% static 'assets/img/illustration/7.png' %}" alt="Image Not Found">
+                                <img src="{% static 'assets/img/shape/23.png' %}" alt="Image Not Found">
+                                <img src="{% static 'assets/img/shape/25.png' %}" alt="Image Not Found">
+                                <img src="{% static 'assets/img/shape/26.png' %}" alt="Image Not Found">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="call-action-info">
+                            <h4 class="sub-title">Get free online visa</h4>
+                            <h2 class="title split-text">Reliable visa & immigration experts</h2>
+                            <a href="apply-form.html" class="btn-style-one circle mt-10 wow fadeInUp" data-wow-delay="100ms">Apply for visa <span></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Call to action  -->
+
+    <!-- Start Blog 
+    ============================================= -->
+    <div id="blog" class="home-blog-area default-padding bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                    <div class="site-heading text-center">
+                        <h4 class="sub-title">News & Updates</h4>
+                        <h2 class="title split-text">Recent story & articles <br> in our community</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!-- Single Item -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="home-blog-style-one wow fadeInUp">
+                        <div class="thumb">
+                            <img src="{% static 'assets/img/blog/1.jpg' %}" alt="Image Not Found">
+                        </div>
+                        <div class="info">
+                            <div class="inner">
+                                <div class="meta">
+                                    <div class="date">
+                                        <strong>29</strong> Jan
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <ul class="blog-meta">
+                                        <li>
+                                            <a href="#"><i class="far fa-user-circle"></i> Md Sohag</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="far fa-comments"></i> 18 Comments</a>
+                                        </li>
+                                    </ul>
+                                    <h3><a href="blog-single-with-sidebar.html">Picked up a Brussels burger Sprouts with ham</a></h3>
+                                    <a href="blog-single-with-sidebar.html" class="btn-regular">
+                                        Read More
+                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 17L17 1H7.8" stroke="#232323" stroke-width="2"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+                <!-- Single Item -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="home-blog-style-one wow fadeInUp" data-wow-delay="100ms">
+                        <div class="thumb">
+                            <img src="{% static 'assets/img/blog/2.jpg' %}" alt="Image Not Found">
+                        </div>
+                        <div class="info">
+                            <div class="inner">
+                                <div class="meta">
+                                    <div class="date">
+                                        <strong>24</strong> Mar
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <ul class="blog-meta">
+                                        <li>
+                                            <a href="#"><i class="far fa-user-circle"></i> Md Sohag</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="far fa-comments"></i> 15 Comments</a>
+                                        </li>
+                                    </ul>
+                                    <h3><a href="blog-single-with-sidebar.html">This prefabrice passive house is highly sustainable</a></h3>
+                                    <a href="blog-single-with-sidebar.html" class="btn-regular">
+                                        Read More
+                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 17L17 1H7.8" stroke="#232323" stroke-width="2"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+            </div>
+        </div>
+    </div>
+    <!-- End Blog  -->
+
+    <!-- Start Footer 
+    ============================================= -->
+    <div class="footer-top-area bg-dark-secondary text-light" style="background-image: url('{% static 'assets/img/shape/17.png' %}');">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <div class="user-card">
+                        <div class="thumb">
+                            <img src="{% static 'assets/img/team/5.jpg' %}" alt="Image Not Found">
+                            <img src="{% static 'assets/img/team/6.jpg' %}" alt="Image Not Found">
+                            <span>1k</span>
+                        </div>
+                        <h4>Approved Student Visa Applications.</h4>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <ul class="address-list">
+                        <li>
+                            <div class="icon"><i class="fas fa-envelope"></i></div>
+                            <div class="info">
+                                <h4>Email:</h4>
+                                <a href="mailto:info@crysta.com">info@edusetin.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+
+
+                            <div class="info">
+                                <h4>Address:</h4>
+                                <p>
+                                    62XW+686, Pathanapuram, Kizhuparamba, Malappuram, Kerala – 673639
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-light">
+       
+        <div class="footer-style-one">
+            <div class="container">
+                <div class="f-items">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 footer-item">
+                            <div class="f-item about">
+                                <div class="footer-logo">
+                                    <img src="{% static 'assets/img/logo1.png' %}" alt="Image Not Found">
+                                </div>
+                                <div class="f-item">
+                                  <p>
+                                    We provide authentic, customized visa and immigration solutions you can trust. Unlike generic services, our expert guidance ensures accuracy, transparency, and success—without confusing jargon or unreliable advice.
+                                </p>
+
+                                    <ul class="footer-social-regular mt-30">
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><img src="{% static 'assets/img/icon/twitter-x.png' %}" alt="Image Not Found"></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 footer-item">
+                            <div class="f-item link">
+                                <h4 class="widget-title">Quick Links</h4>
+                                <ul>
+                                    <li>
+                                        <a href="about-us.html">Compnay Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact-us.html">Help Center</a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us-2.html">Career</a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us.html">Terms & Conditions</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-with-sidebar.html">News & Blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-item">
+                            <div class="f-item link">
+                                <h4 class="widget-title">Our Services</h4>
+                                <ul>
+                                    <li>
+                                        <a href="visa-details.html">Application Assistance</a>
+                                    </li>
+                                    <li>
+                                        <a href="visa-details.html">Visa Type Guidance</a>
+                                    </li>
+                                    <li>
+                                        <a href="visa-details.html">Documentation Support</a>
+                                    </li>
+                                    <li>
+                                        <a href="visa-details.html">Immigration Advice</a>
+                                    </li>
+                                    <li>
+                                        <a href="visa-details.html">Immigration Lawyers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-item">
+                            <div class="f-item newsletter">
+                                <h4 class="widget-title">Newsletter</h4>
+                                <p>
+                                    Join our subscribers list to get the latest news and special offers.
+                                </p>
+                                <form class="newsletter-form-style-one" action="#">
+                                    <input type="email" placeholder="Your Email" class="form-control" name="email">
+                                    <button type="submit">
+                                        Subsribe
+                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 17L17 1H7.8" stroke="white" stroke-width="2"></path>
+                                        </svg>
+                                    </button>  
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-4">
+                          <p>© Copyright 2025. All rights reserved by <a href="https://www.vynzora.com" target="_blank" rel="noopener noreferrer">Vynzora Pvt.Ltd</a>.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Footer Bottom -->
+        </div>
+    </footer>
+    <!-- End Footer -->
+    
+    <!-- jQuery Frameworks
+    ============================================= -->
+<script src="{% static 'assets/js/jquery-3.7.1.min.js' %}"></script>
+<script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.appear.js' %}"></script>
+<script src="{% static 'assets/js/jquery.easing.min.js' %}"></script>
+<script src="{% static 'assets/js/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'assets/js/progress-bar.min.js' %}"></script>
+<script src="{% static 'assets/js/circle-progress.js' %}"></script>
+<script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'assets/js/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'assets/js/magnific-popup.min.js' %}"></script>
+<script src="{% static 'assets/js/count-to.js' %}"></script>
+<script src="{% static 'assets/js/jquery.nice-select.min.js' %}"></script>
+<script src="{% static 'assets/js/wow.min.js' %}"></script>
+<script src="{% static 'assets/js/YTPlayer.min.js' %}"></script>
+<script src="{% static 'assets/js/validnavs.js' %}"></script>
+<script src="{% static 'assets/js/gsap.js' %}"></script>
+<script src="{% static 'assets/js/ScrollTrigger.min.js' %}"></script>
+<script src="{% static 'assets/js/SplitText.min.js' %}"></script>
+<script src="{% static 'assets/js/main.js' %}"></script>
+
+
+</body>
+</html>

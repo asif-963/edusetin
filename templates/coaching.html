@@ -1,0 +1,566 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Edusetin Study Abroad (EDUSETIN LLP), located in Areakode, Malappuram, Kerala, offers expert guidance for studying in Italy, Germany, Singapore & Kyrgyzstan. Services include MBBS, bachelor’s & master’s admissions, visa assistance, scholarships & test prep.
+">
+
+    <!-- ========== Page Title ========== -->
+    <title>Edusetin Study Abroad – Trusted Overseas Education Consultants in Kerala</title>
+
+    <!-- ========== Favicon Icon ========== -->
+<link rel="shortcut icon" href="{% static 'assets/img/favicon.ico' %}" type="image/x-icon">
+
+<!-- ========== Start Stylesheet ========== -->
+<link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/font-awesome.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/visaco-icons.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/magnific-popup.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/swiper-bundle.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/animate.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/validnavs.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/helper.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/unit-test.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+<link href="{% static 'style.css' %}" rel="stylesheet">
+
+    
+
+</head>
+
+
+
+<body>
+    <style>
+  /* Hide default cursor */
+body {
+  cursor: none;
+}
+
+/* Dot cursor */
+.cursor-dot,
+.cursor-circle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+/* Small dot */
+.cursor-dot {
+  width: 13px;
+  height: 13px;
+  background-color: #4faaff; /* Your brand color */
+  border-radius: 70%;
+}
+
+/* Circular outline */
+.cursor-circle {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #4faaff; /* Your brand color */
+  border-radius: 50%;
+  opacity: 0.6;
+  transition: transform 0.15s ease-out, opacity 0.15s ease-out;
+}
+
+    </style>
+    <script>
+    // Create cursor elements
+const cursorDot = document.createElement('div');
+const cursorCircle = document.createElement('div');
+
+cursorDot.classList.add('cursor-dot');
+cursorCircle.classList.add('cursor-circle');
+
+document.body.appendChild(cursorDot);
+document.body.appendChild(cursorCircle);
+
+let mouseX = 0, mouseY = 0;
+let circleX = 0, circleY = 0;
+
+// Update mouse position on move
+document.addEventListener('mousemove', (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+
+  cursorDot.style.top = `${mouseY}px`;
+  cursorDot.style.left = `${mouseX}px`;
+});
+
+// Animate circle following dot smoothly
+function animate() {
+  circleX += (mouseX - circleX) * 0.1; // 0.1 = smoothness factor
+  circleY += (mouseY - circleY) * 0.1;
+
+  cursorCircle.style.top = `${circleY}px`;
+  cursorCircle.style.left = `${circleX}px`;
+
+  requestAnimationFrame(animate);
+}
+
+animate();
+
+
+    </script>
+
+	
+<style>
+    #preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #fff; /* Adjust to var(--white) if using variables */
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader > div {
+  display: inline-flex;
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: #0066f5; /* Your $secondary color */
+  animation: bounce 1.48s ease-in-out infinite both;
+}
+
+.loader > div:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.loader > div:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+</style>
+
+    <!-- Start Preloader 
+    ============================================= -->
+   <div id="preloader">
+  <div class="vynzora-loader-inner">
+    <div class="loader">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</div>
+
+    <!-- preloader end -->
+
+   <!-- Start Header Top 
+    ============================================= -->
+    <div class="top-bar-area bg-dark text-light">
+        <div class="container-full">
+            <div class="row align-center">
+                <div class="col-xl-9 col-lg-9 info">
+                    <div class="address-info">
+                        <ul class="item-flex">
+                            <li>
+                                <i class="fas fa-envelope-open-text"></i> Info@edusetin.com
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i> Working Hours: 09:00 AM – 06:00 PM
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 text-end">
+                    <div class="social">
+                        <ul class="item-flex">
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="{% static 'assets/img/icon/twitter-x.png' %}" alt="Image Not Found">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Top -->
+
+    <!-- Header 
+    ============================================= -->
+    <header>
+        <!-- Start Navigation -->
+        <nav class="navbar mobile-sidenav navbar-default validnavs navbar-sticky navbar-style-two">
+
+            <!-- Start Top Search -->
+            <div class="top-search">
+                <div class="container-xl">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- End Top Search -->
+
+
+            <div class="container-full d-flex justify-content-between align-items-center">            
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="{% url 'index' %}">
+                        <img src="{% static 'assets/img/logo1.png' %}" class="logo logo-display" alt="Logo">
+                        <img src="{% static 'assets/img/logo1.png' %}" class="logo logo-scrolled" alt="Logo">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+
+                    <img src="{% static 'assets/img/logo2.png' %}" alt="Logo">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="dropdown megamenu-fw megamenu-style-one">
+                            <a href="{% url 'index' %}" class="" data-toggle="dropdown">Home</a>
+                          
+                        </li>
+                        <li>
+                            <a href="{% url 'about' %}">About</a>
+                        </li>
+
+                         
+                        <li>
+                            <a href="#country">Country</a>
+                        </li>
+                        <li>
+                            <a href="#team">Courses</a>
+                        </li>
+                        <li>
+                            <a href="#blog">Blog</a>
+                        </li>
+
+                         <li>
+                            <a href="#team">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#blog">Contact</a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+
+                <div class="attr-right">
+                    <!-- Start Atribute Navigation -->
+                    <div class="attr-nav">
+                        <ul>
+                           
+                            <li><a href="apply-form.html" class="btn-style-one">Appointment <span></span></a></li>
+                        </ul>
+                    </div>
+                    <!-- End Atribute Navigation -->
+                </div>
+
+            </div>   
+            <!-- Overlay screen for menu -->
+            <div class="overlay-screen"></div>
+            <!-- End Overlay screen for menu -->
+
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Breadcrumb 
+    ============================================= -->
+    <div class="breadcrumb-area with-banner bg-cover text-center bg-dark text-light" style="background-image: url('{% static 'assets/img/banner/7.png' %}');">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h1>Coaching</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                            <li class="active">Coaching</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumb -->
+
+    <!-- Start Course 
+    ============================================= -->
+    <div class="course-style-two-area default-padding bg-gray bg-cover" style="background-image: url(assets/img/shape/wooden.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="course-style-two-items">
+                        <!-- Single Item -->
+                        <div class="course-style-two-item wow fadeInUp">
+                            <a href="coaching-details.html">
+                                <img src="{% static 'assets/img/icon/38.png' %}" alt="Image Not Fund">
+                                <h6>TOEFL Coaching</h6>
+                            </a>
+                            <a href="coaching-details.html">
+                                <img src="{% static 'assets/img/icon/39.png' %}" alt="Image Not Fund">
+                                <h6>IELTS Coaching</h6>
+                            </a>
+                            <a href="coaching-details.html">
+                                <img src="{% static 'assets/img/icon/40.png' %}" alt="Image Not Fund">
+                                <h6>Citizenship Test</h6>
+                            </a>
+                            <a href="coaching-details.html">
+                                <img src="{% static 'assets/img/icon/41.png' %}" alt="Image Not Fund">
+                                <h6>PTE Coaching</h6>
+                            </a>
+                        </div>
+                        <!-- End Single Item -->
+
+                         <!-- Single Item -->
+                        <div class="course-banner wow fadeInDown bg-theme text-light" style="background-image: url(assets/img/shape/37.png);">
+                            <h2>AVAIL</h2>
+                            <div class="percent">
+                                50%
+                            </div>
+                            <h5>OFF ON ALL COACHING</h5>
+                        </div>
+                        <!-- End Single Item -->
+
+                        <!-- Single Item -->
+                        <div class="course-style-two-item wow fadeInUp">
+                            <a href="coaching-details.html">
+                                <img src="assets/img/icon/42.png" alt="Image Not Fund">
+                                <h6>GMAT Coaching</h6>
+                            </a>
+                            <a href="coaching-details.html">
+                                <img src="assets/img/icon/43.png" alt="Image Not Fund">
+                                <h6>SAT Coaching</h6>
+                            </a>
+                            <a href="coaching-details.html">
+                                <img src="assets/img/icon/44.png" alt="Image Not Fund">
+                                <h6>GRE Coaching</h6>
+                            </a>
+                            <a href="coaching-details.html">
+                                <img src="assets/img/icon/45.png" alt="Image Not Fund">
+                                <h6>OET Coaching</h6>
+                            </a>
+                        </div>
+                        <!-- End Single Item -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Course -->
+
+  
+    <!-- Start Footer 
+    ============================================= -->
+    <div class="footer-top-area bg-dark-secondary text-light" style="background-image: url('{% static 'assets/img/shape/17.png' %}');">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <div class="user-card">
+                        <div class="thumb">
+                            <img src="{% static 'assets/img/team/5.jpg' %}" alt="Image Not Found">
+                            <img src="{% static 'assets/img/team/6.jpg' %}" alt="Image Not Found">
+                            <span>1k</span>
+                        </div>
+                        <h4>Approved Student Visa Applications.</h4>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <ul class="address-list">
+                        <li>
+                            <div class="icon"><i class="fas fa-envelope"></i></div>
+                            <div class="info">
+                                <h4>Email:</h4>
+                                <a href="mailto:info@crysta.com">info@edusetin.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+
+
+                            <div class="info">
+                                <h4>Address:</h4>
+                                <p>
+                                    62XW+686, Pathanapuram, Kizhuparamba, Malappuram, Kerala – 673639
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-light">
+       
+        <div class="footer-style-one">
+            <div class="container">
+                <div class="f-items">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 footer-item">
+                            <div class="f-item about">
+                                <div class="footer-logo">
+                                    <img src="{% static 'assets/img/logo1.png' %}" alt="Image Not Found">
+                                </div>
+                                <div class="f-item">
+                                  <p>
+                                    We provide authentic, customized visa and immigration solutions you can trust. Unlike generic services, our expert guidance ensures accuracy, transparency, and success—without confusing jargon or unreliable advice.
+                                </p>
+
+                                    <ul class="footer-social-regular mt-30">
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><img src="{% static 'assets/img/icon/twitter-x.png' %}" alt="Image Not Found"></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 footer-item">
+                            <div class="f-item link">
+                                <h4 class="widget-title">Quick Links</h4>
+                                <ul>
+                                    <li>
+                                        <a href="about-us.html">Compnay Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact-us.html">Help Center</a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us-2.html">Career</a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us.html">Terms & Conditions</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog-with-sidebar.html">News & Blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-item">
+                            <div class="f-item link">
+                                <h4 class="widget-title">Our Services</h4>
+                                <ul>
+                                    <li>
+                                        <a href="visa-details.html">Application Assistance</a>
+                                    </li>
+                                    <li>
+                                        <a href="visa-details.html">Visa Type Guidance</a>
+                                    </li>
+                                    <li>
+                                        <a href="visa-details.html">Documentation Support</a>
+                                    </li>
+                                    <li>
+                                        <a href="visa-details.html">Immigration Advice</a>
+                                    </li>
+                                    <li>
+                                        <a href="visa-details.html">Immigration Lawyers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-item">
+                            <div class="f-item newsletter">
+                                <h4 class="widget-title">Newsletter</h4>
+                                <p>
+                                    Join our subscribers list to get the latest news and special offers.
+                                </p>
+                                <form class="newsletter-form-style-one" action="#">
+                                    <input type="email" placeholder="Your Email" class="form-control" name="email">
+                                    <button type="submit">
+                                        Subsribe
+                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 17L17 1H7.8" stroke="white" stroke-width="2"></path>
+                                        </svg>
+                                    </button>  
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-4">
+                          <p>© Copyright 2025. All rights reserved by <a href="https://www.vynzora.com" target="_blank" rel="noopener noreferrer">Vynzora Pvt.Ltd</a>.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Footer Bottom -->
+        </div>
+    </footer>
+    <!-- End Footer -->
+    
+    <!-- jQuery Frameworks
+    ============================================= -->
+<script src="{% static 'assets/js/jquery-3.7.1.min.js' %}"></script>
+<script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.appear.js' %}"></script>
+<script src="{% static 'assets/js/jquery.easing.min.js' %}"></script>
+<script src="{% static 'assets/js/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'assets/js/progress-bar.min.js' %}"></script>
+<script src="{% static 'assets/js/circle-progress.js' %}"></script>
+<script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'assets/js/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'assets/js/magnific-popup.min.js' %}"></script>
+<script src="{% static 'assets/js/count-to.js' %}"></script>
+<script src="{% static 'assets/js/jquery.nice-select.min.js' %}"></script>
+<script src="{% static 'assets/js/wow.min.js' %}"></script>
+<script src="{% static 'assets/js/YTPlayer.min.js' %}"></script>
+<script src="{% static 'assets/js/validnavs.js' %}"></script>
+<script src="{% static 'assets/js/gsap.js' %}"></script>
+<script src="{% static 'assets/js/ScrollTrigger.min.js' %}"></script>
+<script src="{% static 'assets/js/SplitText.min.js' %}"></script>
+<script src="{% static 'assets/js/main.js' %}"></script>
+
+
+</body>
+</html>
