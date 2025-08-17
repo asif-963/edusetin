@@ -16,11 +16,27 @@ def blog_details(request):
 def apply_form(request):
     return render(request, 'apply-form.html')
 
-def coaching_details(request):
-    return render(request, 'coaching-details.html')
+def contact_us(request):
+    return render(request, 'contact-us.html')
 
-def coaching(request):
-    return render(request, 'coaching.html')
+
+
+def course(request):
+    return render(request, 'course.html')
+
+def course_details(request):
+    return render(request, 'course-details.html')
+
+
+def country(request):
+    return render(request, 'country.html')
+
+def country_details(request):
+    return render(request, 'country-details.html')
+
+def admin_dashboard(request):
+    return render(request, 'admin_pages/admin-dashboard.html')
+
 
 
 

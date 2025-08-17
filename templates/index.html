@@ -270,20 +270,20 @@ animate();
 
                          
                         <li>
-                            <a href="#country">Country</a>
+                            <a href="{% url 'country' %}">Country</a>
                         </li>
                         <li>
-                            <a href="#team">Courses</a>
+                            <a href="{% url 'course' %}">Courses</a>
                         </li>
                         <li>
-                            <a href="#blog">Blog</a>
+                            <a href="{% url 'blogs' %}">Blog</a>
                         </li>
 
                          <li>
                             <a href="#team">Gallery</a>
                         </li>
                         <li>
-                            <a href="#blog">Contact</a>
+                            <a href="{% url 'contact-us' %}">Contact</a>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -293,7 +293,7 @@ animate();
                     <div class="attr-nav">
                         <ul>
                            
-                            <li><a href="apply-form.html" class="btn-style-one">Appointment <span></span></a></li>
+                            <li><a href="{% url 'apply-form' %}" class="btn-style-one">Appointment <span></span></a></li>
                         </ul>
                     </div>
                     <!-- End Atribute Navigation -->

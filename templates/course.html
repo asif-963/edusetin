@@ -270,20 +270,20 @@ animate();
 
                          
                         <li>
-                            <a href="#country">Country</a>
+                            <a href="{% url 'country' %}">Country</a>
                         </li>
                         <li>
-                            <a href="#team">Courses</a>
+                            <a href="{% url 'course' %}">Courses</a>
                         </li>
                         <li>
-                            <a href="#blog">Blog</a>
+                            <a href="{% url 'blogs' %}">Blog</a>
                         </li>
 
                          <li>
                             <a href="#team">Gallery</a>
                         </li>
                         <li>
-                            <a href="#blog">Contact</a>
+                            <a href="{% url 'contact-us' %}">Contact</a>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -293,7 +293,7 @@ animate();
                     <div class="attr-nav">
                         <ul>
                            
-                            <li><a href="apply-form.html" class="btn-style-one">Appointment <span></span></a></li>
+                            <li><a href="{% url 'apply-form' %}" class="btn-style-one">Appointment <span></span></a></li>
                         </ul>
                     </div>
                     <!-- End Atribute Navigation -->
@@ -328,70 +328,201 @@ animate();
     </div>
     <!-- End Breadcrumb -->
 
-    <!-- Start Course 
+
+      <!-- Start Course 
     ============================================= -->
-    <div class="course-style-two-area default-padding bg-gray bg-cover" style="background-image: url(assets/img/shape/wooden.png);">
+    <div id="coaching" class="course-style-one-area default-padding-top">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="course-style-two-items">
+                <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                    <div class="site-heading text-center">
+                        <h4 class="sub-title">Coaching we provide</h4>
+                        <h2 class="title split-text">Discover the elite training programs you need</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="course-style-one-items">
+            <div class="container">
+                <!-- Navigation -->
+                <div class="course-style-one-nav">
+                    <div class="course-carousel-prev"><i class="fas fa-long-arrow-left"></i></div>
+                    <div class="course-carousel-next"><i class="fas fa-long-arrow-right"></i></div>
+                </div>
+                <!-- Slider main container -->
+                <div class="course-style-one-carousel swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
                         <!-- Single Item -->
-                        <div class="course-style-two-item wow fadeInUp">
-                            <a href="coaching-details.html">
-                                <img src="{% static 'assets/img/icon/38.png' %}" alt="Image Not Fund">
-                                <h6>TOEFL Coaching</h6>
-                            </a>
-                            <a href="coaching-details.html">
-                                <img src="{% static 'assets/img/icon/39.png' %}" alt="Image Not Fund">
-                                <h6>IELTS Coaching</h6>
-                            </a>
-                            <a href="coaching-details.html">
-                                <img src="{% static 'assets/img/icon/40.png' %}" alt="Image Not Fund">
-                                <h6>Citizenship Test</h6>
-                            </a>
-                            <a href="coaching-details.html">
-                                <img src="{% static 'assets/img/icon/41.png' %}" alt="Image Not Fund">
-                                <h6>PTE Coaching</h6>
-                            </a>
-                        </div>
-                        <!-- End Single Item -->
-
-                         <!-- Single Item -->
-                        <div class="course-banner wow fadeInDown bg-theme text-light" style="background-image: url(assets/img/shape/37.png);">
-                            <h2>AVAIL</h2>
-                            <div class="percent">
-                                50%
+                        <div class="swiper-slide">
+                            <div class="course-style-one-item">
+                                <img src="{% static 'assets/img/course/1.jpg' %}" alt="Image Not Found">
+                                <div class="overlay-title">
+                                    <h4><a href="coaching-details.html">Entrepreneurs Starting</a></h4>
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/3.png' %}" alt="Image Not Found">
+                                    </div>
+                                </div>
+                                <div class="overlay">
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/3.png' %}" alt="Image Not Found">
+                                    </div>
+                                    <h4><a href="coaching-details.html">Entrepreneurs Starting</a></h4>
+                                    <p>
+                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in.
+                                    </p>
+                                </div>
                             </div>
-                            <h5>OFF ON ALL COACHING</h5>
                         </div>
-                        <!-- End Single Item -->
-
                         <!-- Single Item -->
-                        <div class="course-style-two-item wow fadeInUp">
-                            <a href="coaching-details.html">
-                                <img src="assets/img/icon/42.png" alt="Image Not Fund">
-                                <h6>GMAT Coaching</h6>
-                            </a>
-                            <a href="coaching-details.html">
-                                <img src="assets/img/icon/43.png" alt="Image Not Fund">
-                                <h6>SAT Coaching</h6>
-                            </a>
-                            <a href="coaching-details.html">
-                                <img src="assets/img/icon/44.png" alt="Image Not Fund">
-                                <h6>GRE Coaching</h6>
-                            </a>
-                            <a href="coaching-details.html">
-                                <img src="assets/img/icon/45.png" alt="Image Not Fund">
-                                <h6>OET Coaching</h6>
-                            </a>
+                        <!-- Single Item -->
+                        <div class="swiper-slide">
+                            <div class="course-style-one-item">
+                                <img src="{% static 'assets/img/course/2.jpg' %}" alt="Image Not Found">
+                                <div class="overlay-title">
+                                    <h4><a href="coaching-details.html">Visa Training</a></h4>
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/4.png' %}" alt="Image Not Found">
+                                    </div>
+                                </div>
+                                <div class="overlay">
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/4.png' %}" alt="Image Not Found">
+                                    </div>
+                                    <h4><a href="coaching-details.html">Visa Training</a></h4>
+                                    <p>
+                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <!-- Single Item -->
+                        <div class="swiper-slide">
+                            <div class="course-style-one-item">
+                                <img src="{% static 'assets/img/course/3.jpg' %}" alt="Image Not Found">
+                                <div class="overlay-title">
+                                    <h4><a href="coaching-details.html">Immigration law</a></h4>
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/5.png' %}" alt="Image Not Found">
+                                    </div>
+                                </div>
+                                <div class="overlay">
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/5.png' %}" alt="Image Not Found">
+                                    </div>
+                                    <h4><a href="coaching-details.html">Immigration law</a></h4>
+                                    <p>
+                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <!-- Single Item -->
+                        <div class="swiper-slide">
+                            <div class="course-style-one-item">
+                                <img src="{% static 'assets/img/course/4.jpg' %}" alt="Image Not Found">
+                                <div class="overlay-title">
+                                    <h4><a href="coaching-details.html">Business Development</a></h4>
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/6.png' %}" alt="Image Not Found">
+                                    </div>
+                                </div>
+                                <div class="overlay">
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/6.png' %}" alt="Image Not Found">
+                                    </div>
+                                    <h4><a href="coaching-details.html">Business Development </a></h4>
+                                    <p>
+                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Course -->
+    <!-- End Course  -->
+
+   <!-- Start Process 
+============================================= -->
+<div class="process-style-one-area text-center default-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                <div class="site-heading text-center">
+                    <h4 class="sub-title">Visa Process Made Easy</h4>
+                    <h2 class="title split-text">Your Visa in Just Three Simple Steps</h2>
+                    <p class="mt-3">
+                        Navigating your visa application has never been easier. Follow our streamlined process to get started on your journey abroad—quickly, confidently, and without hassle.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="process-style-one-items wow fadeInUp" data-wow-delay="100ms">
+                    <!-- Step 1 -->
+                    <div class="process-style-one-item hover-active-item">
+                        <div class="icon">
+                            <img src="{% static 'assets/img/icon/9.png' %}" alt="Visa Application Form Icon">
+                        </div>
+                        <div class="info">
+                            <div class="shape">
+                                <img src="{% static 'assets/img/shape/41.png' %}" alt="Shape">
+                            </div>
+                            <span>01</span>
+                            <h4>Fill Out the Online Form</h4>
+                            <p>
+                                Start your journey by completing our simple and secure online visa application form. It only takes a few minutes and helps us understand your needs better.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="process-style-one-item hover-active-item active">
+                        <div class="icon">
+                            <img src="{% static 'assets/img/icon/10.png' %}" alt="Documents and Payment Icon">
+                        </div>
+                        <div class="info">
+                            <div class="shape">
+                                <img src="{% static 'assets/img/shape/41.png' %}" alt="Shape">
+                            </div>
+                            <span>02</span>
+                            <h4>Submit Documents & Make Payment</h4>
+                            <p>
+                                Upload your required documents and make a secure payment. Our expert team will review everything and provide feedback if needed.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="process-style-one-item hover-active-item">
+                        <div class="icon">
+                            <img src="{% static 'assets/img/icon/11.png' %}" alt="Visa Approval Icon">
+                        </div>
+                        <div class="info">
+                            <div class="shape">
+                                <img src="{% static 'assets/img/shape/41.png' %}" alt="Shape">
+                            </div>
+                            <span>03</span>
+                            <h4>Receive Your Visa</h4>
+                            <p>
+                                Once approved, your visa will be delivered to you via email or courier—fast, efficient, and worry-free. You're now ready to explore new opportunities abroad!
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Steps -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Process -->
 
   
     <!-- Start Footer 

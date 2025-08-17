@@ -269,20 +269,20 @@ animate();
 
                          
                         <li>
-                            <a href="#country">Country</a>
+                            <a href="{% url 'country' %}">Country</a>
                         </li>
                         <li>
-                            <a href="#team">Courses</a>
+                            <a href="{% url 'course' %}">Courses</a>
                         </li>
                         <li>
-                            <a href="#blog">Blog</a>
+                            <a href="{% url 'blogs' %}">Blog</a>
                         </li>
 
                          <li>
                             <a href="#team">Gallery</a>
                         </li>
                         <li>
-                            <a href="#blog">Contact</a>
+                            <a href="{% url 'contact-us' %}">Contact</a>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -292,7 +292,7 @@ animate();
                     <div class="attr-nav">
                         <ul>
                            
-                            <li><a href="apply-form.html" class="btn-style-one">Appointment <span></span></a></li>
+                            <li><a href="{% url 'apply-form' %}" class="btn-style-one">Appointment <span></span></a></li>
                         </ul>
                     </div>
                     <!-- End Atribute Navigation -->
@@ -339,7 +339,7 @@ animate();
                             <div class="blog-item-box">
                                 
                                 <div class="thumb">
-                                    <a href="#"><img src="assets/img/blog/v1.jpg" alt="Thumb"></a>
+                                    <a href="#"><img src="{% static 'assets/img/blog/v1.jpg' %}" alt="Thumb"></a>
                                 </div>
                                 <div class="info">
                                     <div class="meta">
@@ -382,7 +382,7 @@ animate();
                         <!-- Post Author -->
                         <div class="post-author">
                             <div class="thumb">
-                                <img src="assets/img/team/7.jpg" alt="Thumb">
+                                <img src="{% static 'assets/img/team/7.jpg' %}" alt="Thumb">
                             </div>
                             <div class="info">
                                 <h4><a href="#">Md Sohag</a></h4>
@@ -446,7 +446,7 @@ animate();
                                     <div class="comments-list">
                                         <div class="comment-item">
                                             <div class="avatar">
-                                                <img src="assets/img/team/8.jpg" alt="Author">
+                                                <img src="{% static 'assets/img/team/8.jpg' %}" alt="Author">
                                             </div>
                                             <div class="content">
                                                 <div class="title">
@@ -460,7 +460,7 @@ animate();
                                         </div>
                                         <div class="comment-item reply">
                                             <div class="avatar">
-                                                <img src="assets/img/team/9.jpg" alt="Author">
+                                                <img src="{% static 'assets/img/team/9.jpg' %}" alt="Author">
                                             </div>
                                             <div class="content">
                                                 <div class="title">
@@ -528,7 +528,7 @@ animate();
                                     <li>
                                         <div class="thumb">
                                             <a href="#">
-                                                <img src="assets/img/gallery/1.jpg" alt="Thumb">
+                                                <img src="{% static 'assets/img/gallery/1.jpg' %}" alt="Thumb">
                                             </a>
                                         </div>
                                         <div class="info">
@@ -541,7 +541,7 @@ animate();
                                     <li>
                                         <div class="thumb">
                                             <a href="#">
-                                                <img src="assets/img/gallery/2.jpg" alt="Thumb">
+                                                <img src="{% static 'assets/img/gallery/2.jpg' %}" alt="Thumb">
                                             </a>
                                         </div>
                                         <div class="info">
@@ -554,7 +554,7 @@ animate();
                                     <li>
                                         <div class="thumb">
                                             <a href="#">
-                                                <img src="assets/img/gallery/3.jpg" alt="Thumb">
+                                                <img src="{% static 'assets/img/gallery/3.jpg' %}" alt="Thumb">
                                             </a>
                                         </div>
                                         <div class="info">

@@ -270,20 +270,20 @@ animate();
 
                          
                         <li>
-                            <a href="#country">Country</a>
+                            <a href="{% url 'country' %}">Country</a>
                         </li>
                         <li>
-                            <a href="#team">Courses</a>
+                            <a href="{% url 'course' %}">Courses</a>
                         </li>
                         <li>
-                            <a href="#blog">Blog</a>
+                            <a href="{% url 'blogs' %}">Blog</a>
                         </li>
 
                          <li>
                             <a href="#team">Gallery</a>
                         </li>
                         <li>
-                            <a href="#blog">Contact</a>
+                            <a href="{% url 'contact-us' %}">Contact</a>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -293,7 +293,7 @@ animate();
                     <div class="attr-nav">
                         <ul>
                            
-                            <li><a href="apply-form.html" class="btn-style-one">Appointment <span></span></a></li>
+                            <li><a href="{% url 'apply-form' %}" class="btn-style-one">Appointment <span></span></a></li>
                         </ul>
                     </div>
                     <!-- End Atribute Navigation -->
@@ -309,17 +309,18 @@ animate();
     </header>
     <!-- End Header -->
 
-    <!-- Start Breadcrumb 
+
+        <!-- Start Breadcrumb 
     ============================================= -->
     <div class="breadcrumb-area with-banner bg-cover text-center bg-dark text-light" style="background-image: url('{% static 'assets/img/banner/7.png' %}');">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
-                    <h1>Coaching Details</h1>
+                    <h1>Country</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                            <li class="active">Coaching</li>
+                            <li><a href="{% url 'index' %}"><i class="fas fa-home"></i> Home</a></li>
+                            <li class="active">Country</li>
                         </ol>
                     </nav>
                 </div>
@@ -328,113 +329,217 @@ animate();
     </div>
     <!-- End Breadcrumb -->
 
-    <!-- Star Services Details Area
+
+        <!-- Start Visa Country 
     ============================================= -->
-    <div class="services-details-area overflow-hidden default-padding">
+    <div class="visa-country-area default-padding bg-gray bg-cover" style="background-image: url('{% static 'assets/img/shape/wooden.png' %}');">
         <div class="container">
-            <div class="services-details-items">
-                <div class="row">
-                    
-                    <div class="col-xl-8 col-lg-7 order-lg-last pl-50 pl-md-15 pl-xs-15">
-                        <div class="thumb">
-                            <img src="{% static 'assets/img/banner/2.jpg' %}" alt="Thumb">
-                        </div>
-                        <h2>Self-Assessment & Idea Validation</h2>
-                        <p>
-                            We denounce with righteous indige nation and dislike men who are so beguiled and demo realized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue cannot foresee. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled data structures manages data in technology.
-                        </p>
-                        <div class="features mt-40 mt-xs-30 mb-30 mb-xs-20">
-                            <div class="row">
-                                <div class="col-lg-5 col-md-6">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="visa-offer-country-items" id="accordion">
+                        <li class="out">
+                            <div class="visa-offer-country-item">
+                                <div class="country">
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/france.png' %}" alt="Image Not Found">
+                                    </div>
                                     <div class="content">
-                                        <h3>Online Presence</h3>
-                                        <ul class="list-style-four">
-                                            <li>Business Name & Logo</li>
-                                            <li>Website & Social Media</li>
-                                            <li>MVP (Minimum Viable Product)</li>
-                                            <li>Service Delivery System</li>
-                                        </ul>
+                                        <h5>France</h5>
+                                        <span>Artois</span>
                                     </div>
                                 </div>
-                                <div class="col-lg-7 col-md-6 mt-xs-30">
+                                <div class="bottom">
+                                    <ul class="list-style-one">
+                                        <li>Student Visa & Admision</li>
+                                        <li>5 Years Business Visa</li>
+                                        <li>Apply Visa Online</li>
+                                    </ul>
+                                    <a href="country-details.html" class="btn-style-one circle mt-30">Discover More <span></span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="visa-offer-country-item">
+                                <div class="country">
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/uk.png' %}" alt="Image Not Found">
+                                    </div>
                                     <div class="content">
-                                        <h3>Business Planning</h3>
-                                        <p>
-                                            Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias. consequatur aut perferendis doloribus.
-                                        </p>
+                                        <h5>United Kingdom</h5>
+                                        <span>Asheville</span>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <h3>Sales & Marketing Strategy</h3>
-                        <p>
-                            Nam libero tempore, cum soluta nobis est elig endi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repelle ndus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias. consequatur aut perferendis doloribus asperiores repellat. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.  pleasures have to be repudiated and annoyances accepted. 
-                        </p>
-
-                        <div class="card-style-three mt-40">
-                            <div class="item">
-                                <div class="number">01</div>
-                                <div class="info">
-                                    <h4>Quality Visa Service</h4>
-                                    <p>
-                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout the point.
-                                    </p>
+                                <div class="bottom">
+                                    <ul class="list-style-one">
+                                        <li>Student Visa & Admision</li>
+                                        <li>5 Years Business Visa</li>
+                                        <li>Apply Visa Online</li>
+                                    </ul>
+                                    <a href="country-details.html" class="btn-style-one circle mt-30">Discover More <span></span></a>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="number">02</div>
-                                <div class="info">
-                                    <h4>Global Connection</h4>
-                                    <p>
-                                        Remember long established fact that a reader will be distracted by the readable content of a page when looking at its layout the point.
-                                    </p>
+                        </li>
+                        <li>
+                            <div class="visa-offer-country-item">
+                                <div class="country">
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/canada.png' %}" alt="Image Not Found">
+                                    </div>
+                                    <div class="content">
+                                        <h5>Canada</h5>
+                                        <span>Quebec</span>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <ul class="list-style-one">
+                                        <li>Student Visa & Admision</li>
+                                        <li>5 Years Business Visa</li>
+                                        <li>Apply Visa Online</li>
+                                    </ul>
+                                    <a href="country-details.html" class="btn-style-one circle mt-30">Discover More <span></span></a>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-5 mt-md-120 mt-xs-50 services-sidebar">
-                        <!-- Single Widget -->
-                        <div class="single-widget services-list-widget">
-                            <h4 class="widget-title">Training programs</h4>
-                            <div class="content">
-                                <ul>
-                                    <li><a href="coaching-details.html">IELTS Coaching</a></li>
-                                    <li class="current-item"><a href="coaching-details.html">Entrepreneurs Starting</a></li>
-                                    <li><a href="coaching-details.html">Visa Training</a></li>
-                                    <li><a href="coaching-details.html">Immigration law</a></li>
-                                    <li><a href="coaching-details.html">Business Development</a></li>
-                                </ul>
+                        </li>
+                        <li>
+                            <div class="visa-offer-country-item">
+                                <div class="country">
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/australia.png' %}" alt="Image Not Found">
+                                    </div>
+                                    <div class="content">
+                                        <h5>Australia</h5>
+                                        <span>Oceania</span>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <ul class="list-style-one">
+                                        <li>Student Visa & Admision</li>
+                                        <li>5 Years Business Visa</li>
+                                        <li>Apply Visa Online</li>
+                                    </ul>
+                                    <a href="country-details.html" class="btn-style-one circle mt-30">Discover More <span></span></a>
+                                </div>
                             </div>
-                        </div>
-                        <!-- End Single Widget -->
-                        <div class="single-widget course-info-widget" style="background-image: url(assets/img/shape/wooden.png);">
-                            <h4 class="widget-title">Course Benifits</h4>
-                            <ul class="course-info-list">
-                                <li><i class="fas fa-user"></i> Certified Tutors</li>
-                                <li><i class="fas fa-book"></i> Doubt Solving Sessions</li>
-                                <li><i class="fas fa-graduation-cap"></i> Flexible & Regular Batches</li>
-                                <li><i class="fas fa-briefcase"></i> Free study materials</li>
-                            </ul>
-                        </div>
-                        <!-- Single Widget -->
-                        <div class="single-widget widget-brochure">
-                            <h4 class="widget-title">Downloads</h4>
-                            <ul>
-                                <li><a href="#"><i class="fas fa-file-pdf"></i> Download Course </a></li>
-                                <li><a href="#"><i class="fas fa-award"></i> Apply Cerfiticate </a></li>
-                            </ul>
-                        </div>
-                        <!-- End Single Widget -->
-                    </div>
-
+                        </li>
+                        <li>
+                            <div class="visa-offer-country-item">
+                                <div class="country">
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/dubai.png' %}" alt="Image Not Found">
+                                    </div>
+                                    <div class="content">
+                                        <h5>Dubai</h5>
+                                        <span>Abu Dhabi</span>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <ul class="list-style-one">
+                                        <li>Student Visa & Admision</li>
+                                        <li>5 Years Business Visa</li>
+                                        <li>Apply Visa Online</li>
+                                    </ul>
+                                    <a href="country-details.html" class="btn-style-one circle mt-30">Discover More <span></span></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Services Details Area -->
+    <!-- End Visa Country  -->
 
-  
+
+    
+   
+
+    
+
+    
+    
+       <!-- Start Process 
+============================================= -->
+<div class="process-style-one-area text-center default-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                <div class="site-heading text-center">
+                    <h4 class="sub-title">Visa Process Made Easy</h4>
+                    <h2 class="title split-text">Your Visa in Just Three Simple Steps</h2>
+                    <p class="mt-3">
+                        Navigating your visa application has never been easier. Follow our streamlined process to get started on your journey abroad—quickly, confidently, and without hassle.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="process-style-one-items wow fadeInUp" data-wow-delay="100ms">
+                    <!-- Step 1 -->
+                    <div class="process-style-one-item hover-active-item">
+                        <div class="icon">
+                            <img src="{% static 'assets/img/icon/9.png' %}" alt="Visa Application Form Icon">
+                        </div>
+                        <div class="info">
+                            <div class="shape">
+                                <img src="{% static 'assets/img/shape/41.png' %}" alt="Shape">
+                            </div>
+                            <span>01</span>
+                            <h4>Fill Out the Online Form</h4>
+                            <p>
+                                Start your journey by completing our simple and secure online visa application form. It only takes a few minutes and helps us understand your needs better.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="process-style-one-item hover-active-item active">
+                        <div class="icon">
+                            <img src="{% static 'assets/img/icon/10.png' %}" alt="Documents and Payment Icon">
+                        </div>
+                        <div class="info">
+                            <div class="shape">
+                                <img src="{% static 'assets/img/shape/41.png' %}" alt="Shape">
+                            </div>
+                            <span>02</span>
+                            <h4>Submit Documents & Make Payment</h4>
+                            <p>
+                                Upload your required documents and make a secure payment. Our expert team will review everything and provide feedback if needed.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="process-style-one-item hover-active-item">
+                        <div class="icon">
+                            <img src="{% static 'assets/img/icon/11.png' %}" alt="Visa Approval Icon">
+                        </div>
+                        <div class="info">
+                            <div class="shape">
+                                <img src="{% static 'assets/img/shape/41.png' %}" alt="Shape">
+                            </div>
+                            <span>03</span>
+                            <h4>Receive Your Visa</h4>
+                            <p>
+                                Once approved, your visa will be delivered to you via email or courier—fast, efficient, and worry-free. You're now ready to explore new opportunities abroad!
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Steps -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Process -->
+
+
+
+
+
+
+    
+    
     <!-- Start Footer 
     ============================================= -->
     <div class="footer-top-area bg-dark-secondary text-light" style="background-image: url('{% static 'assets/img/shape/17.png' %}');">

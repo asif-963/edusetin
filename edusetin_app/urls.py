@@ -11,10 +11,13 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('blogs/', views.blogs, name='blogs'),
     path('blog_details/', views.blog_details, name='blog_details'),
+    path('contact-us/', views.contact_us, name='contact-us'),
     path('apply-form/', views.apply_form, name='apply-form'),
-    path('coaching/', views.coaching, name='coaching'),
-    path('coaching-details/', views.coaching_details, name='coaching-details'),
-
+    path('country/', views.country, name='country'),
+    path('country-details/', views.country_details, name='country-details'),
+    path('course/', views.course, name='course'),
+    path('course-details/', views.course_details, name='course-details'),
+    path('admin-dashboard/', views.admin_dashboard, name='admin-dashboard'),
 
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
