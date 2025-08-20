@@ -177,7 +177,7 @@
 						lineCap: 'round',
 						emptyFill: '#eeeeee',
 						fill: {
-							gradient: ['#E13833', '#F44336']
+							gradient: ['#2e1081ff', '#2e1081ff']
 						}
 					}).on('circle-animation-progress', function(event, progress, stepValue) {
 						$(this).find('strong').text((stepValue * 100).toFixed(0) + "%");

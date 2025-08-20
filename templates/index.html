@@ -269,12 +269,41 @@ animate();
                         </li>
 
                          
-                        <li>
-                            <a href="{% url 'country' %}">Country</a>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Countries <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">United States</a></li>
+                                <li><a href="">United Kingdom</a></li>
+                                <li><a href="">Canada</a></li>
+                                <li><a href="">Australia</a></li>
+                                <li><a href="">Germany</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="{% url 'course' %}">Courses</a>
+                       
+                         <!-- Universities Dropdown -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Universities <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">Harvard University</a></li>
+                                <li><a href="">University of Oxford</a></li>
+                                <li><a href="">Stanford University</a></li>
+                                <li><a href="">MIT</a></li>
+                                <li><a href="">University of Cambridge</a></li>
+                            </ul>
                         </li>
+
+                        <!-- Courses Dropdown -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">Computer Science</a></li>
+                                <li><a href="">Data Science</a></li>
+                                <li><a href="">Business Management</a></li>
+                                <li><a href="">Medicine</a></li>
+                                <li><a href="">Law</a></li>
+                            </ul>
+                        </li>
+
                         <li>
                             <a href="{% url 'blogs' %}">Blog</a>
                         </li>
@@ -404,7 +433,7 @@ animate();
                     <div class="col-xl-6 col-lg-6">
                         <div class="about-style-three-info">
                             <div class="experience-style-one mb-50">
-                               <h2 style="background-image: url('{% static 'assets/img/about/5.jpg' %}');">10</h2>
+                               <h2 style="background-image: url('{% static 'assets/img/about/5.png' %}');">10</h2>
                                 <h4>Years of Trusted Study Abroad & Visa Support Services</h4>
 
                             </div>
@@ -440,12 +469,12 @@ animate();
                     </div>
                     <div class="col-xl-5 offset-xl-1 col-lg-6">
                         <div class="about-three-thumb">
-                            <img class="wow fadeInUp" src="{% static 'assets/img/thumb/6.jpg' %}" alt="Image Not Found">
+                            <img class="wow fadeInUp" src="{% static 'assets/img/thumb/6.png' %}" alt="Image Not Found">
                             <div class="success-rate wow fadeInDown" data-wow-delay="100ms">
                                 <div class="circle-progress">
                                     <div class="progressbar">
                                         <h4>Success Rate</h4>
-                                        <div class="circle"  data-percent="88">
+                                        <div class="circle"  data-percent="92">
                                             <strong></strong>
                                         </div>
                                     </div>
@@ -582,7 +611,7 @@ animate();
     ============================================= -->
     <div class="choose-us-style-three-area default-padding">
         <div class="choose-us-three-thumb">
-            <img class="wow fadeInLeft" src="{% static 'assets/img/thumb/3.jpg' %}" alt="Image Not Found">
+            <img class="wow fadeInLeft" src="{% static 'assets/img/thumb/3.png' %}" alt="Image Not Found">
             <div class="video-card">
                 <a href="https://www.youtube.com/watch?v=ZRqEtpeQX8g" class="popup-youtube">
                     <i class="fas fa-play"></i>
@@ -619,8 +648,7 @@ animate();
                                 </div>
                             </div>
                         </div>
-
-                        <div class="card-style-three wow fadeInUp" data-wow-delay="100ms">
+                         <div class="card-style-three wow fadeInUp" data-wow-delay="100ms">
                             <div class="item">
                                 <div class="number">03</div>
                                 <div class="info">
@@ -640,6 +668,8 @@ animate();
                                 </div>
                             </div>
                         </div>
+
+                        
 
                     </div>
                 </div>
