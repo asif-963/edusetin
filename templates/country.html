@@ -269,21 +269,49 @@ animate();
                         </li>
 
                          
-                        <li>
-                            <a href="{% url 'country' %}">Countries</a>
+
+                         
+                        <li class="dropdown">
+                            <a href="{% url  'country' %}" class="dropdown-toggle" data-toggle="dropdown">Countries <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'country-details' %}">United States</a></li>
+                                <li><a href="{% url 'country-details' %}">United Kingdom</a></li>
+                                <li><a href="{% url 'country-details' %}">Canada</a></li>
+                                <li><a href="{% url 'country-details' %}">Australia</a></li>
+                                <li><a href="{% url 'country-details' %}">Germany</a></li>
+                            </ul>
                         </li>
-                         <li>
-                            <a href="{% url 'country' %}">Universities</a>
+                       
+                         <!-- Universities Dropdown -->
+                         <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'service-details' %}">Career Counseling</a></li>
+                                <li><a href="{% url 'service-details' %}">Application Process Guidance</a></li>
+                                <li><a href="{% url 'service-details' %}">SOP & Essay Writing</a></li>
+                                <li><a href="{% url 'service-details' %}">Visa Assistance</a></li>
+                                <li><a href="{% url 'service-details' %}">Interview Preparation</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="{% url 'course' %}">Courses</a>
+
+
+                        <!-- Courses Dropdown -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'course-details' %}">Computer Science</a></li>
+                                <li><a href="{% url 'course-details' %}">Data Science</a></li>
+                                <li><a href="{% url 'course-details' %}">Business Management</a></li>
+                                <li><a href="{% url 'course-details' %}">Medicine</a></li>
+                                <li><a href="{% url 'course-details' %}">Law</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a href="{% url 'blogs' %}">Blog</a>
                         </li>
 
                          <li>
-                            <a href="#team">Gallery</a>
+                            <a href="{% url 'gallery' %}">Gallery</a>
                         </li>
                         <li>
                             <a href="{% url 'contact-us' %}">Contact</a>

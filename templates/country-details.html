@@ -269,21 +269,49 @@ animate();
                         </li>
 
                          
-                        <li>
-                            <a href="{% url 'country' %}">Countries</a>
+
+                         
+                        <li class="dropdown">
+                            <a href="{% url  'country' %}" class="dropdown-toggle" data-toggle="dropdown">Countries <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'country-details' %}">United States</a></li>
+                                <li><a href="{% url 'country-details' %}">United Kingdom</a></li>
+                                <li><a href="{% url 'country-details' %}">Canada</a></li>
+                                <li><a href="{% url 'country-details' %}">Australia</a></li>
+                                <li><a href="{% url 'country-details' %}">Germany</a></li>
+                            </ul>
                         </li>
-                         <li>
-                            <a href="{% url 'country' %}">Universities</a>
+                       
+                         <!-- Universities Dropdown -->
+                         <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'service-details' %}">Career Counseling</a></li>
+                                <li><a href="{% url 'service-details' %}">Application Process Guidance</a></li>
+                                <li><a href="{% url 'service-details' %}">SOP & Essay Writing</a></li>
+                                <li><a href="{% url 'service-details' %}">Visa Assistance</a></li>
+                                <li><a href="{% url 'service-details' %}">Interview Preparation</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="{% url 'course' %}">Courses</a>
+
+
+                        <!-- Courses Dropdown -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'course-details' %}">Computer Science</a></li>
+                                <li><a href="{% url 'course-details' %}">Data Science</a></li>
+                                <li><a href="{% url 'course-details' %}">Business Management</a></li>
+                                <li><a href="{% url 'course-details' %}">Medicine</a></li>
+                                <li><a href="{% url 'course-details' %}">Law</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a href="{% url 'blogs' %}">Blog</a>
                         </li>
 
                          <li>
-                            <a href="#team">Gallery</a>
+                            <a href="{% url 'gallery' %}">Gallery</a>
                         </li>
                         <li>
                             <a href="{% url 'contact-us' %}">Contact</a>
@@ -318,22 +346,22 @@ animate();
 
     <!-- Start Breadcrumb 
     ============================================= -->
-    <div class="breadcrumb-area with-banner bg-cover text-center bg-dark text-light" style="background-image: url('{% static 'assets/img/banner/7.png' %}');">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <h1>Country Details</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                            <li class="active">Country</li>
-                        </ol>
-                    </nav>
-                </div>
+      <div class="breadcrumb-area with-banner bg-cover text-center bg-dark text-light" style="background-image: url('{% static 'assets/img/banner/7.png' %}');">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <h1>United States</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="active">United Kingdom</li>
+                    </ol>
+                </nav>
             </div>
         </div>
     </div>
-    <!-- End Breadcrumb -->
+</div>
+<!-- End Breadcrumb -->
 
     <!-- Star Services Details Area
     ============================================= -->
@@ -344,61 +372,70 @@ animate();
                     
                     <div class="col-xl-8 col-lg-7 order-lg-last pl-50 pl-md-15 pl-xs-15">
                         <div class="thumb">
-                            <img src="{% static 'assets/img/banner/8.jpg' %}" alt="Thumb">
+                            <img src="{% static 'assets/img/banner/8.jpg' %}" alt="United Kingdom">
                         </div>
-                        <h2>Most Demand Jobs In United Kingdom</h2>
+                        <h2>Most Popular Courses in United Kingdom</h2>
                         <p>
-                            We denounce with righteous indige nation and dislike men who are so beguiled and demo realized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue cannot foresee. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled data structures manages data in technology.
+                            The United Kingdom is one of the world’s top destinations for international students, offering globally recognized degrees, 
+                            a rich academic tradition, and diverse cultural experiences. 
+                            UK universities and colleges provide a wide range of undergraduate and postgraduate courses designed to prepare students for successful global careers.
                         </p>
+                        
                         <div class="features mt-40 mt-xs-30 mb-30 mb-xs-20">
                             <div class="row">
                                 <div class="col-xl-5 col-md-6">
                                     <div class="content">
-                                        <h3>Online Presence</h3>
+                                        <h3>Top Study Fields</h3>
                                         <ul class="list-style-four">
-                                            <li>Business Name & Logo</li>
-                                            <li>Website & Social Media</li>
-                                            <li>MVP (Minimum Viable Product)</li>
-                                            <li>Service Delivery System</li>
+                                            <li>Business & Management</li>
+                                            <li>Computer Science & IT</li>
+                                            <li>Engineering & Technology</li>
+                                            <li>Medicine & Healthcare</li>
+                                            <li>Law & Social Sciences</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-xl-7 col-md-6 mt-xs-30">
                                     <div class="content">
-                                        <h3>Business Planning</h3>
+                                        <h3>Why Study in the UK?</h3>
                                         <p>
-                                            Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias. consequatur aut perferendis doloribus.
+                                            The UK offers internationally accredited degrees, excellent research facilities, and career-focused programs. 
+                                            Students gain exposure to a multicultural environment while enjoying access to scholarships, internships, and part-time work opportunities.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <h3>Sales & Marketing Strategy</h3>
+
+                        <h3>Study & Visa Support</h3>
                         <p>
-                            Nam libero tempore, cum soluta nobis est elig endi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repelle ndus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias. consequatur aut perferendis doloribus asperiores repellat. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.  pleasures have to be repudiated and annoyances accepted. 
+                            The UK welcomes thousands of international students each year. 
+                            Student visa categories such as the Tier 4 (General Student Visa) are available for those pursuing higher education. 
+                            We provide expert guidance on course selection, university applications, scholarships, and visa processing to make your journey smooth.
                         </p>
 
                         <div class="card-style-three mt-40">
                             <div class="item">
                                 <div class="number">01</div>
                                 <div class="info">
-                                    <h4>Quality Visa Service</h4>
+                                    <h4>Course & University Guidance</h4>
                                     <p>
-                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout the point.
+                                        Our advisors help you choose the right program and institution based on your career goals and interests.
                                     </p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="number">02</div>
                                 <div class="info">
-                                    <h4>Global Connection</h4>
+                                    <h4>End-to-End Visa Assistance</h4>
                                     <p>
-                                        Remember long established fact that a reader will be distracted by the readable content of a page when looking at its layout the point.
+                                        From preparing documentation to application submission, we assist you throughout your UK student visa process.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
 
                     <div class="col-xl-4 col-lg-5 mt-md-120 mt-xs-50 services-sidebar">
                         <!-- Single Widget -->
@@ -406,27 +443,27 @@ animate();
                             <div class="content">
                                 <ul>
                                     <li>
-                                        <a href="country-details.html">
+                                        <a href="{% url 'country-details' %}">
                                             <div class="icon"><img src="{% static 'assets/img/icon/france.png' %}" alt="Flag"></div> France
                                         </a>
                                     </li>
                                     <li class="current-item">
-                                        <a href="country-details.html">
+                                        <a href="{% url 'country-details' %}">
                                             <div class="icon"><img src="{% static 'assets/img/icon/uk.png' %}" alt="Flag"></div> United Kingdom
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="country-details.html">
+                                        <a href="{% url 'country-details' %}">
                                             <div class="icon"><img src="{% static 'assets/img/icon/canada.png' %}" alt="Flag"></div> Canada
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="country-details.html">
+                                        <a href="{% url 'country-details' %}">
                                             <div class="icon"><img src="{% static 'assets/img/icon/australia.png' %}" alt="Flag"></div> Australia
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="country-details.html">
+                                        <a href="{% url 'country-details' %}">
                                             <div class="icon"><img src="{% static 'assets/img/icon/dubai.png' %}" alt="Flag"></div> Dubai
                                         </a>
                                     </li>

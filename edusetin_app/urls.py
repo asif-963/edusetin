@@ -16,7 +16,9 @@ urlpatterns = [
     path('country/', views.country, name='country'),
     path('country-details/', views.country_details, name='country-details'),
     path('course/', views.course, name='course'),
+    path('gallery/', views.gallery, name='gallery'),
     path('course-details/', views.course_details, name='course-details'),
+    path('service-details/', views.service_details, name='service-details'),
     path('admin-dashboard/', views.admin_dashboard, name='admin-dashboard'),
 
 

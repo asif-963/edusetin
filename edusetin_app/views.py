@@ -27,6 +27,13 @@ def course(request):
 def course_details(request):
     return render(request, 'course-details.html')
 
+def service_details(request):
+    return render(request, 'service-details.html')
+
+
+def gallery(request):
+    return render(request, 'gallery.html')
+
 
 def country(request):
     return render(request, 'country.html')

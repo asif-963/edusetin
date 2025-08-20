@@ -269,21 +269,49 @@ animate();
                         </li>
 
                          
-                        <li>
-                            <a href="{% url 'country' %}">Countries</a>
+
+                         
+                        <li class="dropdown">
+                            <a href="{% url  'country' %}" class="dropdown-toggle" data-toggle="dropdown">Countries <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'country-details' %}">United States</a></li>
+                                <li><a href="{% url 'country-details' %}">United Kingdom</a></li>
+                                <li><a href="{% url 'country-details' %}">Canada</a></li>
+                                <li><a href="{% url 'country-details' %}">Australia</a></li>
+                                <li><a href="{% url 'country-details' %}">Germany</a></li>
+                            </ul>
                         </li>
-                         <li>
-                            <a href="{% url 'country' %}">Universities</a>
+                       
+                         <!-- Universities Dropdown -->
+                         <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'service-details' %}">Career Counseling</a></li>
+                                <li><a href="{% url 'service-details' %}">Application Process Guidance</a></li>
+                                <li><a href="{% url 'service-details' %}">SOP & Essay Writing</a></li>
+                                <li><a href="{% url 'service-details' %}">Visa Assistance</a></li>
+                                <li><a href="{% url 'service-details' %}">Interview Preparation</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="{% url 'course' %}">Courses</a>
+
+
+                        <!-- Courses Dropdown -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'course-details' %}">Computer Science</a></li>
+                                <li><a href="{% url 'course-details' %}">Data Science</a></li>
+                                <li><a href="{% url 'course-details' %}">Business Management</a></li>
+                                <li><a href="{% url 'course-details' %}">Medicine</a></li>
+                                <li><a href="{% url 'course-details' %}">Law</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a href="{% url 'blogs' %}">Blog</a>
                         </li>
 
                          <li>
-                            <a href="#team">Gallery</a>
+                            <a href="{% url 'gallery' %}">Gallery</a>
                         </li>
                         <li>
                             <a href="{% url 'contact-us' %}">Contact</a>
@@ -314,22 +342,23 @@ animate();
 
     <!-- Start Breadcrumb 
     ============================================= -->
-    <div class="breadcrumb-area with-banner bg-cover text-center bg-dark text-light" style="background-image: url('{% static 'assets/img/banner/7.png' %}');">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <h1>Coaching Details</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                            <li class="active">Coaching</li>
-                        </ol>
-                    </nav>
-                </div>
+   <div class="breadcrumb-area with-banner bg-cover text-center bg-dark text-light" style="background-image: url('{% static 'assets/img/banner/7.png' %}');">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <h1>Engineering </h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="active">Engineering Course</li>
+                    </ol>
+                </nav>
             </div>
         </div>
     </div>
-    <!-- End Breadcrumb -->
+</div>
+<!-- End Breadcrumb -->
+
 
     <!-- Star Services Details Area
     ============================================= -->
@@ -340,56 +369,68 @@ animate();
                     
                     <div class="col-xl-8 col-lg-7 order-lg-last pl-50 pl-md-15 pl-xs-15">
                         <div class="thumb">
-                            <img src="{% static 'assets/img/banner/2.jpg' %}" alt="Thumb">
+                            <img src="{% static 'assets/img/banner/2.jpg' %}" alt="Engineering Course">
                         </div>
-                        <h2>Self-Assessment & Idea Validation</h2>
+                        <h2>Engineering Course Overview</h2>
                         <p>
-                            We denounce with righteous indige nation and dislike men who are so beguiled and demo realized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue cannot foresee. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled data structures manages data in technology.
+                            Our Engineering courses are designed to equip students with both theoretical knowledge 
+                            and practical skills. The program focuses on building strong foundations in mathematics, 
+                            physics, and core engineering disciplines, while also emphasizing innovation, research, 
+                            and problem-solving techniques required in today’s industries.
                         </p>
+
                         <div class="features mt-40 mt-xs-30 mb-30 mb-xs-20">
                             <div class="row">
                                 <div class="col-lg-5 col-md-6">
                                     <div class="content">
-                                        <h3>Online Presence</h3>
+                                        <h3>Core Subjects</h3>
                                         <ul class="list-style-four">
-                                            <li>Business Name & Logo</li>
-                                            <li>Website & Social Media</li>
-                                            <li>MVP (Minimum Viable Product)</li>
-                                            <li>Service Delivery System</li>
+                                            <li>Mechanical Engineering</li>
+                                            <li>Civil Engineering</li>
+                                            <li>Electrical & Electronics</li>
+                                            <li>Computer Science Engineering</li>
+                                            <li>Artificial Intelligence & Data Science</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-7 col-md-6 mt-xs-30">
                                     <div class="content">
-                                        <h3>Business Planning</h3>
+                                        <h3>Why Choose This Course?</h3>
                                         <p>
-                                            Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias. consequatur aut perferendis doloribus.
+                                            The Engineering program provides practical workshops, industry internships, 
+                                            and research opportunities to prepare students for global career prospects. 
+                                            Graduates are highly sought after in technology, infrastructure, energy, and IT sectors.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <h3>Sales & Marketing Strategy</h3>
+
+                        <h3>Career Opportunities</h3>
                         <p>
-                            Nam libero tempore, cum soluta nobis est elig endi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repelle ndus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias. consequatur aut perferendis doloribus asperiores repellat. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.  pleasures have to be repudiated and annoyances accepted. 
+                            Engineering graduates can pursue careers in multiple domains, including technology, 
+                            manufacturing, construction, data science, renewable energy, and research. 
+                            The course also opens pathways for higher studies, entrepreneurship, and global career opportunities.
                         </p>
 
                         <div class="card-style-three mt-40">
                             <div class="item">
                                 <div class="number">01</div>
                                 <div class="info">
-                                    <h4>Quality Visa Service</h4>
+                                    <h4>Hands-on Training</h4>
                                     <p>
-                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout the point.
+                                        Students gain practical exposure through laboratory experiments, real-world 
+                                        projects, and internships with industry partners.
                                     </p>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="number">02</div>
                                 <div class="info">
-                                    <h4>Global Connection</h4>
+                                    <h4>Global Opportunities</h4>
                                     <p>
-                                        Remember long established fact that a reader will be distracted by the readable content of a page when looking at its layout the point.
+                                        The course prepares students for global opportunities, 
+                                        with skills that are in demand across multiple industries worldwide.
                                     </p>
                                 </div>
                             </div>
@@ -402,11 +443,11 @@ animate();
                             <h4 class="widget-title">Training programs</h4>
                             <div class="content">
                                 <ul>
-                                    <li><a href="coaching-details.html">IELTS Coaching</a></li>
-                                    <li class="current-item"><a href="coaching-details.html">Entrepreneurs Starting</a></li>
-                                    <li><a href="coaching-details.html">Visa Training</a></li>
-                                    <li><a href="coaching-details.html">Immigration law</a></li>
-                                    <li><a href="coaching-details.html">Business Development</a></li>
+                                    <li><a href="{% url 'course-details' %}">IELTS Coaching</a></li>
+                                    <li class="current-item"><a href="{% url 'course-details' %}">Entrepreneurs Starting</a></li>
+                                    <li><a href="{% url 'course-details' %}">Visa Training</a></li>
+                                    <li><a href="{% url 'course-details' %}">Immigration law</a></li>
+                                    <li><a href="{% url 'course-details' %}">Business Development</a></li>
                                 </ul>
                             </div>
                         </div>
