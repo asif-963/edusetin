@@ -230,7 +230,7 @@ animate();
             <!-- Right Content -->
             <div class="popup-right">
                 <h4 class="sub-title">Your Abroad Studies Journey</h4>
-                <h2 class="title">Explore EduSetin's Programs Worldwide</h2>
+                <h2 class="title">Explore Edusetin's Programs Worldwide</h2>
                 <p>Get expert guidance and support for your international education. Learn more about courses, scholarships, and admission procedures.</p>
                 <a href="{% url 'apply-form' %}" class="btn-style-one circle mt-3">
                     Apply Now <span></span>
@@ -437,92 +437,90 @@ document.addEventListener("DOMContentLoaded", function () {
                        
                        
 
-                         <li class="dropdown">
+                         
+                        <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Universities <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="{% url 'service-details' %}">Career Counseling</a></li>
-                                <li><a href="{% url 'service-details' %}">Application Process Guidance</a></li>
-                                <li><a href="{% url 'service-details' %}">SOP & Essay Writing</a></li>
-                                <li><a href="{% url 'service-details' %}">Visa Assistance</a></li>
-                                <li><a href="{% url 'service-details' %}">Interview Preparation</a></li>
+                                <li><a href="{% url 'harvard_details' %}">Harvard University</a></li>
+                                <li><a href="{% url 'oxford_details' %}">University of Oxford</a></li>
+                                <li><a href="{% url 'bologna_details' %}">University of Bologna</a></li>
+                                <li><a href="{% url 'sapienza_details' %}">Sapienza University of Rome</a></li>
+                                <li><a href="{% url 'ludwig_details' %}">Ludwig Maximilian University of Munich</a></li>
+                                <li><a href="{% url 'asian_medical_institute_details' %}">Asian Medical Institute</a></li>
+                                <li><a href="{% url 'kyrgyz_state_academy_details' %}">Kyrgyz State Medical Academy</a></li>
                             </ul>
                         </li>
 
+
+
                          
                         <li class="dropdown">
-                            <a href="{% url  'country' %}" class="dropdown-toggle" data-toggle="dropdown">Countries <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Countries <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="{% url 'country-details' %}">United States</a></li>
-                                <li><a href="{% url 'country-details' %}">United Kingdom</a></li>
-                                <li><a href="{% url 'country-details' %}">Canada</a></li>
-                                <li><a href="{% url 'country-details' %}">Australia</a></li>
-                                <li><a href="{% url 'country-details' %}">Germany</a></li>
+                                <li><a href="{% url 'dubai_details' %}">Dubai</a></li>
+                                <li><a href="{% url 'united_kingdom_details' %}">United Kingdom</a></li>
+                                <li><a href="{% url 'italy_details' %}">Italy</a></li>
+                                <li><a href="{% url 'kyrgyzstan_details' %}">Kyrgyzstan</a></li>
+                                <li><a href="{% url 'germany_details' %}">Germany</a></li>
                             </ul>
                         </li>
-                       
-                         <!-- Universities Dropdown -->
-                         <li class="dropdown">
+
+                       <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'business_management_details' %}">Business & Management</a></li>
+                                <li><a href="{% url 'engineering_details' %}">Engineering</a></li>
+                                <li><a href="{% url 'health_medicine_details' %}">Health & Medicine</a></li>
+                            </ul>
+                        </li>
+
+
+                        <!-- Services Dropdown -->
+                        <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="{% url 'service-details' %}">Career Counseling</a></li>
-                                <li><a href="{% url 'service-details' %}">Application Process Guidance</a></li>
-                                <li><a href="{% url 'service-details' %}">SOP & Essay Writing</a></li>
-                                <li><a href="{% url 'service-details' %}">Visa Assistance</a></li>
-                                <li><a href="{% url 'service-details' %}">Interview Preparation</a></li>
+                                <li><a href="{% url 'career_counselling_details' %}">Career Counselling</a></li>
+                                <li><a href="{% url 'course_selection_details' %}">Selection of Course, Country and University</a></li>
+                                <li><a href="{% url 'test_preparation_details' %}">Test Preparations</a></li>
+                                <li><a href="{% url 'application_process_details' %}">Application Process</a></li>
+                                <li><a href="{% url 'visa_guidance_details' %}">Expert Visa Guidance</a></li>
+                               
                             </ul>
                         </li>
 
 
                         <!-- Courses Dropdown -->
-                        <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses</a>
-  <ul class="dropdown-menu">
+                        <!-- <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses</a>
+                            <ul class="dropdown-menu"> -->
 
-    <!-- Medical Category -->
-    <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Medical</a>
-      <ul class="dropdown-menu">
-        <li><a href="medicine.html">Medicine</a></li>
-        <li><a href="nursing.html">Nursing</a></li>
-        <li><a href="pharmacy.html">Pharmacy</a></li>
-        <li><a href="dentistry.html">Dentistry</a></li>
-      </ul>
-    </li>
+                                <!-- Medical Category -->
+                                <!-- <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Medical</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="medicine.html">Medicine</a></li>
+                                    <li><a href="nursing.html">Nursing</a></li>
+                                    <li><a href="pharmacy.html">Pharmacy</a></li>
+                                    <li><a href="dentistry.html">Dentistry</a></li>
+                                </ul>
+                                </li> -->
 
-    <!-- Engineering Category -->
-    <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Engineering</a>
-      <ul class="dropdown-menu">
-        <li><a href="civil-engineering.html">Civil Engineering</a></li>
-        <li><a href="mechanical-engineering.html">Mechanical Engineering</a></li>
-        <li><a href="electrical-engineering.html">Electrical Engineering</a></li>
-        <li><a href="computer-engineering.html">Computer Engineering</a></li>
-      </ul>
-    </li>
+                                <!-- Engineering Category -->
+                                <!-- <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Engineering</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="civil-engineering.html">Civil Engineering</a></li>
+                                    <li><a href="mechanical-engineering.html">Mechanical Engineering</a></li>
+                                    <li><a href="electrical-engineering.html">Electrical Engineering</a></li>
+                                    <li><a href="computer-engineering.html">Computer Engineering</a></li>
+                                </ul>
+                                </li>
 
-    <!-- Management Category -->
-    <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Management</a>
-      <ul class="dropdown-menu">
-        <li><a href="mba.html">MBA</a></li>
-        <li><a href="finance.html">Finance</a></li>
-        <li><a href="marketing.html">Marketing</a></li>
-      </ul>
-    </li>
+                                
 
-    <!-- Law Category -->
-    <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Law</a>
-      <ul class="dropdown-menu">
-        <li><a href="corporate-law.html">Corporate Law</a></li>
-        <li><a href="criminal-law.html">Criminal Law</a></li>
-        <li><a href="international-law.html">International Law</a></li>
-      </ul>
-    </li>
-
-   
-  </ul>
-</li>
+                            
+                            </ul>
+                            </li> -->
 
 
                          <li class="dropdown">
@@ -752,7 +750,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 </li>
 
                             </ul>
-                            <a href=="{% url 'about' %}" class="btn-style-one circle mt-30 wow fadeInUp" data-wow-delay="200ms">Discover More <span></span></a>
+                            <a href="{% url 'about' %}" class="btn-style-one circle mt-30 wow fadeInUp" data-wow-delay="200ms">Discover More <span></span></a>
                         </div>
                     </div>
                     <div class="col-xl-5 offset-xl-1 col-lg-6">
@@ -777,241 +775,179 @@ document.addEventListener("DOMContentLoaded", function () {
     <!-- End About -->
 
 
-
-    <!-- Start Visa Category 
-    ============================================= -->
-    <div id="services" class="visa-category-area default-padding text-center bg-gray bg-cover" style="background-image: url(assets/img/shape/20.png);">
-        <!-- <div class="shape-top-right">
-            <img src="{% static 'assets/img/illustration/4.png' %}" alt="Image Not Found">
-        </div> -->
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-                    <div class="site-heading text-center">
-                        <h4 class="sub-title">Varieties of visa</h4>
-                        <h2 class="title split-text">Achieve your dream of citizenship & immigration</h2>
-                    </div>
+<!-- Start Services Category 
+============================================= -->
+<div id="services" class="visa-category-area default-padding text-center bg-gray bg-cover" style="background-image: url(assets/img/shape/20.png);">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                <div class="site-heading text-center">
+                    <h4 class="sub-title">Our Services</h4>
+                    <h2 class="title split-text">We guide you at every step of your study abroad journey</h2>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="visa-category-items wow fadeInUp" data-wow-delay="200ms">
-                        <!-- Slider main container -->
-                        <div class="visa-category-carousel swiper">
-                            <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
-                                <!-- Single Item -->
-                                <div class="swiper-slide">
-                                    <div class="visa-cat-style-one">
-                                        <div class="thumb">
-                                            <img src="{% static 'assets/img/category/1.jpg' %}" alt="Image Not Found">
-                                            <div class="shape">
-                                                <img src="{% static 'assets/img/shape/39.png' %}" alt="Image Not Found">
-                                            </div>
-                                            <div class="icon">
-                                                <img src="{% static 'assets/img/icon/business-visa.png' %}" alt="Image Not Found">
-                                            </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="visa-category-items wow fadeInUp" data-wow-delay="200ms">
+                    <!-- Slider main container -->
+                    <div class="visa-category-carousel swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+
+                            <!-- Single Item -->
+                            <div class="swiper-slide">
+                                <div class="visa-cat-style-one">
+                                    <div class="thumb">
+                                        <img src="{% static 'assets/img/category/1.jpg' %}" alt="Career Counselling">
+                                        <div class="shape">
+                                            <img src="{% static 'assets/img/shape/39.png' %}" alt="Shape">
                                         </div>
-                                        <div class="info">
-                                            <h4><a href="visa-details.html">Business Visa</a></h4>
-                                            <p>
-                                                Business visa is a conditional permission provided by a region to a foreigner to enter, stay in, or leave that country.
-                                            </p>
-                                        </div>
-                                        <div class="button">
-                                            <a href="visa-details.html">
-                                                <i class="fas fa-angle-right"></i>
-                                                <span>Know More</span>
-                                                <div class="shape"><img src="{% static 'assets/img/shape/40.png' %}" alt="Image Not Found"></div>
-                                            </a>
+                                        <div class="icon">
+                                            <img src="{% static 'assets/img/icon/business-visa.png' %}" alt="Icon">
                                         </div>
                                     </div>
-                                </div>
-                                <!-- Single Item -->
-                                <!-- Single Item -->
-                                <div class="swiper-slide">
-                                    <div class="visa-cat-style-one">
-                                        <div class="thumb">
-                                            <img src="{% static 'assets/img/category/2.jpg' %}" alt="Image Not Found">
-                                            <div class="shape">
-                                                <img src="{% static 'assets/img/shape/39.png' %}" alt="Image Not Found">
-                                            </div>
-                                            <div class="icon">
-                                                <img src="{% static 'assets/img/icon/student-visa.png' %}" alt="Image Not Found">
-                                            </div>
-                                        </div>
-                                        <div class="info">
-                                            <h4><a href="visa-details.html">Student Visa</a></h4>
-                                            <p>
-                                                Student visa is a conditional permission provided by a region to a foreigner to enter, stay in, or leave that country.
-                                            </p>
-                                        </div>
-                                        <div class="button">
-                                            <a href="visa-details.html">
-                                                <i class="fas fa-angle-right"></i>
-                                                <span>Know More</span>
-                                                <div class="shape"><img src="{% static 'assets/img/shape/40.png' %}" alt="Image Not Found"></div>
-                                            </a>
-                                        </div>
+                                    <div class="info">
+                                        <h4><a href="{% url 'career_counselling_details' %}">Career Counselling</a></h4>
+                                        <p>
+                                            Personalized guidance to help you choose the right career path and align it with your future goals.
+                                        </p>
+                                    </div>
+                                    <div class="button">
+                                        <a href="{% url 'career_counselling_details' %}">
+                                            <i class="fas fa-angle-right"></i>
+                                            <span>Know More</span>
+                                            <div class="shape"><img src="{% static 'assets/img/shape/40.png' %}" alt="Shape"></div>
+                                        </a>
                                     </div>
                                 </div>
-                                <!-- Single Item -->
-                                <!-- Single Item -->
-                                <div class="swiper-slide">
-                                    <div class="visa-cat-style-one">
-                                        <div class="thumb">
-                                            <img src="{% static 'assets/img/category/3.jpg' %}" alt="Image Not Found">
-                                            <div class="shape">
-                                                <img src="{% static 'assets/img/shape/39.png' %}" alt="Image Not Found">
-                                            </div>
-                                            <div class="icon">
-                                                <img src="{% static 'assets/img/icon/travel-visa.png' %}" alt="Image Not Found">
-                                            </div>
-                                        </div>
-                                        <div class="info">
-                                            <h4><a href="visa-details.html">Travel Visa</a></h4>
-                                            <p>
-                                                Travel visa is a conditional permission provided by a region to a foreigner to enter, stay in, or leave that country.
-                                            </p>
-                                        </div>
-                                        <div class="button">
-                                            <a href="visa-details.html">
-                                                <i class="fas fa-angle-right"></i>
-                                                <span>Know More</span>
-                                                <div class="shape"><img src="{% static 'assets/img/shape/40.png' %}" alt="Image Not Found"></div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Single Item -->
                             </div>
+                            <!-- Single Item -->
+
+                            <div class="swiper-slide">
+                                <div class="visa-cat-style-one">
+                                    <div class="thumb">
+                                        <img src="{% static 'assets/img/category/2.jpg' %}" alt="Selection of Course, Country and University">
+                                        <div class="shape">
+                                            <img src="{% static 'assets/img/shape/39.png' %}" alt="Shape">
+                                        </div>
+                                        <div class="icon">
+                                            <img src="{% static 'assets/img/icon/student-visa.png' %}" alt="Icon">
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h4><a href="{% url 'course_selection_details' %}">Selection of Course, Country and University</a></h4>
+                                        <p>
+                                            We assist you in selecting the right course, country, and university based on your academic profile and aspirations.
+                                        </p>
+                                    </div>
+                                    <div class="button">
+                                        <a href="{% url 'course_selection_details' %}">
+                                            <i class="fas fa-angle-right"></i>
+                                            <span>Know More</span>
+                                            <div class="shape"><img src="{% static 'assets/img/shape/40.png' %}" alt="Shape"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Item -->
+
+                            <div class="swiper-slide">
+                                <div class="visa-cat-style-one">
+                                    <div class="thumb">
+                                        <img src="{% static 'assets/img/category/3.jpg' %}" alt="Test Preparations">
+                                        <div class="shape">
+                                            <img src="{% static 'assets/img/shape/39.png' %}" alt="Shape">
+                                        </div>
+                                        <div class="icon">
+                                            <img src="{% static 'assets/img/icon/travel-visa.png' %}" alt="Icon">
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h4><a href="{% url 'test_preparation_details' %}">Test Preparations</a></h4>
+                                        <p>
+                                            Get expert support and resources to prepare for exams like IELTS, TOEFL, GRE, GMAT, and more.
+                                        </p>
+                                    </div>
+                                    <div class="button">
+                                        <a href="{% url 'test_preparation_details' %}">
+                                            <i class="fas fa-angle-right"></i>
+                                            <span>Know More</span>
+                                            <div class="shape"><img src="{% static 'assets/img/shape/40.png' %}" alt="Shape"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Item -->
+
+                            <div class="swiper-slide">
+                                <div class="visa-cat-style-one">
+                                    <div class="thumb">
+                                        <img src="{% static 'assets/img/category/1.jpg' %}" alt="Application Process">
+                                        <div class="shape">
+                                            <img src="{% static 'assets/img/shape/39.png' %}" alt="Shape">
+                                        </div>
+                                        <div class="icon">
+                                            <img src="{% static 'assets/img/icon/business-visa.png' %}" alt="Icon">
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h4><a href="{% url 'application_process_details' %}">Application Process</a></h4>
+                                        <p>
+                                            Complete guidance in filling applications, preparing documents, and meeting deadlines efficiently.
+                                        </p>
+                                    </div>
+                                    <div class="button">
+                                        <a href="{% url 'application_process_details' %}">
+                                            <i class="fas fa-angle-right"></i>
+                                            <span>Know More</span>
+                                            <div class="shape"><img src="{% static 'assets/img/shape/40.png' %}" alt="Shape"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Item -->
+
+                            <div class="swiper-slide">
+                                <div class="visa-cat-style-one">
+                                    <div class="thumb">
+                                        <img src="{% static 'assets/img/category/2.jpg' %}" alt="Expert Visa Guidance">
+                                        <div class="shape">
+                                            <img src="{% static 'assets/img/shape/39.png' %}" alt="Shape">
+                                        </div>
+                                        <div class="icon">
+                                            <img src="{% static 'assets/img/icon/student-visa.png' %}" alt="Icon">
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h4><a href="{% url 'visa_guidance_details' %}">Expert Visa Guidance</a></h4>
+                                        <p>
+                                            Step-by-step guidance on visa applications, documentation, and interviews to ensure success.
+                                        </p>
+                                    </div>
+                                    <div class="button">
+                                        <a href="{% url 'visa_guidance_details' %}">
+                                            <i class="fas fa-angle-right"></i>
+                                            <span>Know More</span>
+                                            <div class="shape"><img src="{% static 'assets/img/shape/40.png' %}" alt="Shape"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Item -->
+
+                          
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Visa Category -->
-
-     <!-- Start Why Choose Us 
-    ============================================= -->
-    <div class="choose-us-style-three-area default-padding">
-        <div class="choose-us-three-thumb">
-            <img class="wow fadeInLeft" src="{% static 'assets/img/thumb/3.png' %}" alt="Image Not Found">
-            <div class="video-card">
-                <a href="https://www.youtube.com/watch?v=ZRqEtpeQX8g" class="popup-youtube">
-                    <i class="fas fa-play"></i>
-                </a>
-                <span>Watch Us</span>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-8 offset-xl-4">
-                    <div class="choose-us-style-three-info">
-                        <h4 class="sub-title">Why choose us</h4>
-                        <h2 class="title split-text">Reliable Study Abroad & Immigration Services in Kerala</h2>
-                        <p class="wow fadeInUp">
-                            At Edusetin, we specialize in providing personalized guidance for students aiming to study abroad. With over a decade of experience, we’ve helped hundreds of students secure admissions and visas for top universities in Germany, Italy, Singapore, and Kyrgyzstan. Our expert team ensures transparent, end-to-end support — from university selection to final visa approval — making us a trusted name in overseas education consulting in Kerala.
-                            </p>
-                      <div class="card-style-three wow fadeInUp" data-wow-delay="100ms">
-                            <div class="item">
-                                <div class="number">01</div>
-                                <div class="info">
-                                    <h4>Expert Visa Guidance</h4>
-                                    <p>
-                                        Our team provides step-by-step support for student visas, ensuring accurate documentation and faster approvals for countries like Germany, Italy, and Kyrgyzstan.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="number">02</div>
-                                <div class="info">
-                                    <h4>Global University Network</h4>
-                                    <p>
-                                        We work closely with reputed universities across Europe and Asia, helping students access top-ranked programs in MBBS, engineering, and business.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                         <div class="card-style-three wow fadeInUp" data-wow-delay="100ms">
-                            <div class="item">
-                                <div class="number">03</div>
-                                <div class="info">
-                                    <h4>Personalized Admission Support</h4>
-                                    <p>
-                                        From course selection to application submission, Edusetin offers tailored guidance to match your career goals with the right international programs.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="number">04</div>
-                                <div class="info">
-                                    <h4>Trusted by Students Across Kerala</h4>
-                                    <p>
-                                        With years of experience and hundreds of success stories, Edusetin has become a go-to consultancy for students pursuing higher education abroad.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Why Choose Us -->
-      <!-- Start Fun fact 
-    ============================================= -->
-    <div class="fun-fact-style-one-area default-padding bg-gray bg-cover overflow-hidden" style="background-image: url(assets/img/shape/banner-3.jpg);">
-        <div class="container">
-            <div class="fun-fact-style-one-items">
-                <div class="row">
-                   <!-- Single item -->
-                    <div class="col-lg-4 col-md-6 funfact-style-one-item">
-                        <div class="fun-fact">
-                            <div class="counter">
-                                <div class="timer" data-to="56" data-speed="2000">56</div>
-                                <div class="operator">K</div>
-                            </div>
-                            <span class="medium">Students Guided for <br> Overseas Education</span>
-                        </div>
-                    </div>
-                    <!-- End Single item -->
-
-                    <!-- Single item -->
-                    <div class="col-lg-4 col-md-6 funfact-style-one-item">
-                        <div class="fun-fact">
-                            <div class="counter">
-                                <div class="timer" data-to="100" data-speed="2000">100</div>
-                                <div class="operator">%</div>
-                            </div>
-                            <span class="medium">Visa Success Rate for <br> Study Abroad Applicants</span>
-                        </div>
-                    </div>
-                    <!-- End Single item -->
-
-                    <!-- Single item -->
-                    <div class="col-lg-4 col-md-6 funfact-style-one-item">
-                        <div class="fun-fact">
-                            <div class="counter">
-                                <div class="timer" data-to="2" data-speed="2000">2</div>
-                                <div class="operator">Days</div>
-                            </div>
-                            <span class="medium">Quickest Visa Approval <br> Turnaround Time</span>
-                        </div>
-                    </div>
-                    <!-- End Single item -->
-
-                </div>
-           </div>
-        </div>
-    </div>
-    <!-- End Fun Fact -->
+</div>
+<!-- End Services Category -->
 
     <!-- Start Visa Country 
 ============================================= -->
@@ -1036,11 +972,11 @@ document.addEventListener("DOMContentLoaded", function () {
                         <div class="visa-offer-country-item">
                             <div class="country">
                                 <div class="icon">
-                                    <img src="{% static 'assets/img/icon/france.png' %}" alt="France">
+                                    <img src="{% static 'assets/img/icon/germany.png' %}" alt="Germany">
                                 </div>
                                 <div class="content">
-                                    <h5>France</h5>
-                                    <span>Artois</span>
+                                    <h5>Germany</h5>
+                                    <span>Germany</span>
                                 </div>
                             </div>
                             <div class="bottom">
@@ -1049,7 +985,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                     <li>5 Years Business Visa</li>
                                     <li>Apply Visa Online</li>
                                 </ul>
-                                <a href="{% url 'country-details' %}" class="btn-style-one circle mt-30">Discover More <span></span></a>
+                                <a href="{% url 'germany_details' %}" class="btn-style-one circle mt-30">Discover More <span></span></a>
                             </div>
                         </div>
                     </li>
@@ -1072,7 +1008,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                     <li>5 Years Business Visa</li>
                                     <li>Apply Visa Online</li>
                                 </ul>
-                                <a href="{% url 'country-details'  %}" class="btn-style-one circle mt-30">Discover More <span></span></a>
+                                <a href="{% url 'united_kingdom_details'  %}" class="btn-style-one circle mt-30">Discover More <span></span></a>
                             </div>
                         </div>
                     </li>
@@ -1082,11 +1018,11 @@ document.addEventListener("DOMContentLoaded", function () {
                         <div class="visa-offer-country-item">
                             <div class="country">
                                 <div class="icon">
-                                    <img src="{% static 'assets/img/icon/canada.png' %}" alt="Canada">
+                                    <img src="{% static 'assets/img/icon/kyrgyzstan.png' %}" alt="Canada">
                                 </div>
                                 <div class="content">
-                                    <h5>Canada</h5>
-                                    <span>Quebec</span>
+                                    <h5>Kyrgyzstan</h5>
+                                    <span>Kyrgyzstan</span>
                                 </div>
                             </div>
                             <div class="bottom">
@@ -1095,7 +1031,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                     <li>5 Years Business Visa</li>
                                     <li>Apply Visa Online</li>
                                 </ul>
-                                <a href="{% url 'country-details' %}" class="btn-style-one circle mt-30">Discover More <span></span></a>
+                                <a href="{% url 'kyrgyzstan_details' %}" class="btn-style-one circle mt-30">Discover More <span></span></a>
                             </div>
                         </div>
                     </li>
@@ -1105,11 +1041,11 @@ document.addEventListener("DOMContentLoaded", function () {
                         <div class="visa-offer-country-item">
                             <div class="country">
                                 <div class="icon">
-                                    <img src="{% static 'assets/img/icon/australia.png' %}" alt="Australia">
+                                    <img src="{% static 'assets/img/icon/italy.png' %}" alt="Australia">
                                 </div>
                                 <div class="content">
-                                    <h5>Australia</h5>
-                                    <span>Oceania</span>
+                                    <h5>Italy</h5>
+                                    <span>Italy</span>
                                 </div>
                             </div>
                             <div class="bottom">
@@ -1118,7 +1054,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                     <li>5 Years Business Visa</li>
                                     <li>Apply Visa Online</li>
                                 </ul>
-                                <a href="{% url 'country-details' %}" class="btn-style-one circle mt-30">Discover More <span></span></a>
+                                <a href="{% url 'italy_details' %}" class="btn-style-one circle mt-30">Discover More <span></span></a>
                             </div>
                         </div>
                     </li>
@@ -1141,7 +1077,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                     <li>5 Years Business Visa</li>
                                     <li>Apply Visa Online</li>
                                 </ul>
-                                <a href="{% url 'country-details' %}" class="btn-style-one circle mt-30">Discover More <span></span></a>
+                                <a href="{% url 'dubai_details' %}" class="btn-style-one circle mt-30">Discover More <span></span></a>
                             </div>
                         </div>
                     </li>
@@ -1161,8 +1097,8 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="row">
                 <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
                     <div class="site-heading text-center">
-                        <h4 class="sub-title">Our Expert Members</h4>
-                        <h2 class="title split-text">Introducing our skilled visa process specialists</h2>
+                        <h4 class="sub-title">Our Team</h4>
+<h2 class="title split-text">Meet Our Experts</h2>
                     </div>
                 </div>
             </div>
@@ -1173,7 +1109,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="col-lg-4 col-md-6 mb-30">
                     <div class="team-style-one-item wow fadeInUp">
                         <div class="thumb">
-                            <img src="{% static 'assets/img/team/8.jpg' %}" alt="Image Not Found">
+                            <img src="{% static 'assets/img/team/t1.jpeg' %}" alt="Image Not Found" style="height: 500px; object-fit: cover;">
                             <img src="{% static 'assets/img/shape/31.png' %}" alt="Image Not Found">
                             <div class="social-info">
                                 <div class="social-overlay">
@@ -1192,12 +1128,12 @@ document.addEventListener("DOMContentLoaded", function () {
                                         <i class="fas fa-plus"></i>
                                     </div>
                                 </div>
-                                <a href="contact-us.html"><i class="fas fa-comments-alt"></i></a>
+                                <a href=""><i class="fas fa-comments-alt"></i></a>
                             </div>
                         </div>
                         <div class="info">
-                            <h4><a href="team-details.html">Aleesha Brown</a></h4>
-                            <span>Visa Counselor</span>
+                            <h4><a href="">RASIF MEEMBATTA</a></h4>
+                            <span>Managing Director</span>
                         </div>
                     </div>
                 </div>
@@ -1206,7 +1142,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="col-lg-4 col-md-6 mb-30">
                     <div class="team-style-one-item wow fadeInUp" data-wow-delay="100ms">
                         <div class="thumb">
-                            <img src="{% static 'assets/img/team/9.jpg' %}" alt="Image Not Found">
+                            <img src="{% static 'assets/img/team/t2.jpeg' %}" alt="Image Not Found" style="height: 500px; object-fit: cover;">
                             <img src="{% static 'assets/img/shape/31.png' %}" alt="Image Not Found">
                             <div class="social-info">
                                 <div class="social-overlay">
@@ -1225,21 +1161,52 @@ document.addEventListener("DOMContentLoaded", function () {
                                         <i class="fas fa-plus"></i>
                                     </div>
                                 </div>
-                                <a href="contact-us.html"><i class="fas fa-comments-alt"></i></a>
+                                <a href=""><i class="fas fa-comments-alt"></i></a>
                             </div>
                         </div>
                         <div class="info">
-                            <h4><a href="team-details.html">Kevin Martin</a></h4>
-                            <span>Immigration Officer</span>
+                            <h4><a href="">SAJEER POOVENCHERI</a></h4>
+                            <span>Managing Director</span>
                         </div>
                     </div>
                 </div>
                 <!-- End Single Item -->
+                 <div class="col-lg-4 col-md-6 mb-30">
+                    <div class="team-style-one-item wow fadeInUp" data-wow-delay="200ms">
+                        <div class="thumb">
+                            <img src="{% static 'assets/img/team/t5.jpeg' %}" alt="Image Not Found" style="height: 500px; object-fit: cover;">
+                            <img src="{% static 'assets/img/shape/31.png' %}" alt="Image Not Found">
+                            <div class="social-info">
+                                <div class="social-overlay">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="icon">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                </div>
+                                <a href=""><i class="fas fa-comments-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h4><a href="">SHANEEB EDANATTU</a></h4>
+                            <span>Managing Director</span>
+                        </div>
+                    </div>
+                </div>
                 <!-- Single Item -->
                 <div class="col-lg-4 col-md-6 mb-30">
                     <div class="team-style-one-item wow fadeInUp" data-wow-delay="200ms">
                         <div class="thumb">
-                            <img src="{% static 'assets/img/team/7.jpg' %}" alt="Image Not Found">
+                            <img src="{% static 'assets/img/team/t3.jpeg' %}" alt="Image Not Found" style="height: 500px; object-fit: cover;">
                             <img src="{% static 'assets/img/shape/31.png' %}" alt="Image Not Found">
                             <div class="social-info">
                                 <div class="social-overlay">
@@ -1258,16 +1225,50 @@ document.addEventListener("DOMContentLoaded", function () {
                                         <i class="fas fa-plus"></i>
                                     </div>
                                 </div>
-                                <a href="contact-us.html"><i class="fas fa-comments-alt"></i></a>
+                                <a href=""><i class="fas fa-comments-alt"></i></a>
                             </div>
                         </div>
                         <div class="info">
-                            <h4><a href="team-details.html">Sarah Albert</a></h4>
-                            <span>Immigration Specialist</span>
+                            <h4><a href="">NABEEL MUHAMMED</a></h4>
+                            <span>CTO</span>
                         </div>
                     </div>
                 </div>
                 <!-- End Single Item -->
+                   <!-- Single Item -->
+                <div class="col-lg-4 col-md-6 mb-30">
+                    <div class="team-style-one-item wow fadeInUp" data-wow-delay="200ms">
+                        <div class="thumb">
+                            <img src="{% static 'assets/img/team/t4.jpeg' %}" alt="Image Not Found" style="height: 500px; object-fit: cover;">
+                            <img src="{% static 'assets/img/shape/31.png' %}" alt="Image Not Found">
+                            <div class="social-info">
+                                <div class="social-overlay">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="icon">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                </div>
+                                <a href=""><i class="fas fa-comments-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h4><a href="">SONU RESWIN</a></h4>
+                            <span>Advertising Executive</span>
+                        </div>
+                    </div>
+                </div>
+                  <!-- Single Item -->
+                
             </div>
         </div>
     </div>
@@ -1399,192 +1400,294 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 <!-- End FAQ  -->
 
-    <!-- Start Course 
+    <!-- Start Universities 
     ============================================= -->
-    <div id="coaching" class="course-style-one-area default-padding-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-                    <div class="site-heading text-center">
-                        <h4 class="sub-title">Coaching we provide</h4>
-                        <h2 class="title split-text">Discover the elite training programs you need</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="course-style-one-items">
-            <div class="container">
-                <!-- Navigation -->
-                <div class="course-style-one-nav">
-                    <div class="course-carousel-prev"><i class="fas fa-long-arrow-left"></i></div>
-                    <div class="course-carousel-next"><i class="fas fa-long-arrow-right"></i></div>
-                </div>
-                <!-- Slider main container -->
-                <div class="course-style-one-carousel swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Single Item -->
-                        <div class="swiper-slide">
-                            <div class="course-style-one-item">
-                                <img src="{% static 'assets/img/course/1.jpg' %}" alt="Image Not Found">
-                                <div class="overlay-title">
-                                    <h4><a href="coaching-details.html">Entrepreneurs Starting</a></h4>
-                                    <div class="icon">
-                                        <img src="{% static 'assets/img/icon/3.png' %}" alt="Image Not Found">
-                                    </div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="icon">
-                                        <img src="{% static 'assets/img/icon/3.png' %}" alt="Image Not Found">
-                                    </div>
-                                    <h4><a href="coaching-details.html">Entrepreneurs Starting</a></h4>
-                                    <p>
-                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Item -->
-                        <!-- Single Item -->
-                        <div class="swiper-slide">
-                            <div class="course-style-one-item">
-                                <img src="{% static 'assets/img/course/2.jpg' %}" alt="Image Not Found">
-                                <div class="overlay-title">
-                                    <h4><a href="coaching-details.html">Visa Training</a></h4>
-                                    <div class="icon">
-                                        <img src="{% static 'assets/img/icon/4.png' %}" alt="Image Not Found">
-                                    </div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="icon">
-                                        <img src="{% static 'assets/img/icon/4.png' %}" alt="Image Not Found">
-                                    </div>
-                                    <h4><a href="coaching-details.html">Visa Training</a></h4>
-                                    <p>
-                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Item -->
-                        <!-- Single Item -->
-                        <div class="swiper-slide">
-                            <div class="course-style-one-item">
-                                <img src="{% static 'assets/img/course/3.jpg' %}" alt="Image Not Found">
-                                <div class="overlay-title">
-                                    <h4><a href="coaching-details.html">Immigration law</a></h4>
-                                    <div class="icon">
-                                        <img src="{% static 'assets/img/icon/5.png' %}" alt="Image Not Found">
-                                    </div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="icon">
-                                        <img src="{% static 'assets/img/icon/5.png' %}" alt="Image Not Found">
-                                    </div>
-                                    <h4><a href="coaching-details.html">Immigration law</a></h4>
-                                    <p>
-                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Item -->
-                        <!-- Single Item -->
-                        <div class="swiper-slide">
-                            <div class="course-style-one-item">
-                                <img src="{% static 'assets/img/course/4.jpg' %}" alt="Image Not Found">
-                                <div class="overlay-title">
-                                    <h4><a href="coaching-details.html">Business Development</a></h4>
-                                    <div class="icon">
-                                        <img src="{% static 'assets/img/icon/6.png' %}" alt="Image Not Found">
-                                    </div>
-                                </div>
-                                <div class="overlay">
-                                    <div class="icon">
-                                        <img src="{% static 'assets/img/icon/6.png' %}" alt="Image Not Found">
-                                    </div>
-                                    <h4><a href="coaching-details.html">Business Development </a></h4>
-                                    <p>
-                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Single Item -->
-                    </div>
+<div id="universities" class="course-style-one-area default-padding-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                <div class="site-heading text-center">
+                    <h4 class="sub-title">Top Partner Universities</h4>
+                    <h2 class="title split-text">Explore Our Global University Network</h2>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Course  -->
+    <div class="course-style-one-items">
+        <div class="container">
+            <!-- Navigation -->
+            <div class="course-style-one-nav">
+                <div class="course-carousel-prev"><i class="fas fa-long-arrow-left"></i></div>
+                <div class="course-carousel-next"><i class="fas fa-long-arrow-right"></i></div>
+            </div>
+            <!-- Slider main container -->
+            <div class="course-style-one-carousel swiper">
+                <div class="swiper-wrapper">
 
-    <!-- Start Testimonial 
-    ============================================= -->
-    <div class="tesimonial-style-one-area text-center default-padding bg-cover" style="background-image: url('{% static 'assets/img/shape/map.png' %}');">
-        <div class="container">
-            <div class="testimonial-style-one-items">
-                <div class="row">
-                    <div class="col-lg-8 offset-lg-2">
-                        <div class="testimonial-style-one-contents">
-                            <div class="testimonial-one-shape">
-                                <img class="wow fadeInUp" src="{% static 'assets/img/team/7.jpg' %}" alt="Image Not Found">
-                                <img class="wow fadeInUp" src="{% static 'assets/img/team/8.jpg' %}" alt="Image Not Found">
-                                <img class="wow fadeInUp" data-wow-delay="100ms" src="{% static 'assets/img/team/9.jpg' %}" alt="Image Not Found">
-                                <img class="wow fadeInUp" data-wow-delay="100ms" src="{% static 'assets/img/team/10.jpg' %}" alt="Image Not Found">
-                            </div>
-                            <!-- Slider main container -->
-                            <div class="testimonial-style-one-carousel wow fadeInUp swiper">
-                                <!-- Additional required wrapper -->
-                                <div class="swiper-wrapper">
-                                    <!-- Single Item -->
-                                    <div class="swiper-slide">
-                                        <div class="testimonial-style-one-item">
-                                            <div class="tm-provider">
-                                                <img src="{% static 'assets/img/team/10.jpg' %}" alt="Image Not Found">
-                                            </div>
-                                            <div class="reviews">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
-                                            <h3>Positive and supportive interactions</h3>
-                                            <p>
-                                                Objectively administrate bleeding-edge best practices through interactive niche market. Distinctively productize Phosphorescently promote excellent.Sed ut perspiciatis unde omnis isteerror voluptatem Distinctively.
-                                            </p>
-                                            <div class="tm-provider-detaisl">
-                                                <h4>Nazat Sarwar</h4>
-                                                <span>Web Developer</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Item -->
-                                    <!-- Single Item -->
-                                    <div class="swiper-slide">
-                                        <div class="testimonial-style-one-item">
-                                            <div class="tm-provider">
-                                                <img src="{% static 'assets/img/team/11.jpg' %}" alt="Image Not Found">
-                                            </div>
-                                            <div class="reviews">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
-                                            <h3>Courteous and attentive support</h3>
-                                            <p>
-                                                Regulation administrate bleeding-edge best practices through interactive niche market. Distinctively productize Phosphorescently promote excellent.Sed ut perspiciatis unde omnis isteerror voluptatem Distinctively.
-                                            </p>
-                                            <div class="tm-provider-detaisl">
-                                                <h4>Kevin Martin</h4>
-                                                <span>Product Manager</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Item -->
+                    <!-- Harvard University -->
+                    <div class="swiper-slide">
+                        <div class="course-style-one-item">
+                            <img src="{% static 'assets/img/banner/harvard.jpg' %}" alt="Harvard University" style="height: 550px; object-fit: cover;">
+                            <div class="overlay-title">
+                                <h4><a href="{% url 'harvard_details' %}">Harvard University</a></h4>
+                                <div class="icon">
+                                    <img src="{% static 'assets/img/icon/5.png' %}" alt="Icon">
                                 </div>
+                            </div>
+                            <div class="overlay">
+                                <div class="icon">
+                                    <img src="{% static 'assets/img/icon/5.png' %}" alt="Icon">
+                                </div>
+                                <h4><a href="{% url 'harvard_details' %}">Harvard University</a></h4>
+                                <p>
+                                    One of the world’s top universities offering programs in business, engineering, law, and medicine.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Oxford University -->
+                    <div class="swiper-slide">
+                        <div class="course-style-one-item">
+                            <img src="{% static 'assets/img/banner/oxford.jpg' %}" alt="University of Oxford" style="height: 550px; object-fit: cover;">
+                            <div class="overlay-title">
+                                <h4><a href="{% url 'oxford_details' %}">University of Oxford</a></h4>
+                                <div class="icon">
+                                    <img src="{% static 'assets/img/icon/5.png' %}" alt="Icon">
+                                </div>
+                            </div>
+                            <div class="overlay">
+                                <div class="icon">
+                                    <img src="{% static 'assets/img/icon/5.png' %}" alt="Icon">
+                                </div>
+                                <h4><a href="{% url 'oxford_details' %}">University of Oxford</a></h4>
+                                <p>
+                                    Renowned for academic excellence and research in science, humanities, and social sciences.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bologna University -->
+                    <div class="swiper-slide">
+                        <div class="course-style-one-item">
+                            <img src="{% static 'assets/img/banner/bologna.jpg' %}" alt="Bologna University" style="height: 550px; object-fit: cover;">
+                            <div class="overlay-title">
+                                <h4><a href="{% url 'bologna_details' %}">Bologna University</a></h4>
+                                <div class="icon">
+                                    <img src="{% static 'assets/img/icon/5.png' %}" alt="Icon">
+                                </div>
+                            </div>
+                            <div class="overlay">
+                                <div class="icon">
+                                    <img src="{% static 'assets/img/icon/5.png' %}" alt="Icon">
+                                </div>
+                                <h4><a href="{% url 'bologna_details' %}">Bologna University</a></h4>
+                                <p>
+                                    Italy’s oldest university offering a range of courses in medicine, law, and arts with a rich academic tradition.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sapienza University -->
+                    <div class="swiper-slide">
+                        <div class="course-style-one-item">
+                            <img src="{% static 'assets/img/banner/sapienza.jpg' %}" alt="Sapienza University" style="height: 550px; object-fit: cover;">
+                            <div class="overlay-title">
+                                <h4><a href="{% url 'sapienza_details' %}">Sapienza University</a></h4>
+                                <div class="icon">
+                                    <img src="{% static 'assets/img/icon/5.png' %}" alt="Icon">
+                                </div>
+                            </div>
+                            <div class="overlay">
+                                <div class="icon">
+                                    <img src="{% static 'assets/img/icon/5.png' %}" alt="Icon">
+                                </div>
+                                <h4><a href="{% url 'sapienza_details' %}">Sapienza University</a></h4>
+                                <p>
+                                    Offers high-quality programs in engineering, medicine, and humanities with international collaborations.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ludwig University -->
+                    <div class="swiper-slide">
+                        <div class="course-style-one-item">
+                            <img src="{% static 'assets/img/banner/ludwig.jpg' %}" alt="Ludwig University" style="height: 550px; object-fit: cover;">
+                            <div class="overlay-title">
+                                <h4><a href="{% url 'ludwig_details' %}">Ludwig University</a></h4>
+                                <div class="icon">
+                                    <img src="{% static 'assets/img/icon/5.png' %}" alt="Icon">
+                                </div>
+                            </div>
+                            <div class="overlay">
+                                <div class="icon">
+                                    <img src="{% static 'assets/img/icon/5.png' %}" alt="Icon">
+                                </div>
+                                <h4><a href="{% url 'ludwig_details' %}">Ludwig University</a></h4>
+                                <p>
+                                    German university with top-ranked programs in natural sciences, life sciences, and medicine.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Asian Medical Institute -->
+                    <div class="swiper-slide">
+                        <div class="course-style-one-item">
+                            <img src="{% static 'assets/img/banner/asiamedical.jpg' %}" alt="Asian Medical Institute" style="height: 550px; object-fit: cover;">
+                            <div class="overlay-title">
+                                <h4><a href="{% url 'asian_medical_institute_details' %}">Asian Medical Institute</a></h4>
+                                <div class="icon">
+                                    <img src="{% static 'assets/img/icon/5.png' %}" alt="Icon">
+                                </div>
+                            </div>
+                            <div class="overlay">
+                                <div class="icon">
+                                    <img src="{% static 'assets/img/icon/5.png' %}" alt="Icon">
+                                </div>
+                                <h4><a href="{% url 'asian_medical_institute_details' %}">Asian Medical Institute</a></h4>
+                                <p>
+                                    Focused on medical and health sciences education with experienced faculty and global exposure.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kyrgyz State Academy -->
+                    <div class="swiper-slide">
+                        <div class="course-style-one-item">
+                            <img src="{% static 'assets/img/banner/kyrgyz.jpg' %}" alt="Kyrgyz State Academy" style="height: 550px; object-fit: cover;">
+                            <div class="overlay-title">
+                                <h4><a href="{% url 'kyrgyz_state_academy_details' %}">Kyrgyz State Academy</a></h4>
+                                <div class="icon">
+                                    <img src="{% static 'assets/img/icon/5.png' %}" alt="Icon">
+                                </div>
+                            </div>
+                            <div class="overlay">
+                                <div class="icon">
+                                    <img src="{% static 'assets/img/icon/5.png' %}" alt="Icon">
+                                </div>
+                                <h4><a href="{% url 'kyrgyz_state_academy_details' %}">Kyrgyz State Academy</a></h4>
+                                <p>
+                                    Offers programs in medicine, engineering, and sciences with strong international student support.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Universities -->
+
+  <!-- Start Testimonial 
+============================================= -->
+<div class="tesimonial-style-one-area text-center default-padding bg-cover" style="background-image: url('{% static 'assets/img/shape/map.png' %}');">
+    <div class="container">
+        <div class="testimonial-style-one-items">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="testimonial-style-one-contents">
+                        <div class="testimonial-one-shape">
+                            <img class="wow fadeInUp" src="{% static 'assets/img/team/7.jpg' %}" alt="Image Not Found">
+                            <img class="wow fadeInUp" src="{% static 'assets/img/team/8.jpg' %}" alt="Image Not Found">
+                            <img class="wow fadeInUp" data-wow-delay="100ms" src="{% static 'assets/img/team/9.jpg' %}" alt="Image Not Found">
+                            <img class="wow fadeInUp" data-wow-delay="100ms" src="{% static 'assets/img/team/10.jpg' %}" alt="Image Not Found">
+                        </div>
+                        <!-- Slider main container -->
+                        <div class="testimonial-style-one-carousel wow fadeInUp swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                
+                                <!-- Single Item -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-style-one-item">
+                                        <div class="tm-provider">
+                                            <img src="{% static 'assets/img/team/10.jpg' %}" alt="Image Not Found">
+                                        </div>
+                                        <div class="reviews">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        </div>
+                                        <h3>Niranjana Ram, Milan</h3>
+                                        <p>
+                                            I never thought studying in Italy could be this easy. From day one, Edusetin made me feel confident and well-prepared. Thanks to their step-by-step guidance, I secured admission as an Erasmus Mundus Scholar. Today, I’m living my dream in Milan, and I couldn’t be more grateful.
+                                        </p>
+                                        <div class="tm-provider-detaisl">
+                                            <h4>Niranjana Ram</h4>
+                                            <span>Milan</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Item -->
+
+                                <!-- Single Item -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-style-one-item">
+                                        <div class="tm-provider">
+                                            <img src="{% static 'assets/img/team/11.jpg' %}" alt="Image Not Found">
+                                        </div>
+                                        <div class="reviews">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        </div>
+                                        <h3>Shaneeb Edanattu, Turin</h3>
+                                        <p>
+                                            Before joining, I felt completely lost about how to move forward with my higher education abroad. But Edusetin gave me the right direction and support. Now, I am preparing for my final departure to the Polytechnic of Turin to pursue Climate Studies with an amazing 6-month internship opportunity.
+                                        </p>
+                                        <div class="tm-provider-detaisl">
+                                            <h4>Shaneeb Edanattu</h4>
+                                            <span>Turin</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Item -->
+
+                                <!-- Single Item -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-style-one-item">
+                                        <div class="tm-provider">
+                                            <img src="{% static 'assets/img/team/8.jpg' %}" alt="Image Not Found">
+                                        </div>
+                                        <div class="reviews">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        </div>
+                                        <h3>Jensen Jerone, Pavia</h3>
+                                        <p>
+                                            Studying Food Science abroad was always my dream, but I had no idea where to begin. Edusetin changed that for me. With their detailed guidance, everything from course selection to application became smooth. Now, I’m admitted to the University of Pavia for the 2025 intake.
+                                        </p>
+                                        <div class="tm-provider-detaisl">
+                                            <h4>Jensen Jerone</h4>
+                                            <span>Pavia</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Item -->
+
+                                <!-- Single Item -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-style-one-item">
+                                        <div class="tm-provider">
+                                            <img src="{% static 'assets/img/team/7.jpg' %}" alt="Image Not Found">
+                                        </div>
+                                        <div class="reviews">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        </div>
+                                        <h3>Pooja Bindu Sadees, Pavia</h3>
+                                        <p>
+                                            The University of Pavia was my top priority for Food Science, but the admission process felt overwhelming. Edusetin’s expert support in documentation, interview prep, and application submission gave me confidence. Now I feel fully prepared to start this exciting new chapter in 2025.
+                                        </p>
+                                        <div class="tm-provider-detaisl">
+                                            <h4>Pooja Bindu Sadees</h4>
+                                            <span>Pavia</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Item -->
+
                             </div>
                         </div>
                     </div>
@@ -1592,7 +1695,9 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         </div>
     </div>
-    <!-- End Testimonial -->
+</div>
+<!-- End Testimonial -->
+
 
     <!-- Start Call to action 
     ============================================= -->
@@ -1628,97 +1733,96 @@ document.addEventListener("DOMContentLoaded", function () {
     <!-- End Call to action  -->
 
 
-
-
-    <!-- Start Blog 
-    ============================================= -->
-    <div id="blog" class="home-blog-area default-padding bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-                    <div class="site-heading text-center">
-                        <h4 class="sub-title">News & Updates</h4>
-                        <h2 class="title split-text">Recent story & articles <br> in our community</h2>
-                    </div>
+<!-- Start Blog 
+============================================= -->
+<div id="blog" class="home-blog-area default-padding bg-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                <div class="site-heading text-center">
+                    <h4 class="sub-title">Study Abroad Insights</h4>
+                    <h2 class="title split-text">Latest articles & guides <br> for international students</h2>
                 </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <!-- Single Item -->
-                <div class="col-lg-6 col-md-6">
-                    <div class="home-blog-style-one wow fadeInUp">
-                        <div class="thumb">
-                            <img src="{% static 'assets/img/blog/1.jpg' %}" alt="Image Not Found">
-                        </div>
-                        <div class="info">
-                            <div class="inner">
-                                <div class="meta">
-                                    <div class="date">
-                                        <strong>29</strong> Jan
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <ul class="blog-meta">
-                                        <li>
-                                            <a href="#"><i class="far fa-user-circle"></i> Md Sohag</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="far fa-comments"></i> 18 Comments</a>
-                                        </li>
-                                    </ul>
-                                    <h3><a href="blog-single-with-sidebar.html">Picked up a Brussels burger Sprouts with ham</a></h3>
-                                    <a href="blog-single-with-sidebar.html" class="btn-regular">
-                                        Read More
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 17L17 1H7.8" stroke="#232323" stroke-width="2"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Item -->
-                <!-- Single Item -->
-                <div class="col-lg-6 col-md-6">
-                    <div class="home-blog-style-one wow fadeInUp" data-wow-delay="100ms">
-                        <div class="thumb">
-                            <img src="{% static 'assets/img/blog/2.jpg' %}" alt="Image Not Found">
-                        </div>
-                        <div class="info">
-                            <div class="inner">
-                                <div class="meta">
-                                    <div class="date">
-                                        <strong>24</strong> Mar
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <ul class="blog-meta">
-                                        <li>
-                                            <a href="#"><i class="far fa-user-circle"></i> Md Sohag</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="far fa-comments"></i> 15 Comments</a>
-                                        </li>
-                                    </ul>
-                                    <h3><a href="blog-single-with-sidebar.html">This prefabrice passive house is highly sustainable</a></h3>
-                                    <a href="blog-single-with-sidebar.html" class="btn-regular">
-                                        Read More
-                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 17L17 1H7.8" stroke="#232323" stroke-width="2"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Item -->
             </div>
         </div>
     </div>
-    <!-- End Blog  -->
+    <div class="container">
+        <div class="row">
+            <!-- Single Item -->
+            <div class="col-lg-6 col-md-6">
+                <div class="home-blog-style-one wow fadeInUp">
+                    <div class="thumb">
+                        <img src="{% static 'assets/img/blog/1.jpg' %}" alt="Study Abroad Guide" style="width:100%; height:350px; object-fit:cover;">
+                    </div>
+                    <div class="info">
+                        <div class="inner">
+                            <div class="meta">
+                                <div class="date">
+                                    <strong>12</strong> Aug
+                                </div>
+                            </div>
+                            <div class="content">
+                                <ul class="blog-meta">
+                                    <li>
+                                        <a href="#"><i class="far fa-user-circle"></i> EduStation Team</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="far fa-comments"></i> 25 Comments</a>
+                                    </li>
+                                </ul>
+                                <h3><a href="{% url 'harvard_details' %}">Top 5 Countries for Affordable Higher Education</a></h3>
+                                <a href="{% url 'harvard_details' %}" class="btn-regular">
+                                    Read More
+                                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 17L17 1H7.8" stroke="#232323" stroke-width="2"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Single Item -->
+
+            <!-- Single Item -->
+            <div class="col-lg-6 col-md-6">
+                <div class="home-blog-style-one wow fadeInUp" data-wow-delay="100ms">
+                    <div class="thumb">
+                        <img src="{% static 'assets/img/blog/2.jpg' %}" alt="Scholarships Abroad" style="width:100%; height:350px; object-fit:cover;">
+                    </div>
+                    <div class="info">
+                        <div class="inner">
+                            <div class="meta">
+                                <div class="date">
+                                    <strong>28</strong> Jul
+                                </div>
+                            </div>
+                            <div class="content">
+                                <ul class="blog-meta">
+                                    <li>
+                                        <a href="#"><i class="far fa-user-circle"></i> EduStation Experts</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="far fa-comments"></i> 30 Comments</a>
+                                    </li>
+                                </ul>
+                                <h3><a href="{% url 'oxford_details' %}">How to Apply for Scholarships Abroad in 2025</a></h3>
+                                <a href="{% url 'oxford_details' %}" class="btn-regular">
+                                    Read More
+                                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 17L17 1H7.8" stroke="#232323" stroke-width="2"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Single Item -->
+        </div>
+    </div>
+</div>
+<!-- End Blog -->
 
     <!-- Start Footer 
     ============================================= -->
@@ -1790,43 +1894,36 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <h4 class="widget-title">Quick Links</h4>
                                 <ul>
                                     <li>
-                                        <a href="about-us.html">Compnay Profile</a>
+                                        <a href="{% url 'index' %}">Home</a>
                                     </li>
                                     <li>
-                                        <a href="contact-us.html">Help Center</a>
+                                        <a href="{% url  'about' %}">About</a>
                                     </li>
                                     <li>
-                                        <a href="about-us-2.html">Career</a>
+                                        <a href="{% url 'blogs' %}">Blogs</a>
                                     </li>
                                     <li>
-                                        <a href="about-us.html">Terms & Conditions</a>
+                                        <a href="{% url 'gallery' %}">Gallery</a>
                                     </li>
                                     <li>
-                                        <a href="blog-with-sidebar.html">News & Blog</a>
+                                        <a href="{% url 'contact-us' %}">Terms & Conditions</a>
                                     </li>
+                                    
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 footer-item">
                             <div class="f-item link">
                                 <h4 class="widget-title">Our Services</h4>
-                                <ul>
-                                    <li>
-                                        <a href="visa-details.html">Application Assistance</a>
-                                    </li>
-                                    <li>
-                                        <a href="visa-details.html">Visa Type Guidance</a>
-                                    </li>
-                                    <li>
-                                        <a href="visa-details.html">Documentation Support</a>
-                                    </li>
-                                    <li>
-                                        <a href="visa-details.html">Immigration Advice</a>
-                                    </li>
-                                    <li>
-                                        <a href="visa-details.html">Immigration Lawyers</a>
-                                    </li>
+                              <ul>
+                                                  <li><a href="{% url 'career_counselling_details' %}">Career Counselling</a></li>
+                                <li><a href="{% url 'course_selection_details' %}">Selection of Course, Country and University</a></li>
+                                <li><a href="{% url 'test_preparation_details' %}">Test Preparations</a></li>
+                                <li><a href="{% url 'application_process_details' %}">Application Process</a></li>
+                                <li><a href="{% url 'visa_guidance_details' %}">Expert Visa Guidance</a></li>
                                 </ul>
+
+
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 footer-item">
