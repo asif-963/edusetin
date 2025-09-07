@@ -232,7 +232,7 @@ animate();
                 <h4 class="sub-title">Your Abroad Studies Journey</h4>
                 <h2 class="title">Explore EduSetin's Programs Worldwide</h2>
                 <p>Get expert guidance and support for your international education. Learn more about courses, scholarships, and admission procedures.</p>
-                <a href="apply-form.html" class="btn-style-one circle mt-3">
+                <a href="{% url 'apply-form' %}" class="btn-style-one circle mt-3">
                     Apply Now <span></span>
                 </a>
             </div>
@@ -475,15 +475,56 @@ document.addEventListener("DOMContentLoaded", function () {
 
                         <!-- Courses Dropdown -->
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="{% url 'course-details' %}">Computer Science</a></li>
-                                <li><a href="{% url 'course-details' %}">Data Science</a></li>
-                                <li><a href="{% url 'course-details' %}">Business Management</a></li>
-                                <li><a href="{% url 'course-details' %}">Medicine</a></li>
-                                <li><a href="{% url 'course-details' %}">Law</a></li>
-                            </ul>
-                        </li>
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses</a>
+  <ul class="dropdown-menu">
+
+    <!-- Medical Category -->
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Medical</a>
+      <ul class="dropdown-menu">
+        <li><a href="medicine.html">Medicine</a></li>
+        <li><a href="nursing.html">Nursing</a></li>
+        <li><a href="pharmacy.html">Pharmacy</a></li>
+        <li><a href="dentistry.html">Dentistry</a></li>
+      </ul>
+    </li>
+
+    <!-- Engineering Category -->
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Engineering</a>
+      <ul class="dropdown-menu">
+        <li><a href="civil-engineering.html">Civil Engineering</a></li>
+        <li><a href="mechanical-engineering.html">Mechanical Engineering</a></li>
+        <li><a href="electrical-engineering.html">Electrical Engineering</a></li>
+        <li><a href="computer-engineering.html">Computer Engineering</a></li>
+      </ul>
+    </li>
+
+    <!-- Management Category -->
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Management</a>
+      <ul class="dropdown-menu">
+        <li><a href="mba.html">MBA</a></li>
+        <li><a href="finance.html">Finance</a></li>
+        <li><a href="marketing.html">Marketing</a></li>
+      </ul>
+    </li>
+
+    <!-- Law Category -->
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Law</a>
+      <ul class="dropdown-menu">
+        <li><a href="corporate-law.html">Corporate Law</a></li>
+        <li><a href="criminal-law.html">Criminal Law</a></li>
+        <li><a href="international-law.html">International Law</a></li>
+      </ul>
+    </li>
+
+   
+  </ul>
+</li>
+
+
                          <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Others <b class="caret"></b></a>
                             <ul class="dropdown-menu">
@@ -539,9 +580,9 @@ document.addEventListener("DOMContentLoaded", function () {
                             </li>
                            
                             <li>
-                                <a href="{% url 'apply-form' %}" class="btn-style-one">
-                                    Get Your Job Visa <span></span>
-                                </a>
+                               <a href="https://edusetinglobalcareers.com/" target="_blank" rel="noopener noreferrer" class="btn-style-one" >
+                                        Get Your Job Visa <span></span>
+                                    </a>
                                 </li>
                         </ul>
                     </div>
@@ -640,7 +681,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                         Get expert help in securing international job visas. We guide you through visa applications, documentation, and smooth processing for your dream career abroad.
                                     </p>
                                     <div class="button">
-                                        <a href="{% url 'apply-form' %}" class="btn-style-one circle">Apply for Job Visa<span></span></a>
+                                        <a href="https://edusetinglobalcareers.com/" target="_blank" rel="noopener noreferrer" class="btn-style-one circle">Apply for Job Visa<span></span></a>
                                     </div>
                                 </div>
                             </div>
@@ -1577,7 +1618,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <div class="call-action-info">
                             <h4 class="sub-title">Get free online visa</h4>
                             <h2 class="title split-text">Reliable visa & immigration experts</h2>
-                            <a href="apply-form.html" class="btn-style-one circle mt-10 wow fadeInUp" data-wow-delay="100ms">Apply for visa <span></span></a>
+                            <a href="https://edusetinglobalcareers.com/" target="_blank" rel="noopener noreferrer" class="btn-style-one circle mt-10 wow fadeInUp" data-wow-delay="100ms">Apply for visa <span></span></a>
                         </div>
                     </div>
                 </div>
