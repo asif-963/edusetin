@@ -260,15 +260,19 @@ animate();
                     </button>
                     
                     <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li class="dropdown megamenu-fw megamenu-style-one">
-                            <a href="{% url 'index' %}" class="" data-toggle="dropdown">Home</a>
-                          
-                        </li>
-                        <li>
-                            <a href="{% url 'about' %}">About</a>
-                        </li>
+                       
+                       
 
-                         
+                         <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Universities <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'service-details' %}">Career Counseling</a></li>
+                                <li><a href="{% url 'service-details' %}">Application Process Guidance</a></li>
+                                <li><a href="{% url 'service-details' %}">SOP & Essay Writing</a></li>
+                                <li><a href="{% url 'service-details' %}">Visa Assistance</a></li>
+                                <li><a href="{% url 'service-details' %}">Interview Preparation</a></li>
+                            </ul>
+                        </li>
 
                          
                         <li class="dropdown">
@@ -306,15 +310,18 @@ animate();
                                 <li><a href="{% url 'course-details' %}">Law</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="{% url 'blogs' %}">Blog</a>
+                         <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Others <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                 <li><a href="{% url 'about' %}">About</a></li>
+                                <li><a href="{% url 'blogs' %}">Blog</a></li>
+                                <li> <a href="{% url 'gallery' %}">Gallery</a></li>
+                                 <li><a href="{% url 'contact-us' %}">Contact</a></li>
+                            </ul>
                         </li>
-
-                         <li>
-                            <a href="{% url 'gallery' %}">Gallery</a>
-                        </li>
+                      
                         <li>
-                            <a href="{% url 'contact-us' %}">Contact</a>
+                           
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -323,8 +330,45 @@ animate();
                     <!-- Start Atribute Navigation -->
                     <div class="attr-nav">
                         <ul>
+                            <li class="contact">
+                                <div class="call">
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/phone.png' %}" alt="Image Not Found">
+                                    </div>
+                                    <div class="info">
+                                        <p>Need to discuss?</p>
+                                        <h5>
+                                            <a href="{% url 'apply-form' %}" class="appointment-btn">Schedule Now</a>
+                                            </h5>
+
+                                            <style>
+                                                .appointment-btn {
+                                                    display: inline-block;
+                                                    background-color: #D3202A; /* your theme color */
+                                                    
+                                                    padding: 10px 20px;
+                                                    border-radius: 8px;
+                                                    font-size: 16px;
+                                                    font-weight: 600;
+                                                    text-decoration: none;
+                                                    transition: background 0.3s ease;
+                                                    }
+
+                                                    .appointment-btn:hover {
+                                                    background-color: #b91c1c; /* darker shade on hover */
+                                                    
+                                                    }
+
+                                            </style>
+                                    </div>
+                                </div>
+                            </li>
                            
-                            <li><a href="{% url 'apply-form' %}" class="btn-style-one">Appointment <span></span></a></li>
+                            <li>
+                                <a href="{% url 'apply-form' %}" class="btn-style-one">
+                                    Get Your Job Visa <span></span>
+                                </a>
+                                </li>
                         </ul>
                     </div>
                     <!-- End Atribute Navigation -->
@@ -463,15 +507,19 @@ animate();
                     </div>
                     <!-- End Single Widget -->
 
-                    <div class="single-widget course-info-widget" style="background-image: url(assets/img/shape/wooden.png);">
-                        <h4 class="widget-title">Visa Support Benefits</h4>
-                        <ul class="course-info-list">
-                            <li><i class="fas fa-user"></i> Dedicated Consultants</li>
-                            <li><i class="fas fa-file-alt"></i> Complete Documentation Support</li>
-                            <li><i class="fas fa-check-circle"></i> High Visa Success Rate</li>
-                            <li><i class="fas fa-briefcase"></i> Country-Specific Guidance</li>
-                        </ul>
-                    </div>
+                     <div class="single-widget text-light appl-visa-widget" style="background-image: url('{% static 'assets/img/shape/1.jpg' %}');">
+                            <h4>Dream Tour</h4>
+                            <h2>Explore The World</h2>
+                            <a href="{% url 'about' %}" class="btn-style-one btn-light circle">Discover More <span></span></a>
+                        </div>
+                        <!-- Single Widget -->
+                        <div class="single-widget widget-brochure">
+                            <h4 class="widget-title">Downloads</h4>
+                            <ul>
+                                <li><a href="#"><i class="fas fa-file-pdf"></i> Appiication Form </a></li>
+                                <li><a href="#"><i class="fas fa-file-word"></i> Terms & Conditions </a></li>
+                            </ul>
+                        </div>
 
                   
 
