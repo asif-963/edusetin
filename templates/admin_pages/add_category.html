@@ -1,0 +1,39 @@
+{% extends "admin_pages/base.html" %}
+{% load static %}
+
+{% block title %}Add Category | Admin Dashboard{% endblock %}
+
+{% block content %}
+<div class="dashboard sp_bottom_100">
+    <div class="container-fluid full__width__padding">
+        <div class="row">
+            <div class="col-xl-9 col-lg-9 col-md-12">
+                <div class="dashboard__section__title">
+                    <h4 class="mb-0">Add Category</h4>
+                    <p class="text-muted mt-2">Create a new category for gallery images</p>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <form method="post" class="needs-validation form-wrapper" novalidate>
+                            {% csrf_token %}
+                            <div class="mb-4">
+                                <label for="categoryName" class="form-label">Category Name <span class="text-danger">*</span></label>
+                                <input type="text" name="name" id="categoryName" class="form-control modern-input" required>
+                                <div class="invalid-feedback">Please enter a category name.</div>
+                            </div>
+
+                            <div class="dashboard__form__button">
+                                <button type="submit" class="btn btn-primary">Add Category</button>
+
+    <!-- Cancel Button -->
+    <a href="{% url 'category_list' %}" class="btn btn-secondary">Cancel</a>
+                            </div>
+                        </form>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

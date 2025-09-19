@@ -1,0 +1,2593 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Edusetin Study Abroad (EDUSETIN LLP), located in Areakode, Malappuram, Kerala, offers expert guidance for studying in Italy, Germany, Singapore & Kyrgyzstan. Services include MBBS, bachelor’s & master’s admissions, visa assistance, scholarships & test prep.
+">
+
+    <!-- ========== Page Title ========== -->
+    <title>Edusetin Study Abroad – Trusted Overseas Education Consultants in Kerala</title>
+
+    <!-- ========== Favicon Icon ========== -->
+<link rel="shortcut icon" href="{% static 'assets/img/favicon.ico' %}" type="image/x-icon">
+
+<!-- ========== Start Stylesheet ========== -->
+<link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/font-awesome.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/visaco-icons.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/magnific-popup.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/swiper-bundle.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/animate.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/validnavs.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/helper.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/unit-test.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+<link href="{% static 'style.css' %}" rel="stylesheet">
+
+    
+
+</head>
+
+
+
+<body>
+    <style>
+  /* Hide default cursor */
+body {
+  cursor: none;
+}
+
+/* Dot cursor */
+.cursor-dot,
+.cursor-circle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+/* Small dot */
+.cursor-dot {
+  width: 13px;
+  height: 13px;
+  background-color: #4faaff; /* Your brand color */
+  border-radius: 70%;
+}
+
+/* Circular outline */
+.cursor-circle {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #4faaff; /* Your brand color */
+  border-radius: 50%;
+  opacity: 0.6;
+  transition: transform 0.15s ease-out, opacity 0.15s ease-out;
+}
+
+    </style>
+    <script>
+    // Create cursor elements
+const cursorDot = document.createElement('div');
+const cursorCircle = document.createElement('div');
+
+cursorDot.classList.add('cursor-dot');
+cursorCircle.classList.add('cursor-circle');
+
+document.body.appendChild(cursorDot);
+document.body.appendChild(cursorCircle);
+
+let mouseX = 0, mouseY = 0;
+let circleX = 0, circleY = 0;
+
+// Update mouse position on move
+document.addEventListener('mousemove', (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+
+  cursorDot.style.top = `${mouseY}px`;
+  cursorDot.style.left = `${mouseX}px`;
+});
+
+// Animate circle following dot smoothly
+function animate() {
+  circleX += (mouseX - circleX) * 0.1; // 0.1 = smoothness factor
+  circleY += (mouseY - circleY) * 0.1;
+
+  cursorCircle.style.top = `${circleY}px`;
+  cursorCircle.style.left = `${circleX}px`;
+
+  requestAnimationFrame(animate);
+}
+
+animate();
+
+
+    </script>
+
+	
+<style>
+    #preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #fff; /* Adjust to var(--white) if using variables */
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader > div {
+  display: inline-flex;
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: #0066f5; /* Your $secondary color */
+  animation: bounce 1.48s ease-in-out infinite both;
+}
+
+.loader > div:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.loader > div:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+</style>
+
+    <!-- Start Preloader 
+    ============================================= -->
+   <div id="preloader">
+  <div class="vynzora-loader-inner">
+    <div class="loader">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</div>
+
+    <!-- preloader end -->
+
+   <!-- Start Header Top 
+    ============================================= -->
+    <div class="top-bar-area bg-dark text-light">
+        <div class="container-full">
+            <div class="row align-center">
+                <div class="col-xl-9 col-lg-9 info">
+                    <div class="address-info">
+                        <ul class="item-flex">
+                            <li>
+                                <i class="fas fa-envelope-open-text"></i> Info@edusetin.com
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i> Working Hours: 09:00 AM – 06:00 PM
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 text-end">
+                    <div class="social">
+                        <ul class="item-flex">
+                            <li>
+                                <a href="https://wa.me/1234567890" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="{% static 'assets/img/icon/twitter-x.png' %}" alt="Image Not Found">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Top -->
+
+    <!-- Popup Modal (Abroad Studies - New Design) -->
+{% comment %} <div id="ctaPopup" class="cta-popup">
+    <div class="cta-popup-content new-popup">
+        <span class="cta-close">&times;</span>
+        <div class="popup-inner d-flex align-items-center">
+            <!-- Left Image -->
+            <div class="popup-left">
+                <img src="{% static 'assets/img/illustration/6.png' %}" alt="Abroad Studies Illustration">
+            </div>
+            <!-- Right Content -->
+            <div class="popup-right">
+                <h4 class="sub-title">Your Abroad Studies Journey</h4>
+                <h2 class="title">Explore Edusetin's Programs Worldwide</h2>
+                <p>Get expert guidance and support for your international education. Learn more about courses, scholarships, and admission procedures.</p>
+                <a href="{% url "apply_form" %}" class="btn-style-one circle mt-3">
+                    Apply Now <span></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div> {% endcomment %}
+
+<div id="ctaPopup" class="cta-popup">
+    <div class="cta-popup-content new-popup">
+        <span class="cta-close">&times;</span>
+        <div class="popup-inner d-flex align-items-center">
+            <!-- Left Image -->
+            <div class="popup-left">
+                <img src="{% static 'assets/img/illustration/6.png' %}" alt="Abroad Studies Illustration">
+            </div>
+            <!-- Right Content -->
+            <div class="popup-right">
+                <h4 class="sub-title">Your Abroad Studies Journey</h4>
+                <h2 class="title">Explore Edusetin's Programs Worldwide</h2>
+                <p>Get expert guidance and support for your international education. Learn more about courses, scholarships, and admission procedures.</p>
+                <a href="{% url 'apply_form' %}" class="btn-style-one circle mt-3">
+                    Apply Now <span></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CSS -->
+
+ <style>
+        :root {
+            --primary-color: #1E3A8A;   /* Deep Blue */
+            --secondary-color: #2563EB; /* Vibrant Blue */
+            --accent-color: #60A5FA;    /* Light Blue */
+            --primary-dark: #172554;
+            --text-dark: #1F2937;
+            --light-bg: #F9FAFB;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            margin: 0;
+            background: var(--light-bg);
+        }
+
+        /* --- Chatbot Container --- */
+        .chatbot-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        /* --- Floating Button --- */
+        .chatbot-button {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            animation: vibratePulse 2s infinite;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        
+        @media (min-width: 480px) {
+            .chatbot-button {
+                width: 65px;
+                height: 65px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .chatbot-button {
+                width: 70px;
+                height: 70px;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .chatbot-button {
+                width: 75px;
+                height: 75px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+            }
+        }
+
+        .chatbot-button:hover {
+            transform: scale(1.15);
+            background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+        }
+
+        .chatbot-button i {
+            color: white;
+            font-size: 24px;
+        }
+        
+        @media (min-width: 480px) {
+            .chatbot-button i {
+                font-size: 26px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .chatbot-button i {
+                font-size: 28px;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .chatbot-button i {
+                font-size: 30px;
+            }
+        }
+
+        /* --- Chatbot Box --- */
+        .chatbot-box {
+            width: 90vw;
+            height: 70vh;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(14px);
+            border-radius: 16px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            bottom: 75px;
+            right: 0;
+            opacity: 0;
+            transform: scale(0.7) translateY(40px);
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        @media (min-width: 480px) {
+            .chatbot-box {
+                width: 85vw;
+                height: 65vh;
+                border-radius: 18px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .chatbot-box {
+                width: 380px;
+                height: 500px;
+                border-radius: 20px;
+                box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .chatbot-box {
+                width: 420px;
+                height: 550px;
+                border-radius: 24px;
+                box-shadow: 0 12px 50px rgba(0, 0, 0, 0.3);
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            .chatbot-box {
+                width: 450px;
+                height: 580px;
+            }
+        }
+
+        .chatbot-box.active {
+            display: flex;
+            opacity: 1;
+            transform: scale(1) translateY(0);
+            animation: popup-bounce 0.5s ease forwards;
+        }
+        
+        /* Full screen for very small devices */
+        @media (max-width: 360px) and (max-height: 640px) {
+            .chatbot-box {
+                width: 100vw;
+                height: 100vh;
+                bottom: 0;
+                right: 0;
+                border-radius: 0;
+            }
+            
+            .chatbot-container {
+                bottom: 10px;
+                right: 10px;
+            }
+        }
+
+        /* --- Header --- */
+        .chatbot-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        @media (min-width: 768px) {
+            .chatbot-header {
+                padding: 18px;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .chatbot-header {
+                padding: 20px;
+            }
+        }
+
+        .chatbot-header h3 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 600;
+            color: #ffffff !important;
+        }
+        
+        @media (min-width: 480px) {
+            .chatbot-header h3 {
+                font-size: 19px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .chatbot-header h3 {
+                font-size: 20px;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .chatbot-header h3 {
+                font-size: 22px;
+            }
+        }
+
+        .chatbot-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 22px;
+            cursor: pointer;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        @media (min-width: 768px) {
+            .chatbot-close {
+                font-size: 24px;
+            }
+        }
+
+        /* --- Messages Area --- */
+        .chatbot-messages {
+            flex: 1;
+            padding: 15px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        @media (min-width: 480px) {
+            .chatbot-messages {
+                padding: 18px;
+                gap: 11px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .chatbot-messages {
+                padding: 20px;
+                gap: 12px;
+            }
+        }
+
+        .message {
+            max-width: 80%;
+            padding: 10px 14px;
+            border-radius: 18px;
+            line-height: 1.4;
+            font-size: 14px;
+            position: relative;
+            animation: fadeInUp 0.3s ease;
+            word-wrap: break-word;
+        }
+        
+        @media (min-width: 480px) {
+            .message {
+                padding: 11px 15px;
+                border-radius: 20px;
+                font-size: 14.5px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .message {
+                padding: 12px 16px;
+                border-radius: 22px;
+                font-size: 15px;
+                line-height: 1.5;
+            }
+        }
+
+        .bot-message {
+            background: var(--accent-color);
+            color: white;
+            align-self: flex-start;
+            border-bottom-left-radius: 6px;
+        }
+
+        .user-message {
+            background: var(--primary-color);
+            color: white;
+            align-self: flex-end;
+            border-bottom-right-radius: 6px;
+        }
+
+        /* --- Input Area --- */
+        .chatbot-input {
+            display: flex;
+            padding: 10px;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            background: rgba(255, 255, 255, 0.9);
+        }
+        
+        @media (min-width: 768px) {
+            .chatbot-input {
+                padding: 12px;
+            }
+        }
+
+        .chatbot-input input {
+            flex: 1;
+            padding: 10px 14px;
+            border: 1px solid #ddd;
+            border-radius: 24px;
+            outline: none;
+            font-size: 14px;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        @media (min-width: 480px) {
+            .chatbot-input input {
+                padding: 11px 15px;
+                font-size: 14.5px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .chatbot-input input {
+                padding: 12px 16px;
+                font-size: 15px;
+                border-radius: 26px;
+            }
+        }
+
+        .chatbot-input button {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 42px;
+            height: 42px;
+            margin-left: 8px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+        
+        @media (min-width: 480px) {
+            .chatbot-input button {
+                width: 44px;
+                height: 44px;
+                margin-left: 9px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .chatbot-input button {
+                width: 46px;
+                height: 46px;
+                margin-left: 10px;
+            }
+        }
+
+        .chatbot-input button i {
+            font-size: 16px;
+        }
+        
+        @media (min-width: 480px) {
+            .chatbot-input button i {
+                font-size: 17px;
+            }
+        }
+
+        /* --- Animations --- */
+        @keyframes vibratePulse {
+            0%, 100% { transform: scale(1) translate(0); }
+            10% { transform: scale(1.05) translate(-1px, 1px); }
+            20% { transform: scale(1) translate(-1px, -1px); }
+            30% { transform: scale(1.08) translate(1px, 1px); }
+            40% { transform: scale(1) translate(1px, -1px); }
+            50% { transform: scale(1.1); }
+            70% { transform: scale(1); }
+        }
+        
+        @media (min-width: 1024px) {
+            @keyframes vibratePulse {
+                0%, 100% { transform: scale(1) translate(0); }
+                10% { transform: scale(1.1) translate(-2px, 2px); }
+                20% { transform: scale(1) translate(-2px, -2px); }
+                30% { transform: scale(1.12) translate(2px, 2px); }
+                40% { transform: scale(1) translate(2px, -2px); }
+                50% { transform: scale(1.15); }
+                70% { transform: scale(1); }
+            }
+        }
+
+        @keyframes popup-bounce {
+            0% { transform: scale(0.7) translateY(40px); opacity: 0; }
+            60% { transform: scale(1.05) translateY(-5px); opacity: 1; }
+            100% { transform: scale(1) translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Improve scrolling on mobile */
+        .chatbot-messages {
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        /* Hide chatbot on print */
+        @media print {
+            .chatbot-container {
+                display: none;
+            }
+        }
+    </style>
+
+
+
+<style>
+
+.cta-popup {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+  pointer-events: all;
+}
+
+.cta-popup-content.new-popup {
+  background: #fff;
+  border-radius: 20px;
+  max-width: 900px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  position: relative;
+  animation: slideIn 0.6s ease forwards;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  pointer-events: auto;
+}
+
+.popup-inner {
+  display: flex;
+  width: 100%;
+}
+
+.popup-left {
+  flex: 1;
+  overflow: hidden;
+}
+
+.popup-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.popup-right {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.popup-right .sub-title {
+  color: #ff4d5a;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.popup-right .title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.popup-right p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.btn-style-one {
+  display: inline-block;
+  padding: 12px 25px;
+ 
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+
+
+.cta-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 38px;
+  font-weight: bold;
+  color: #fff;
+  background: rgba(0,0,0,0.7);
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  line-height: 55px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10001;
+  transition: all 0.3s ease;
+}
+
+.cta-close:hover {
+  background: rgba(0,0,0,0.9);
+  transform: scale(1.1);
+}
+
+@keyframes slideIn {
+  from {opacity: 0; transform: translateY(-30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@media (max-width: 768px) {
+  .cta-popup-content.new-popup {
+    flex-direction: column;
+  }
+  .popup-left img {
+    height: 200px;
+  }
+}
+
+.service-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 5px;
+    color: #007bff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+</style>
+
+<style>
+    .testimonial-style-one-item {
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.testimonial-review {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto 10px;
+    max-width: 100%;
+}
+
+.testimonial-name {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.reviews i {
+    color: #FFD700; /* gold stars */
+    margin: 0 2px;
+}
+
+@media (max-width: 768px) {
+    .testimonial-review {
+        font-size: 14px;
+    }
+    .testimonial-name {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial-review {
+        font-size: 13px;
+    }
+    .testimonial-name {
+        font-size: 15px;
+    }
+}
+
+
+</style>
+
+
+{% comment %} <style>
+    .review-text {
+    word-wrap: break-word;   /* Break long words */
+    overflow-wrap: break-word;
+    white-space: normal;     /* Allow wrapping */
+    max-width: 100%;         /* Prevent overflow */
+    line-height: 1.5;        /* Improve readability */
+    font-size: 16px;         /* Default desktop */
+}
+
+@media (max-width: 768px) {
+    .review-text {
+        font-size: 14px;   /* Smaller text on tablet/mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .review-text {
+        font-size: 13px;   /* Even smaller for very small screens */
+    }
+}
+ {% endcomment %}
+</style>
+<!-- JavaScript -->
+{% comment %} <script>
+document.addEventListener("DOMContentLoaded", function () {
+    let popup = document.getElementById("ctaPopup");
+    let closeBtn = document.querySelector(".cta-close");
+
+    // Load saved state
+    let popupData = JSON.parse(localStorage.getItem("ctaPopupData")) || {
+        shownCount: 0
+    };
+
+    // Helper: show popup
+    function showPopup() {
+        popup.style.display = "flex";
+        popupData.shownCount += 1;
+        popupData.lastShown = Date.now();
+        localStorage.setItem("ctaPopupData", JSON.stringify(popupData));
+    }
+
+    // Helper: schedule popup
+    function schedulePopup(delayMinutes) {
+        setTimeout(showPopup, delayMinutes * 60 * 1000); // convert minutes to ms
+    }
+
+    // MAIN LOGIC
+    if (popupData.shownCount === 0) {
+        // First time → 30 minutes
+        schedulePopup(30);
+    } else if (popupData.shownCount === 1) {
+        // Second time → 60 minutes
+        schedulePopup(60);
+    } 
+    // After 2 times, it won't show anymore
+
+    // Close popup manually
+    closeBtn.onclick = function () {
+        popup.style.display = "none";
+    };
+
+    popup.addEventListener("click", function (e) {
+        if (e.target === popup) {
+            popup.style.display = "none";
+        }
+    });
+});
+</script> {% endcomment %}
+
+{% comment %} <script>
+document.addEventListener("DOMContentLoaded", function () {
+    let popup = document.getElementById("ctaPopup");
+    let closeBtn = document.querySelector(".cta-close");
+
+    // Show popup once after 30 seconds
+    let popupTimer = setTimeout(function() {
+        popup.style.display = "flex";
+    }, 30000); // 30 seconds
+
+    // Close popup
+    closeBtn.onclick = function () {
+        popup.style.display = "none";
+        clearTimeout(popupTimer);
+    }
+
+    // Close when clicking outside content
+    popup.addEventListener('click', function(e) {
+        if (e.target === popup) {
+            popup.style.display = "none";
+            clearTimeout(popupTimer);
+        }
+    });
+});
+</script> {% endcomment %}
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    let popup = document.getElementById("ctaPopup");
+    let closeBtn = document.querySelector(".cta-close");
+    let shownCount = 0; // track how many times popup is shown
+
+    function showPopup() {
+        if (shownCount < 2) { 
+            popup.style.display = "flex";
+            shownCount++;
+        }
+    }
+
+    // Show popup first after 30s
+    setTimeout(showPopup, 30000); // 30 seconds
+    // Show popup again after 60s
+    setTimeout(showPopup, 60000); // 60 seconds
+
+    // Close popup
+    closeBtn.onclick = function () {
+        popup.style.display = "none";
+    }
+
+    // Close when clicking outside content
+    popup.addEventListener("click", function (e) {
+        if (e.target === popup) {
+            popup.style.display = "none";
+        }
+    });
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const chatbotButton = document.getElementById('chatbotButton');
+    const chatbotBox = document.getElementById('chatbotBox');
+    const chatbotClose = document.getElementById('chatbotClose');
+    const userInput = document.getElementById('userInput');
+    const sendMessage = document.getElementById('sendMessage');
+    const chatMessages = document.getElementById('chatMessages');
+
+    let chatbotState = {
+        step: "welcome",
+        path: null,
+        name: null,
+        year: null,
+        subject: null
+    };
+
+    // --- Save Data to Backend ---
+    function saveUserData(extra = {}) {
+        const payload = {
+            name: chatbotState.name,
+            course: chatbotState.path,
+            year: chatbotState.year,
+            subject: chatbotState.subject,
+            ...extra
+        };
+
+        fetch("/save-user-data/", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "X-CSRFToken": getCookie("csrftoken")
+            },
+            body: JSON.stringify(payload)
+        })
+        .then(res => res.json())
+        .then(data => console.log("Saved:", data))
+        .catch(err => console.error("Save error:", err));
+    }
+
+    // --- Get CSRF Token for Django ---
+    function getCookie(name) {
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            const cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i].trim();
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+
+    // --- Chat Functions ---
+    function addMessage(text, type) {
+        const div = document.createElement('div');
+        div.classList.add('message', type + '-message');
+        div.textContent = text;
+        chatMessages.appendChild(div);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function botReply(text) {
+        addMessage(text, 'bot');
+    }
+
+    function sendUserMessage() {
+        const message = userInput.value.trim();
+        if (!message) return;
+
+        addMessage(message, 'user');
+        userInput.value = '';
+
+        processUserInput(message);
+    }
+
+    sendMessage.addEventListener('click', sendUserMessage);
+    userInput.addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') sendUserMessage();
+    });
+
+    chatbotButton.addEventListener('click', () => chatbotBox.classList.toggle('active'));
+    chatbotClose.addEventListener('click', () => chatbotBox.classList.remove('active'));
+
+    // --- Flow Logic ---
+    function processUserInput(input) {
+        switch (chatbotState.step) {
+            case "welcome":
+                botReply("Welcome! Please choose your course: Bachelors, Masters, Masters Diploma, or MBBS.");
+                chatbotState.step = "chooseCourse";
+                break;
+
+            case "chooseCourse":
+                if (["bachelors", "masters", "masters diploma", "mbbs"].includes(input.toLowerCase())) {
+                    chatbotState.path = input.toLowerCase();
+                    botReply("Great! Please tell me your name.");
+                    chatbotState.step = "askName";
+                } else {
+                    botReply("Please choose from: Bachelors, Masters, Masters Diploma, MBBS.");
+                }
+                break;
+
+            case "askName":
+                chatbotState.name = input;
+                botReply("In which year did you complete your last qualification?");
+                chatbotState.step = "askYear";
+                break;
+
+            case "askYear":
+                chatbotState.year = input;
+                botReply("Which subject did you study?");
+                chatbotState.step = "askSubject";
+                break;
+
+            case "askSubject":
+                chatbotState.subject = input;
+                botReply("Now, choose from: Scholarships, Application Procedures, Documents Needed, IELTS Requirements, Part-time Jobs, Intro.");
+                chatbotState.step = "mainMenu";
+                break;
+
+            case "mainMenu":
+                handleCourseMenus(input.toLowerCase());
+                break;
+
+            default:
+                botReply("I didn't understand that. Please follow the menu.");
+        }
+    }
+
+    // --- Menus for each course ---
+    function handleCourseMenus(choice) {
+        let response = "";
+
+        // --- Scholarships ---
+        if (["scholarship", "scholarships"].includes(choice)) {
+            if (chatbotState.path === "bachelors") {
+                response = `There are 4 types of scholarships you can apply in Italy:
+1. NEED-Based Scholarships – Eligible if parent's annual income < 20 Lakhs. Covers tuition, food, accommodation, living.
+2. Merit Scholarship – For students with > 85%. Tuition + accommodation covered.
+3. University Scholarship – Check university website.
+4. Government Scholarships – MAECI, Invest Your Talent, Erasmus Mundus. Mostly merit-based.`;
+            } else if (chatbotState.path === "masters") {
+                response = `Masters Scholarships include NEED-based, University specific, Government (MAECI, Invest Your Talent), and Erasmus Mundus. Covers tuition + living depending on merit.`;
+            } else if (chatbotState.path === "masters diploma") {
+                response = `Masters Diploma scholarships: Universities often provide partial/full tuition waivers based on merit rank list. Check course/university site.`;
+            } else if (chatbotState.path === "mbbs") {
+                response = `MBBS Scholarships: Mainly regional NEED-based scholarships in Italy covering tuition, accommodation, living expenses. Some universities offer merit scholarships.`;
+            }
+        }
+
+        // --- Applications ---
+        else if (choice.includes("application")) {
+            if (chatbotState.path === "bachelors") {
+                response = `Bachelor’s Application (6 Stages):
+1. Select course & University
+2. Check if TOLC admission test required
+3. University Admission
+4. Pre-enrolment (Universitaly)
+5. Scholarship Application
+6. VISA Application`;
+            } else if (chatbotState.path === "masters") {
+                response = `Masters Application (5 Stages):
+1. Select course & University
+2. University Admission
+3. Pre-enrolment (Universitaly)
+4. Scholarship Application
+5. VISA Application`;
+            } else if (chatbotState.path === "masters diploma") {
+                response = `Masters Diploma Application (5 Stages):
+1. Select course & University
+2. Admission via interview/test
+3. University Admission
+4. Pre-enrolment (Universitaly)
+5. VISA Application`;
+            } else if (chatbotState.path === "mbbs") {
+                response = `MBBS Application (7 Stages):
+1. Select University
+2. University Admission
+3. Pre-enrolment (Universitaly)
+4. Scholarship Application
+5. IMAT Registration
+6. IMAT Exam
+7. VISA Application`;
+            }
+        }
+
+        // --- Documents ---
+        else if (choice.includes("document")) {
+            if (chatbotState.path === "bachelors") {
+                response = `Bachelor’s Documents:
+1. Passport size photo
+2. Valid Passport (2 yrs validity, 6 blank pages)
+3. 10th, +2 certificates
+4. Experience/Internship (if any)
+5. SOP
+6. Europass CV
+7. 2 Recommendation letters
+8. IELTS/MOI`;
+            } else if (chatbotState.path === "masters") {
+                response = `Masters Documents:
+1. Passport size photo
+2. Valid Passport
+3. 10th, +2, Bachelors (certificates + transcripts)
+4. Experience/Internship (if any)
+5. SOP
+6. Europass CV
+7. 2 Recommendation letters
+8. IELTS/MOI`;
+            } else if (chatbotState.path === "masters diploma") {
+                response = `Masters Diploma Documents:
+1. Passport size photo
+2. Valid Passport
+3. 10th, +2, Bachelors, Masters (certificates + transcripts)
+4. Experience/Internship (if any)
+5. SOP
+6. Europass CV
+7. 2 Recommendation letters
+8. IELTS/MOI`;
+            } else if (chatbotState.path === "mbbs") {
+                response = `MBBS Documents:
+1. Passport size photo
+2. Valid Passport
+3. 10th, +2 certificates
+4. NEET Score card
+5. Experience/Internship (if any)
+6. SOP
+7. Europass CV
+8. 2 Recommendation letters
+9. IELTS/MOI`;
+            }
+        }
+
+        // --- IELTS ---
+        else if (choice.includes("ielts")) {
+            response = `IELTS Requirements:
+Most Italian universities require IELTS/TOEFL. Some accept MOI (Medium of Instruction).
+⚡ Tip: IELTS improves admission + VISA success chances.`;
+        }
+
+        // --- Jobs ---
+        else if (choice.includes("part-time") || choice.includes("job")) {
+            response = `Part-time Jobs in Italy:
+• Hospitality & Retail (cafes, shops)
+• Tutoring
+• Admin roles in universities
+Work hours: 20 hrs/week (academic), full-time (holidays)
+Pay: €7–10/hour
+⚡ Learn basic Italian to improve chances.`;
+        }
+
+        // --- Intro ---
+        else if (choice.includes("intro")) {
+            response = `You selected ${chatbotState.path}. This course has structured admission, scholarships, and work opportunities. Type "application", "documents", "scholarships", "IELTS", or "part-time jobs" to know more.`;
+        }
+
+        else {
+            response = "Please choose a valid option from the menu.";
+        }
+
+        botReply(response);
+
+        // Save interaction in DB
+        saveUserData({
+            user_message: choice,
+            bot_response: response
+        });
+    }
+});
+</script>
+
+    <!-- Header 
+    ============================================= -->
+    <header>
+        <!-- Start Navigation -->
+        <nav class="navbar mobile-sidenav navbar-default validnavs navbar-sticky navbar-style-two">
+
+            <!-- Start Top Search -->
+            <div class="top-search">
+                <div class="container-xl">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- End Top Search -->
+
+
+            <div class="container-full d-flex justify-content-between align-items-center">            
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="{% url 'index' %}">
+                        <img src="{% static 'assets/img/logo1.png' %}" class="logo logo-display" alt="Logo">
+                        <img src="{% static 'assets/img/logo1.png' %}" class="logo logo-scrolled" alt="Logo">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+
+                    <img src="{% static 'assets/img/logo2.png' %}" alt="Logo">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                       
+                       
+
+                         
+                        <li>
+                            <a href="{% url 'index' %}">Home</a>
+                        </li>
+
+
+
+                         
+                        <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        Countries <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+        {% for country in countries %}
+            <li>
+                <a href="{% url 'country_detail' country.id %}">
+                    {{ country.name }}
+                </a>
+            </li>
+        {% empty %}
+            <li><a href="#">No countries available</a></li>
+        {% endfor %}
+    </ul>
+</li>
+
+
+<li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        Courses <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+        {% for category in course_categories %}
+            <li>
+                
+                <a href={% url 'course_category_detail' category.id %} " %}">
+                    {{ category.name }}
+                </a>
+            </li>
+        {% empty %}
+            <li><a href="#">No course categories available</a></li>
+        {% endfor %}
+    </ul>
+</li>
+
+
+                        {% comment %} add urls after setting universities detial page>>>>>>>>>>>>> {% endcomment %}
+                       {% comment %} <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Business & Management</a></li>
+                                <li><a href="#}">Engineering</a></li>
+                                <li><a href="#">Health & Medicine</a></li>
+                            </ul>
+                        </li> {% endcomment %}
+
+
+                        <!-- Services Dropdown -->
+                        <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        Services <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+        {% for service in services %}
+            <li>
+                <a href="{% url 'service_detail' service.id %}">
+                    {{ service.title }}
+                </a>
+            </li>
+        {% empty %}
+            <li><a href="#">No services available</a></li>
+        {% endfor %}
+    </ul>
+</li>
+
+                        <!-- Courses Dropdown -->
+                        <!-- <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses</a>
+                            <ul class="dropdown-menu"> -->
+
+                                <!-- Medical Category -->
+                                <!-- <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Medical</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="medicine.html">Medicine</a></li>
+                                    <li><a href="nursing.html">Nursing</a></li>
+                                    <li><a href="pharmacy.html">Pharmacy</a></li>
+                                    <li><a href="dentistry.html">Dentistry</a></li>
+                                </ul>
+                                </li> -->
+
+                                <!-- Engineering Category -->
+                                <!-- <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Engineering</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="civil-engineering.html">Civil Engineering</a></li>
+                                    <li><a href="mechanical-engineering.html">Mechanical Engineering</a></li>
+                                    <li><a href="electrical-engineering.html">Electrical Engineering</a></li>
+                                    <li><a href="computer-engineering.html">Computer Engineering</a></li>
+                                </ul>
+                                </li>
+
+                                
+
+                            
+                            </ul>
+                            </li> -->
+
+
+                         <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Others <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                 <li><a href="{% url 'about' %}">About</a></li>
+                                <li><a href="{% url "index_blog" %}">Blog</a></li>
+                                <li> <a href="{% url 'gallery' %}">Gallery</a></li>
+                                 <li><a href="{% url "contact_us" %}">Contact</a></li>
+                            </ul>
+                        </li>
+                      
+                        <li>
+                           
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+
+                <div class="attr-right">
+                    <!-- Start Atribute Navigation -->
+                    <div class="attr-nav">
+                        <ul>
+                            <li class="contact">
+                                <div class="call">
+                                    <div class="icon">
+                                        <img src="{% static 'assets/img/icon/phone.png' %}" alt="Image Not Found">
+                                    </div>
+                                    <div class="info">
+                                        <p>Need to discuss?</p>
+                                        <h5>
+                                            <a href="{% url "apply_form" %}" class="appointment-btn">Schedule Now</a>
+                                            </h5>
+
+                                            <style>
+                                                .appointment-btn {
+                                                    display: inline-block;
+                                                    background-color: #D3202A; /* your theme color */
+                                                    
+                                                    padding: 10px 20px;
+                                                    border-radius: 8px;
+                                                    font-size: 16px;
+                                                    font-weight: 600;
+                                                    text-decoration: none;
+                                                    transition: background 0.3s ease;
+                                                    }
+
+                                                    .appointment-btn:hover {
+                                                    background-color: #b91c1c; /* darker shade on hover */
+                                                    
+                                                    }
+
+                                            </style>
+                                    </div>
+                                </div>
+                            </li>
+                           
+                            <li>
+                               <a href="https://edusetinglobalcareers.com/" target="_blank" rel="noopener noreferrer" class="btn-style-one" >
+                                        Get Your Job Visa <span></span>
+                                    </a>
+                                </li>
+                        </ul>
+                    </div>
+                    <!-- End Atribute Navigation -->
+                </div>
+
+            </div>   
+            <!-- Overlay screen for menu -->
+            <div class="overlay-screen"></div>
+            <!-- End Overlay screen for menu -->
+
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- Chatbot Container -->
+     <div class="chatbot-container">
+        <div class="chatbot-box" id="chatbotBox">
+            <div class="chatbot-header">
+                <h3>Edusetin Assistant</h3>
+                <button class="chatbot-close" id="chatbotClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chatbot-messages" id="chatMessages">
+                <div class="message bot-message">
+                    Hello! I'm Edusetin's virtual assistant. How can I help you with studying abroad today?
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="userInput" placeholder="Type your message here...">
+                <button id="sendMessage">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+        <div class="chatbot-button" id="chatbotButton">
+            <i class="fas fa-comment"></i>
+        </div>
+    </div>
+
+
+    <!-- Start Banner Area 
+============================================= -->
+<div class="banner-area banner-style-three navigation-circle overflow-hidden text-light auto-height">
+    
+    <!-- Slider main container -->
+    <div class="banner-fade">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+
+            <!-- Single Item (Study Abroad) -->
+            <div class="swiper-slide banner-style-three shadow-left">
+                <div class="item bg-cover" style="background: url('{% static 'assets/img/banner/2.png' %}');">
+                    <div class="banner-syle-thee-shape">
+                        <img src="{% static 'assets/img/shape/3.png' %}" alt="Image Not Found">
+                        <img src="{% static 'assets/img/shape/4.png' %}" alt="Image Not Found">
+                    </div>
+                   <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-xl-7">
+                                <div class="content">
+                                    <h2>Study Abroad Consultants in Kerala</h2>
+                                    <h3 class="tagline">Beyond Your Quest</h3>
+                                    <p>
+                                        Get expert guidance for studying in Germany, Italy, Singapore & Kyrgyzstan. 
+                                        Edusetin offers complete support for admissions, student visa, and scholarships.
+                                    </p>
+                                    <div class="button">
+                                        <a href="{% url 'about' %}" class="btn-style-one circle">Discover More <span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+            <!-- End Single Item -->
+
+            <!-- Single Item (MBBS) -->
+            <div class="swiper-slide banner-style-three shadow-left">
+                <div class="item bg-cover" style="background: url('{% static 'assets/img/banner/1.png' %}');">
+                    <div class="banner-syle-thee-shape">
+                        <img src="{% static 'assets/img/shape/3.png' %}" alt="Image Not Found">
+                        <img src="{% static 'assets/img/shape/4.png' %}" alt="Image Not Found">
+                    </div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-xl-7">
+                                <div class="content">
+                                    <h2>Affordable MBBS & Study Abroad Guidance</h2>
+                                    <h3 class="tagline">Beyond Your Quest</h3>
+                                    <p>
+                                        Secure your seat for MBBS or master’s programs abroad with Edusetin. Trusted for low tuition universities, admission help, and fast visa processing.
+                                    </p>
+                                    <div class="button">
+                                        <a href="{% url "apply_form" %}" class="btn-style-one circle">Apply Now<span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Single Item -->
+
+            <!-- Single Item (Job Visa) -->
+            <div class="swiper-slide banner-style-three shadow-left">
+                <div class="item bg-cover" style="background: url('{% static 'assets/img/banner/job-visa.jpg' %}');">
+                    <div class="banner-syle-thee-shape">
+                        <img src="{% static 'assets/img/shape/3.png' %}" alt="Image Not Found">
+                        <img src="{% static 'assets/img/shape/4.png' %}" alt="Image Not Found">
+                    </div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-xl-7">
+                                <div class="content">
+                                    <h2>Job Visa Assistance & Overseas Careers</h2>
+                                    <h3 class="tagline">Beyond Your Quest</h3>
+                                    <p>
+                                        Get expert help in securing international job visas. We guide you through visa applications, documentation, and smooth processing for your dream career abroad.
+                                    </p>
+                                    <div class="button">
+                                        <a href="https://edusetinglobalcareers.com/" target="_blank" rel="noopener noreferrer" class="btn-style-one circle">Apply for Job Visa<span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Single Item -->
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="banner-prev-nav">
+            <svg width="27" height="10" viewBox="0 0 27 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27 9H3L9.9 1" stroke="#ffffff" stroke-width="2"></path>
+            </svg>
+        </div>
+        <div class="banner-next-nav">
+            <svg width="27" height="10" viewBox="0 0 27 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 9H24L17.1 1" stroke="#ffffff" stroke-width="2"></path>
+            </svg>
+        </div>
+
+    </div> 
+
+</div>
+<!-- End Banner -->
+
+
+    <!-- Start About 
+    ============================================= -->
+    <div id="about" class="about-style-three-area default-padding">
+    
+        <div class="container">
+            <div class="about-style-three-items"> 
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="about-style-three-info">
+                            <div class="experience-style-one mb-50">
+                               <h2 style="background-image: url('{% static 'assets/img/about/5.png' %}');">10</h2>
+                                <h4>Years of Trusted Study Abroad & Visa Support Services</h4>
+
+                            </div>
+                            <h4 class="sub-title">About Edusetin Study Abroad</h4>
+                            <h2 class="title split-text">Trusted Experts in Student Visa & Overseas Education</h2>
+
+                           <p class="wow fadeInUp">
+                            Edusetin offers expert guidance for students planning to study abroad. From university selection to visa processing, we ensure a smooth journey to top destinations like Germany, Italy, Singapore, and Kyrgyzstan.
+                            </p>
+                            <ul class="list-card wow fadeInUp" data-wow-delay="100ms">
+                               <li>
+                                    <div class="top">
+                                        <img src="{% static 'assets/img/icon/16.png' %}" alt="Best Consultancy for Study Abroad">
+                                        <h4>Top-Rated Study Abroad Consultancy</h4>
+                                    </div>
+                                    <p>
+                                        Edusetin is trusted by students across Kerala for expert guidance on overseas education, including MBBS, bachelor's, and master's programs in top countries.
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="top">
+                                        <img src="{% static 'assets/img/icon/17.png' %}" alt="Visa Assistance Services">
+                                        <h4>Comprehensive Visa Support</h4>
+                                    </div>
+                                    <p>
+                                        We assist students with return visa applications, interview preparation, and complete documentation support to ensure smooth international travel.
+                                    </p>
+                                </li>
+
+                            </ul>
+                            <a href="{% url 'about' %}" class="btn-style-one circle mt-30 wow fadeInUp" data-wow-delay="200ms">Discover More <span></span></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 offset-xl-1 col-lg-6">
+                        <div class="about-three-thumb">
+                            <img class="wow fadeInUp" src="{% static 'assets/img/thumb/6.png' %}" alt="Image Not Found">
+                            <div class="success-rate wow fadeInDown" data-wow-delay="100ms">
+                                <div class="circle-progress">
+                                    <div class="progressbar">
+                                        <h4>Success Rate</h4>
+                                        <div class="circle"  data-percent="92">
+                                            <strong></strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About -->
+
+
+<!-- Start Services Category 
+============================================= -->
+<div id="services" class="visa-category-area default-padding text-center bg-gray bg-cover" style="background-image: url(assets/img/shape/20.png);">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                <div class="site-heading text-center">
+                    <h4 class="sub-title">Our Services</h4>
+                    <h2 class="title split-text">We guide you at every step of your study abroad journey</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="visa-category-items wow fadeInUp" data-wow-delay="200ms">
+                    <div class="visa-category-carousel swiper">
+                        <div class="swiper-wrapper">
+                            {% for service in services %}
+                            <div class="swiper-slide">
+                                <div class="visa-cat-style-one">
+                                    <div class="thumb">
+                                        <img src="{{ service.image.url }}" alt="{{ service.title }}">
+                                        <div class="shape">
+                                            <img src="{% static 'assets/img/shape/39.png' %}" alt="Shape">
+                                        </div>
+                                        <div class="icon">
+                                            <img src="{% static 'assets/img/icon/business-visa.png' %}" alt="Icon">
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h4>
+                                            <a href="{% url 'service_detail' service.id %}">{{ service.title }}</a>
+                                        </h4>
+                                        <p class="service-desc">{{ service.description|truncatechars:120|safe }}</p>
+                                    </div>
+                                    <div class="button">
+                                        <a href="{% url 'service_detail' service.id %}">
+                                            <i class="fas fa-angle-right"></i>
+                                            <span>Know More</span>
+                                            <div class="shape">
+                                                <img src="{% static 'assets/img/shape/40.png' %}" alt="Shape">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+
+                        <!-- Optional navigation buttons -->
+                        {% comment %} <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div> {% endcomment %}
+
+                        <!-- Optional pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- End Services Category -->
+
+    <!-- Start Visa Country 
+============================================= -->
+<div class="visa-country-area default-padding bg-dark text-light bg-cover" style="background-image: url({% static 'assets/img/shape/21.png' %});">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                <div class="site-heading text-center">
+                    <h4 class="sub-title">Explore Our Covered</h4>
+                    <h2 class="title split-text">Start your journey & pick <br> your ideal country</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% comment %} <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="visa-offer-country-items" id="accordion">
+                    
+                    <!-- France -->
+                    <li class="out">
+                        <div class="visa-offer-country-item">
+                            <div class="country">
+                                <div class="icon">
+                                    <img src="{% static 'assets/img/icon/germany.png' %}" alt="Germany">
+                                </div>
+                                <div class="content">
+                                    <h5>Germany</h5>
+                                    <span>Germany</span>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <ul class="list-style-one">
+                                    <li>Student Visa & Admission</li>
+                                    <li>5 Years Business Visa</li>
+                                    <li>Apply Visa Online</li>
+                                </ul>
+                                <a href="#" class="btn-style-one circle mt-30">Discover More <span></span></a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <!-- UK -->
+                    <li>
+                        <div class="visa-offer-country-item">
+                            <div class="country">
+                                <div class="icon">
+                                    <img src="{% static 'assets/img/icon/uk.png' %}" alt="United Kingdom">
+                                </div>
+                                <div class="content">
+                                    <h5>United Kingdom</h5>
+                                    <span>Asheville</span>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <ul class="list-style-one">
+                                    <li>Student Visa & Admission</li>
+                                    <li>5 Years Business Visa</li>
+                                    <li>Apply Visa Online</li>
+                                </ul>
+                                <a href="#" class="btn-style-one circle mt-30">Discover More <span></span></a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <!-- Canada -->
+                    <li>
+                        <div class="visa-offer-country-item">
+                            <div class="country">
+                                <div class="icon">
+                                    <img src="{% static 'assets/img/icon/kyrgyzstan.png' %}" alt="Canada">
+                                </div>
+                                <div class="content">
+                                    <h5>Kyrgyzstan</h5>
+                                    <span>Kyrgyzstan</span>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <ul class="list-style-one">
+                                    <li>Student Visa & Admission</li>
+                                    <li>5 Years Business Visa</li>
+                                    <li>Apply Visa Online</li>
+                                </ul>
+                                <a href="#" class="btn-style-one circle mt-30">Discover More <span></span></a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <!-- Australia -->
+                    <li>
+                        <div class="visa-offer-country-item">
+                            <div class="country">
+                                <div class="icon">
+                                    <img src="{% static 'assets/img/icon/italy.png' %}" alt="Australia">
+                                </div>
+                                <div class="content">
+                                    <h5>Italy</h5>
+                                    <span>Italy</span>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <ul class="list-style-one">
+                                    <li>Student Visa & Admission</li>
+                                    <li>5 Years Business Visa</li>
+                                    <li>Apply Visa Online</li>
+                                </ul>
+                                <a href="#" class="btn-style-one circle mt-30">Discover More <span></span></a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <!-- Dubai -->
+                    <li>
+                        <div class="visa-offer-country-item">
+                            <div class="country">
+                                <div class="icon">
+                                    <img src="{% static 'assets/img/icon/dubai.png' %}" alt="Dubai">
+                                </div>
+                                <div class="content">
+                                    <h5>Dubai</h5>
+                                    <span>Abu Dhabi</span>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <ul class="list-style-one">
+                                    <li>Student Visa & Admission</li>
+                                    <li>5 Years Business Visa</li>
+                                    <li>Apply Visa Online</li>
+                                </ul>
+                                <a href="#" class="btn-style-one circle mt-30">Discover More <span></span></a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div> {% endcomment %}
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="visa-offer-country-items" id="accordion">
+                
+                {% for country in countriess %}
+                <li>
+                    <div class="visa-offer-country-item">
+                        <div class="country">
+                            <div class="icon">
+                                <img src="{{ country.flag.url }}" alt="{{ country.name }}">
+                            </div>
+                            <div class="content">
+                                <h5>{{ country.name }}</h5>
+                                <span>{{ country.city }}</span>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <ul class="list-style-one">
+                                <li>Student Visa & Admission</li>
+                                <li>5 Years Business Visa</li>
+                                <li>Apply Visa Online</li>
+                            </ul>
+                            <a href="{% url "country_detail" country.id %}" class="btn-style-one circle mt-30">
+                                Discover More <span></span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                {% endfor %}
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+</div>
+<!-- End Visa Country  -->
+
+
+     <!-- Start Team 
+    ============================================= -->
+    <div id="team" class="team-style-one-area default-padding bottom-less">
+
+       <div class="container">
+            <div class="row">
+                <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                    <div class="site-heading text-center">
+                        <h4 class="sub-title">Our Team</h4>
+<h2 class="title split-text">Meet Our Experts</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                
+                <!-- Single Item -->
+                <div class="row">
+            <!-- Django template loop starts here -->
+            {% for member in team_members %}
+            <!-- Single Item -->
+            <div class="col-lg-4 col-md-6 mb-30">
+                <div class="team-style-one-item wow fadeInUp" data-wow-delay="{{ forloop.counter0|add:1 }}00ms">
+                    <div class="thumb">
+                        {% if member.image %}
+                        <img src="{{ member.image.url }}" alt="{{ member.name }}" style="height: 500px; object-fit: cover;">
+                        {% else %}
+                        <img src="{% static 'assets/img/team/placeholder.jpg' %}" alt="{{ member.name }}" style="height: 500px; object-fit: cover;">
+                        {% endif %}
+                        <img src="{% static 'assets/img/shape/31.png' %}" alt="Image Not Found">
+                        <div class="social-info">
+                            <div class="social-overlay">
+                                <ul>
+                                    {% if member.linkedin %}
+                                    <li>
+                                        <a href="{{ member.linkedin }}"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                    {% endif %}
+                                    {% if member.github %}
+                                    <li>
+                                        <a href="{{ member.github }}"><i class="fab fa-github"></i></a>
+                                    </li>
+                                    {% endif %}
+                                    {% if member.twitter %}
+                                    <li>
+                                        <a href="{{ member.twitter }}"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    {% endif %}
+                                </ul>
+                                <div class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                            <a href="#"><i class="fas fa-comments-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h4><a href="#">{{ member.name }}</a></h4>
+                        <span>{{ member.profession }}</span>
+                    </div>
+                </div>
+            </div>
+            <!-- End Single Item -->
+            {% endfor %}
+            <!-- Django template loop ends here -->
+        </div>
+    </div>
+                <!-- End Single Item -->
+                <!-- Single Item -->
+                  <!-- Single Item -->
+                
+            </div>
+        </div>
+    </div>
+    <!-- End Team -->
+
+
+
+
+
+
+
+  <!-- Start FAQ 
+============================================= -->
+<div class="faq-style-one-area default-padding bg-cover bg-gray" style="background-image: url('{% static 'assets/img/shape/22.png' %}');">
+    <div class="container">
+        <div class="row justify-content-end">
+            
+            <div class="col-xl-6 offset-xl-1 order-lg-last">
+                <div class="faq-style-one-items">
+                    <h4 class="sub-title">Frequently Asked Questions</h4>
+                    <h2 class="title wow fadeInUp">Quick Answers About Studying Abroad with Edusetin</h2>
+                    <div class="accordion wow fadeInUp" data-wow-delay="100ms" id="faqAccordion">
+                        
+                        <!-- Single Item -->
+                        <div class="accordion-item accordion-style-one">
+                            <h2 class="accordion-header" id="heading_1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_1" aria-expanded="true" aria-controls="collapse_1">
+                                    Which countries can I apply to through Edusetin?
+                                </button>
+                            </h2>
+                            <div id="collapse_1" class="accordion-collapse collapse show" aria-labelledby="heading_1" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        Edusetin currently offers study opportunities in <strong>Italy, Germany, Singapore, and Kyrgyzstan</strong>. 
+                                        From MBBS programs to bachelor’s and master’s degrees, we guide you in selecting the best-fit country and university based on your career goals.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+
+                        <!-- Single Item -->
+                        <div class="accordion-item accordion-style-one">
+                            <h2 class="accordion-header" id="heading_2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_2" aria-expanded="false" aria-controls="collapse_2">
+                                    What services does Edusetin provide?
+                                </button>
+                            </h2>
+                            <div id="collapse_2" class="accordion-collapse collapse" aria-labelledby="heading_2" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        We provide complete <strong>end-to-end support</strong>, including counseling, university selection, admission process, 
+                                        documentation, visa application assistance, and pre-departure guidance. 
+                                        Our goal is to make your study abroad journey smooth and stress-free.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+
+                        <!-- Single Item -->
+                        <div class="accordion-item accordion-style-one">
+                            <h2 class="accordion-header" id="heading_3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_3" aria-expanded="false" aria-controls="collapse_3">
+                                    Do I need to know the local language to study abroad?
+                                </button>
+                            </h2>
+                            <div id="collapse_3" class="accordion-collapse collapse" aria-labelledby="heading_3" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        Many programs, especially in <strong>Italy and Germany</strong>, are taught in English. 
+                                        However, learning the local language is recommended for daily life and part-time job opportunities. 
+                                        Edusetin provides guidance and resources for language preparation as well.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+
+                        <!-- Single Item -->
+                        <div class="accordion-item accordion-style-one">
+                            <h2 class="accordion-header" id="heading_4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_4" aria-expanded="false" aria-controls="collapse_4">
+                                    What are the costs involved in studying abroad?
+                                </button>
+                            </h2>
+                            <div id="collapse_4" class="accordion-collapse collapse" aria-labelledby="heading_4" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        Costs vary depending on the country and program. For example, MBBS in Kyrgyzstan is affordable compared to Western Europe, 
+                                        while Italy and Germany often provide <strong>low tuition fees and scholarships</strong>. 
+                                        Our team will give you a detailed financial breakdown during counseling.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+
+                        <!-- Single Item -->
+                        <div class="accordion-item accordion-style-one">
+                            <h2 class="accordion-header" id="heading_5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_5" aria-expanded="false" aria-controls="collapse_5">
+                                    How can I get started with Edusetin?
+                                </button>
+                            </h2>
+                            <div id="collapse_5" class="accordion-collapse collapse" aria-labelledby="heading_5" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        Simply reach out to us through our <strong>website, Instagram page, or YouTube channel</strong>. 
+                                        Book a counseling session, share your academic background, and we’ll help you choose the right program and start your application process step by step.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Item -->
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-5">
+                <div class="faq-style-one-thumb">
+                    <img src="{% static 'assets/img/illustration/5.png' %}" alt="Study Abroad Support Illustration">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- End FAQ  -->
+
+    <!-- Start Universities 
+    ============================================= -->
+<div id="universities" class="course-style-one-area default-padding-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                <div class="site-heading text-center">
+                    <h4 class="sub-title">Top Partner Universities</h4>
+                    <h2 class="title split-text">Explore Our Global University Network</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="course-style-one-items">
+        <div class="container">
+            <!-- Navigation -->
+            <div class="course-style-one-nav">
+                <div class="course-carousel-prev"><i class="fas fa-long-arrow-left"></i></div>
+                <div class="course-carousel-next"><i class="fas fa-long-arrow-right"></i></div>
+            </div>
+            <!-- Slider main container -->
+            <div class="course-style-one-carousel swiper">
+                <div class="swiper-wrapper">
+
+                    {% for university in universities %}
+                    <div class="swiper-slide">
+                        <div class="course-style-one-item">
+                            <img src="{{ university.image.url }}" alt="{{ university.name }}" style="height: 550px; object-fit: cover;">
+                            
+                            <div class="overlay-title">
+                                <h4>
+                                    <a href="{% url 'uni_detail' university.pk %}">{{ university.name }}</a>
+                                </h4>
+                                <div class="icon">
+                                    <img src="{% static 'assets/img/icon/5.png' %}" alt="Icon">
+                                </div>
+                            </div>
+                            
+                            <div class="overlay">
+                                <div class="icon">
+                                    <img src="{% static 'assets/img/icon/5.png' %}" alt="Icon">
+                                </div>
+                                <h4>
+                                    <a href="{% url 'uni_detail' university.pk %}">{{ university.name }}</a>
+                                </h4>
+                                <p>{{ university.description|truncatewords:25|safe }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Universities -->
+
+  <!-- Start Testimonial 
+============================================= -->
+<div class="tesimonial-style-one-area text-center default-padding bg-cover" style="background-image: url('{% static 'assets/img/shape/map.png' %}');">
+    <div class="container">
+        <div class="testimonial-style-one-items">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="testimonial-style-one-contents">
+
+                        <!-- Dynamic Images from Testimonials -->
+                        <div class="testimonial-one-shape">
+                            {% for t in testimonials %}
+                                {% if t.image %}
+                                    <img class="wow fadeInUp" 
+                                         {% if forloop.counter > 1 %} data-wow-delay="{{ forloop.counter0 }}00ms" {% endif %} 
+                                         src="{{ t.image.url }}" 
+                                         alt="{{ t.name }}">
+                                {% else %}
+                                    <img class="wow fadeInUp" 
+                                         {% if forloop.counter > 1 %} data-wow-delay="{{ forloop.counter0 }}00ms" {% endif %} 
+                                         src="{% static 'assets/img/team/default.jpg' %}" 
+                                         alt="Default">
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+
+                        <!-- Slider main container -->
+                        <div class="testimonial-style-one-carousel wow fadeInUp swiper">
+                            <div class="swiper-wrapper">
+                                {% for t in testimonials %}
+                                <div class="swiper-slide">
+                                    <div class="testimonial-style-one-item">
+                                        
+                                        <!-- Image -->
+                                        <div class="tm-provider">
+                                            {% if t.image %}
+                                                <img src="{{ t.image.url }}" alt="{{ t.name }}">
+                                            {% else %}
+                                                <img src="{% static 'assets/img/team/default.jpg' %}" alt="Default">
+                                            {% endif %}
+                                        </div>
+
+                                        <!-- Rating Stars -->
+                                        <div class="reviews">
+                                            {% for i in "12345"|slice:":t.rating" %}
+                                                <i class="fas fa-star"></i>
+                                            {% endfor %}
+                                            {% for i in "12345"|slice:"t.rating:" %}
+                                                <i class="far fa-star"></i>
+                                            {% endfor %}
+                                        </div>
+
+                                        <!-- Review -->
+                                        <h3>{{ t.name }}</h3>
+                                        <p class="testimonial-review mb-2">{{ t.review|truncatewords:30|safe }}</p>
+                                        
+
+                                        <!-- Details -->
+                                        <div class="tm-provider-detaisl">
+                                            <h4>{{ t.name }}</h4>
+                                            <span>{{ t.created_at|date:"F Y" }}</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <!-- End Slider -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Testimonial -->
+
+
+    <!-- Start Call to action 
+    ============================================= -->
+    <div class="call-to-action-area">
+        <div class="container">
+            <div class="call-to-action-style-one bg-dark text-light">
+                <div class="shape">
+                    <img src="{% static 'assets/img/shape/24.png' %}" alt="Image Not Found">
+                </div>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="thumb bg-theme-secondary">
+                            <img class="wow fadeInUp" src="{% static 'assets/img/illustration/6.png' %}" alt="Image Not Found">
+                            <div class="shape">
+                                <img src="{% static 'assets/img/illustration/7.png' %}" alt="Image Not Found">
+                                <img src="{% static 'assets/img/shape/23.png' %}" alt="Image Not Found">
+                                <img src="{% static 'assets/img/shape/25.png' %}" alt="Image Not Found">
+                                <img src="{% static 'assets/img/shape/26.png' %}" alt="Image Not Found">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="call-action-info">
+                            <h4 class="sub-title">Get free online visa</h4>
+                            <h2 class="title split-text">Reliable visa & immigration experts</h2>
+                            <a href="https://edusetinglobalcareers.com/" target="_blank" rel="noopener noreferrer" class="btn-style-one circle mt-10 wow fadeInUp" data-wow-delay="100ms">Apply for visa <span></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Call to action  -->
+
+
+<!-- Start Blog 
+============================================= -->
+<div id="blog" class="home-blog-area default-padding bg-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                <div class="site-heading text-center">
+                    <h4 class="sub-title">Study Abroad Insights</h4>
+                    <h2 class="title split-text">Latest articles & guides <br> for international students</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+    {% for blog in blogs %}
+    <div class="col-lg-6 col-md-6">
+        <div class="home-blog-style-one wow fadeInUp">
+            <div class="thumb">
+                <img src="{{ blog.image.url }}" alt="{{ blog.title }}" 
+                     style="width:100%; height:350px; object-fit:cover;">
+            </div>
+            <div class="info">
+                <div class="inner">
+                    <div class="meta">
+                        <div class="date">
+                            <strong>{{ blog.created_at|date:"d" }}</strong> 
+                            {{ blog.created_at|date:"M" }}
+                        </div>
+                    </div>
+                    <div class="content">
+                        <ul class="blog-meta">
+                            <li>
+                                <a href="#"><i class="far fa-user-circle"></i> {{ blog.title}}</a>
+                            </li>
+                            <li>
+                                {% comment %} <a href="#"><i class="far fa-comments"></i> 0 Comments</a> {% endcomment %}
+                            </li>
+                        </ul>
+                        <h3>
+                            <a href="{% url 'blog_detail' blog.id %}">{{ blog.title }}</a>
+                        </h3>
+                        <a href="{% url 'blog_detail' blog.id %}" class="btn-regular"> 
+                            Read More
+                            <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 17L17 1H7.8" stroke="#232323" stroke-width="2"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <p>No blogs available.</p>
+    {% endfor %}
+</div>
+
+    </div>
+</div>
+<!-- End Blog -->
+
+    <!-- Start Footer 
+    ============================================= -->
+    <div class="footer-top-area bg-dark-secondary text-light" style="background-image: url('{% static 'assets/img/shape/17.png' %}');">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <div class="user-card">
+                        <div class="thumb">
+                            <img src="{% static 'assets/img/team/5.jpg' %}" alt="Image Not Found">
+                            <img src="{% static 'assets/img/team/6.jpg' %}" alt="Image Not Found">
+                            <span>1k</span>
+                        </div>
+                        <h4>Approved Student Visa Applications.</h4>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <ul class="address-list">
+                        <li>
+                            <div class="icon"><i class="fas fa-envelope"></i></div>
+                            <div class="info">
+                                <h4>Email:</h4>
+                                <a href="mailto:info@crysta.com">info@edusetin.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+
+
+                            <div class="info">
+                                <h4>Address:</h4>
+                                <p>
+                                    62XW+686, Pathanapuram, Kizhuparamba, Malappuram, Kerala – 673639
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-light">
+       
+        <div class="footer-style-one">
+            <div class="container">
+                <div class="f-items">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 footer-item">
+                            <div class="f-item about">
+                                <div class="footer-logo">
+                                    <img src="{% static 'assets/img/logo1.png' %}" alt="Image Not Found">
+                                </div>
+                                <div class="f-item">
+                                  <p>
+                                    We provide authentic, customized visa and immigration solutions you can trust. Unlike generic services, our expert guidance ensures accuracy, transparency, and success—without confusing jargon or unreliable advice.
+                                </p>
+
+                                    <ul class="footer-social-regular mt-30">
+                                         <li>
+                <a href="https://wa.me/1234567890" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </li>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><img src="{% static 'assets/img/icon/twitter-x.png' %}" alt="Image Not Found"></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 footer-item">
+                            <div class="f-item link">
+                                <h4 class="widget-title">Quick Links</h4>
+                                <ul>
+                                    <li>
+                                        <a href="{% url 'index' %}">Home</a>
+                                    </li>
+                                   
+                                    <li>
+                                        <a href="{% url  'about' %}">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="{% url "index_blog" %}">Blogs</a>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'gallery' %}">Gallery</a>
+                                    </li>
+                                   
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-item">
+                            <div class="f-item link">
+    <h4 class="widget-title">Our Services</h4>
+    <ul>
+        {% for service in services %}
+            <li>
+                <a href="{% url 'service_detail' service.id %}">
+                    {{ service.title }}
+                </a>
+            </li>
+        {% empty %}
+            <li>No services available</li>
+        {% endfor %}
+    </ul>
+</div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 footer-item">
+                            <div class="f-item newsletter">
+                                <h4 class="widget-title">Newsletter</h4>
+                                <p>
+                                    Join our subscribers list to get the latest news and special offers.
+                                </p>
+                                <form class="newsletter-form-style-one" action="#">
+                                    <input type="email" placeholder="Your Email" class="form-control" name="email">
+                                    <button type="submit">
+                                        Subsribe
+                                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 17L17 1H7.8" stroke="white" stroke-width="2"></path>
+                                        </svg>
+                                    </button>  
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-4">
+                          <p>© Copyright 2025. All rights reserved by <a href="https://www.vynzora.com" target="_blank" rel="noopener noreferrer">Vynzora Pvt.Ltd</a>.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Footer Bottom -->
+        </div>
+    </footer>
+    <!-- End Footer -->
+    
+<script>
+var swiper = new Swiper('.visa-category-carousel', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        0: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        992: { slidesPerView: 3 }
+    }
+});
+</script>
+    <!-- jQuery Frameworks
+    ============================================= -->
+<script src="{% static 'assets/js/jquery-3.7.1.min.js' %}"></script>
+<script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.appear.js' %}"></script>
+<script src="{% static 'assets/js/jquery.easing.min.js' %}"></script>
+<script src="{% static 'assets/js/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'assets/js/progress-bar.min.js' %}"></script>
+<script src="{% static 'assets/js/circle-progress.js' %}"></script>
+<script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'assets/js/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'assets/js/magnific-popup.min.js' %}"></script>
+<script src="{% static 'assets/js/count-to.js' %}"></script>
+<script src="{% static 'assets/js/jquery.nice-select.min.js' %}"></script>
+<script src="{% static 'assets/js/wow.min.js' %}"></script>
+<script src="{% static 'assets/js/YTPlayer.min.js' %}"></script>
+<script src="{% static 'assets/js/validnavs.js' %}"></script>
+<script src="{% static 'assets/js/gsap.js' %}"></script>
+<script src="{% static 'assets/js/ScrollTrigger.min.js' %}"></script>
+<script src="{% static 'assets/js/SplitText.min.js' %}"></script>
+<script src="{% static 'assets/js/main.js' %}"></script>
+
+
+</body>
+</html>

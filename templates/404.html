@@ -1,0 +1,453 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Edusetin Study Abroad (EDUSETIN LLP) - Page Not Found">
+
+    <!-- ========== Page Title ========== -->
+    <title>Page Not Found - Edusetin Study Abroad</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="{% static 'assets/img/favicon.ico' %}" type="image/x-icon">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/visaco-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/magnific-popup.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/swiper-bundle.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/validnavs.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/helper.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/unit-test.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        /* Hide default cursor */
+        body {
+            cursor: none;
+        }
+
+        /* Dot cursor */
+        .cursor-dot,
+        .cursor-circle {
+            position: fixed;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Small dot */
+        .cursor-dot {
+            width: 13px;
+            height: 13px;
+            background-color: #4faaff; /* Your brand color */
+            border-radius: 70%;
+        }
+
+        /* Circular outline */
+        .cursor-circle {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #4faaff; /* Your brand color */
+            border-radius: 50%;
+            opacity: 0.6;
+            transition: transform 0.15s ease-out, opacity 0.15s ease-out;
+        }
+
+        /* Preloader Styles */
+        #preloader {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: #fff;
+            z-index: 999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loader {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .loader > div {
+            display: inline-flex;
+            width: 25px;
+            height: 25px;
+            margin: 0 5px;
+            border-radius: 50%;
+            background: #0066f5;
+            animation: bounce 1.48s ease-in-out infinite both;
+        }
+
+        .loader > div:nth-child(1) {
+            animation-delay: -0.32s;
+        }
+
+        .loader > div:nth-child(2) {
+            animation-delay: -0.16s;
+        }
+
+        @keyframes bounce {
+            0%, 80%, 100% {
+                transform: scale(0);
+            }
+            40% {
+                transform: scale(1);
+            }
+        }
+
+        /* 404 Page Specific Styles */
+        .error-content {
+            padding: 80px 0 100px;
+            text-align: center;
+            background: #f9f9f9;
+        }
+
+        .error-code {
+            font-size: 120px;
+            font-weight: 700;
+            color: #D3202A;
+            margin-bottom: 10px;
+            line-height: 1;
+        }
+
+        .error-title {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #1E3A8A;
+        }
+
+        .error-text {
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: #6B7280;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .error-actions {
+            margin-top: 30px;
+        }
+
+        /* New Professional Animation Styles */
+        .animation-container {
+            margin: 0 auto 30px;
+            display: flex;
+            justify-content: center;
+            height: 250px;
+            position: relative;
+        }
+
+        .error-animation {
+            width: 300px;
+            height: 200px;
+            position: relative;
+        }
+
+        .page {
+            position: absolute;
+            width: 150px;
+            height: 200px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .page-1 {
+            left: 0;
+            z-index: 3;
+            transform: rotate(-5deg);
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .page-2 {
+            left: 75px;
+            z-index: 2;
+            transform: rotate(2deg);
+            animation: float 4s ease-in-out infinite 0.5s;
+        }
+
+        .page-3 {
+            left: 150px;
+            z-index: 1;
+            transform: rotate(5deg);
+            animation: float 4s ease-in-out infinite 1s;
+        }
+
+        .page-content {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .lines {
+            position: absolute;
+            width: 80%;
+            height: 70%;
+            top: 15%;
+            left: 10%;
+        }
+
+        .line {
+            height: 6px;
+            background: #f0f0f0;
+            margin-bottom: 12px;
+            border-radius: 3px;
+        }
+
+        .line.short {
+            width: 60%;
+        }
+
+        .search-icon {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: #4faaff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            animation: pulse 2s infinite;
+            box-shadow: 0 5px 15px rgba(79, 170, 255, 0.4);
+        }
+
+        .magnifying-glass {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            border: 3px solid white;
+            border-radius: 50%;
+        }
+
+        .magnifying-glass::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            right: -8px;
+            width: 15px;
+            height: 3px;
+            background: white;
+            transform: rotate(45deg);
+        }
+
+        .question-mark {
+            position: absolute;
+            font-size: 80px;
+            font-weight: bold;
+            color: #4faaff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            animation: appear 4s infinite 2s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(-5deg); }
+            50% { transform: translateY(-15px) rotate(-7deg); }
+        }
+
+        @keyframes pulse {
+            0% { transform: translate(-50%, -50%) scale(1); }
+            50% { transform: translate(-50%, -50%) scale(1.1); }
+            100% { transform: translate(-50%, -50%) scale(1); }
+        }
+
+        @keyframes appear {
+            0%, 100% { opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+            50% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+        }
+
+        /* Breadcrumb area fix */
+        .breadcrumb-area {
+            padding: 80px 0;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .breadcrumb-area::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+    </style>
+
+    <!-- Start Preloader -->
+    <div id="preloader">
+        <div class="vynzora-loader-inner">
+            <div class="loader">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader end -->
+
+    <!-- Start Header Top -->
+    <!-- End Header -->
+
+    <!-- Start 404 Content -->
+    <div class="error-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="animation-container">
+                        <div class="error-animation">
+                            <div class="page page-1">
+                                <div class="page-content">
+                                    <div class="lines">
+                                        <div class="line"></div>
+                                        <div class="line short"></div>
+                                        <div class="line"></div>
+                                        <div class="line short"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page page-2">
+                                <div class="page-content">
+                                    <div class="lines">
+                                        <div class="line"></div>
+                                        <div class="line short"></div>
+                                        <div class="line"></div>
+                                        <div class="line short"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page page-3">
+                                <div class="page-content">
+                                    <div class="lines">
+                                        <div class="line"></div>
+                                        <div class="line short"></div>
+                                        <div class="line"></div>
+                                        <div class="line short"></div>
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-icon">
+                                <div class="magnifying-glass"></div>
+                            </div>
+                            <div class="question-mark">?</div>
+                        </div>
+                    </div>
+                    <h1 class="error-code">404</h1>
+                    <h2 class="error-title">Page Not Found</h2>
+                    <p class="error-text">
+                        The page you are looking for might have been removed, had its name changed, 
+                        or is temporarily unavailable. Please check the URL for proper spelling and capitalization.
+                    </p>
+                    <div class="error-actions">
+                        <a href="{% url 'index' %}" class="btn-style-one circle">Back to Homepage <span></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End 404 Content -->
+
+    <!-- Start Footer -->
+    <!-- End Footer -->
+
+    <!-- jQuery Frameworks -->
+    <script src="{% static 'assets/js/jquery-3.7.1.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.appear.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'assets/js/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/progress-bar.min.js' %}"></script>
+    <script src="{% static 'assets/js/circle-progress.js' %}"></script>
+    <script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/magnific-popup.min.js' %}"></script>
+    <script src="{% static 'assets/js/count-to.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/YTPlayer.min.js' %}"></script>
+    <script src="{% static 'assets/js/validnavs.js' %}"></script>
+    <script src="{% static 'assets/js/gsap.js' %}"></script>
+    <script src="{% static 'assets/js/ScrollTrigger.min.js' %}"></script>
+    <script src="{% static 'assets/js/SplitText.min.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+    <script>
+        // Create cursor elements
+        const cursorDot = document.createElement('div');
+        const cursorCircle = document.createElement('div');
+
+        cursorDot.classList.add('cursor-dot');
+        cursorCircle.classList.add('cursor-circle');
+
+        document.body.appendChild(cursorDot);
+        document.body.appendChild(cursorCircle);
+
+        let mouseX = 0, mouseY = 0;
+        let circleX = 0, circleY = 0;
+
+        // Update mouse position on move
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+
+            cursorDot.style.top = `${mouseY}px`;
+            cursorDot.style.left = `${mouseX}px`;
+        });
+
+        // Animate circle following dot smoothly
+        function animate() {
+            circleX += (mouseX - circleX) * 0.1; // 0.1 = smoothness factor
+            circleY += (mouseY - circleY) * 0.1;
+
+            cursorCircle.style.top = `${circleY}px`;
+            cursorCircle.style.left = `${circleX}px`;
+
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+
+        // Preloader
+        window.addEventListener('load', function() {
+            const preloader = document.getElementById('preloader');
+            setTimeout(function() {
+                preloader.style.display = 'none';
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
